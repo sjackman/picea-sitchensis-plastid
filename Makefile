@@ -1,10 +1,10 @@
 name=pg29plastid-scaffolds
 ref=NC_021456
 
-all: $(name).png
+all: $(name).gbk.png
 
 clean:
-	rm -f $(name).gb $(name).gbk $(name).gff $(name).png
+	rm -f $(name).gb $(name).gbk $(name).gff $(name).gbk.png
 
 .PHONY: all clean
 .DELETE_ON_ERROR:
@@ -15,20 +15,17 @@ plastids/%:
 	mkdir -p plastids
 	curl -fsS http://ftp.cbi.pku.edu.cn/pub/database/Genome/Chloroplasts/$@ >$@
 
-%.faa: plastids/%.faa
+%.faa: plastids/%.gbk
 	bin/gbk-to-faa <$< >$@
 
 %.frn: plastids/%.frn
 	sed 's/^>.*\[gene=/>/;s/\].*$$//' $< >$@
 
-maker_opts.ctl: maker_opts.ctl.diff
-	maker -CTL
-	patch <maker_opts.ctl.diff
-
-%.maker.output/%.db: maker_opts.ctl %.fa $(ref).frn $(ref).faa
+%.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn $(ref).faa
 	maker -fix_nucleotides
+	touch $@
 
-%.gff: %.maker.output/%.db
+%.gff: %.maker.output/stamp
 	gff3_merge -s -g -n -d $*.maker.output/$*_master_datastore_index.log \
 		|sed '/rrn/s/mRNA/rRNA/;/trn/s/mRNA/tRNA/' >$@
 
