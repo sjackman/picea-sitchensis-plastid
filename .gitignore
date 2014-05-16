@@ -1,0 +1,12 @@
+*.diff
+*.fa
+*.fai
+*.gb
+*.gbk
+*.gff
+*.log
+*.maker.output
+*.orig
+*.png
+NC_021456.*
+plastids
