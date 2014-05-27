@@ -4,6 +4,7 @@
 *.gb
 *.gbk
 *.gff
+*.gff.gene
 *.log
 *.maker.output
 *.orig
