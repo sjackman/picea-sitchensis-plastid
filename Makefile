@@ -1,6 +1,9 @@
 name=pg29plastid-scaffolds
 ref=NC_021456
 
+# Picea abies chloroplast complete genome
+edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] RefSeq[Keyword]'
+
 all: $(name).gbk.png
 
 clean:
@@ -9,6 +12,15 @@ clean:
 .PHONY: all clean
 .DELETE_ON_ERROR:
 .SECONDARY:
+
+# Fetch data from NCBI
+
+cds_aa.orig.fa cds_na.orig.fa: %.fa:
+	esearch -db nuccore -query $(edirect_query) \
+		|efetch -format fasta_$* >$@
+
+cds_aa.fa cds_na.fa: %.fa: %.orig.fa
+	sed -E 's/^>(.*gene=([^]]*).*)$$/>\2|\1/' $< >$@
 
 # asn,faa,ffn,fna,frn,gbk,gff,ptt,rnt,rpt,val
 plastids/%:
@@ -21,7 +33,7 @@ plastids/%:
 %.frn: plastids/%.frn
 	sed 's/^>.*\[gene=/>/;s/\].*$$//' $< >$@
 
-%.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn $(ref).faa
+%.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn cds_aa.fa
 	maker -fix_nucleotides
 	touch $@
 
@@ -47,4 +59,4 @@ plastids/%:
 	ruby -we 'ARGF.each { |s| \
 		puts $$1 if s =~ /\tgene\t.*Name=([^;]*)/ \
 	}' $< \
-	|sed 's/-gene//' >$@
+	|sed 's/-gene//;s/|.*//' >$@

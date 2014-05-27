@@ -6,7 +6,7 @@ organism_type=prokaryotic #eukaryotic or prokaryotic. Default is eukaryotic
 est=NC_021456.frn #set of ESTs or assembled mRNA-seq in fasta format
 
 #-----Protein Homology Evidence (for best results provide a file for at least one)
-protein=NC_021456.faa #protein sequence file in fasta format (i.e. from mutiple oransisms)
+protein=cds_aa.fa #protein sequence file in fasta format (i.e. from mutiple oransisms)
 
 #-----Repeat Masking (leave values blank to skip repeat masking)
 repeat_protein=/usr/local/Cellar/maker/2.31/libexec/data/te_proteins.fasta #provide a fasta file of transposable element proteins for RepeatRunner
