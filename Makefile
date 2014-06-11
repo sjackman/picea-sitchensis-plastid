@@ -45,7 +45,10 @@ plastids/%:
 	bin/gff_to_genbank.py $^ >$@
 
 %.gbk: %-header.gbk %.gb
-	(cat $< && sed -n '/^FEATURES/,$${s/Name=/gene=/;s/-gene//;p;}' $*.gb) >$@
+	(cat $< && sed -En '/^FEATURES/,$${ \
+		s/Name=/gene=/; \
+		s/gene="([^|"]*)\|[^"]*"/gene="\1"/; \
+		p;}' $*.gb) >$@
 
 %.gbk.png: %.gbk
 	drawgenemap --format png --infile $< --outfile $<
