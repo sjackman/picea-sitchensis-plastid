@@ -56,7 +56,5 @@ plastids/%:
 # Report the annotated genes
 
 %.gff.gene: %.gff
-	ruby -we 'ARGF.each { |s| \
-		puts $$1 if s =~ /\tgene\t.*Name=([^;]*)/ \
-	}' $< \
-	|sed 's/-gene//;s/|.*//' >$@
+	gsed -nE 's/^.*\tgene\t.*Name=([^|;]*).*$$/\1/;T; \
+		s/-gene//' $< >$@
