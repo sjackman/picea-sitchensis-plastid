@@ -1,4 +1,4 @@
-name=pg29plastid-scaffolds
+name=pg29-plastid
 ref=NC_021456
 
 # Picea abies chloroplast complete genome

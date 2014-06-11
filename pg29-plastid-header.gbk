@@ -1,4 +1,4 @@
-LOCUS       205522                129078 bp    DNA     circular PLN 04-FEB-2014
+LOCUS       1                     123266 bp    DNA     circular PLN 04-FEB-2014
 DEFINITION  Picea glauca chloroplast complete genome
 ACCESSION
 VERSION
@@ -7,12 +7,12 @@ SOURCE      plastid Picea glauca (white spruce)
   ORGANISM  Picea glauca
             Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
             Spermatophyta; Coniferopsida; Coniferales; Pinaceae; Picea.
-REFERENCE   1  (bases 1 to 129078)
+REFERENCE   1  (bases 1 to 123266)
   AUTHORS   Jackman,S.D.
   CONSRTM   SMarTForests
   TITLE     Organellar Genomes of White Spruce (Picea glauca)
   JOURNAL   Unpublished
-REFERENCE   2  (bases 1 to 129078)
+REFERENCE   2  (bases 1 to 123266)
   AUTHORS   Jackman,S.D.
   CONSRTM   SMarTForests
   TITLE     Direct Submission

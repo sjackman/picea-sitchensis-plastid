@@ -1,5 +1,5 @@
 #-----Genome (these are always required)
-genome=pg29plastid-scaffolds.fa #genome sequence (fasta file or fasta embeded in GFF3 file)
+genome=pg29-plastid.fa #genome sequence (fasta file or fasta embeded in GFF3 file)
 organism_type=prokaryotic #eukaryotic or prokaryotic. Default is eukaryotic
 
 #-----EST Evidence (for best results provide a file for at least one)
