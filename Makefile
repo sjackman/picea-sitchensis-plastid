@@ -59,5 +59,7 @@ plastids/%:
 # Report the annotated genes
 
 %.gff.gene: %.gff
-	gsed -nE 's/^.*\tgene\t.*Name=([^|;]*).*$$/\1/;T; \
-		s/-gene//' $< >$@
+	gsed -nE '/\tgene\t/!d; \
+		s/^.*Name=([^|;]*).*$$/\1/; \
+		s/-gene//; \
+		p' $< >$@
