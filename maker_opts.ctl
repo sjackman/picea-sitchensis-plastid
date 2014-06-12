@@ -1,6 +1,6 @@
 #-----Genome (these are always required)
 genome=pg29-plastid.fa #genome sequence (fasta file or fasta embeded in GFF3 file)
-organism_type=prokaryotic #eukaryotic or prokaryotic. Default is eukaryotic
+organism_type=eukaryotic #eukaryotic or prokaryotic. Default is eukaryotic
 
 #-----EST Evidence (for best results provide a file for at least one)
 est=NC_021456.frn #set of ESTs or assembled mRNA-seq in fasta format
@@ -9,7 +9,8 @@ est=NC_021456.frn #set of ESTs or assembled mRNA-seq in fasta format
 protein=cds_aa.fa #protein sequence file in fasta format (i.e. from mutiple oransisms)
 
 #-----Repeat Masking (leave values blank to skip repeat masking)
-repeat_protein=/usr/local/Cellar/maker/2.31/libexec/data/te_proteins.fasta #provide a fasta file of transposable element proteins for RepeatRunner
+model_org=
+repeat_protein=
 
 #-----Gene Prediction
 est2genome=1 #infer gene predictions directly from ESTs, 1 = yes, 0 = no
