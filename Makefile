@@ -7,7 +7,7 @@ edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] R
 all: $(name).gff.gene $(name).gbk.png
 
 clean:
-	rm -f $(name).gb $(name).gbk $(name).gff $(name).gbk.png
+	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png
 
 .PHONY: all clean
 .DELETE_ON_ERROR:
@@ -41,14 +41,15 @@ plastids/%:
 	gff3_merge -s -g -n -d $*.maker.output/$*_master_datastore_index.log \
 		|sed '/rrn/s/mRNA/rRNA/;/trn/s/mRNA/tRNA/' >$@
 
-%.gb: %.gff %.fa
+%.orig.gbk: %.gff %.fa
 	bin/gff_to_genbank.py $^
+	mv $*.gb $@
 
-%.gbk: %-header.gbk %.gb
+%.gbk: %-header.gbk %.orig.gbk
 	(cat $< && sed -En '/^FEATURES/,$${ \
 		s/Name=/gene=/; \
 		s/gene="([^|"]*)\|[^"]*"/gene="\1"/; \
-		p;}' $*.gb) >$@
+		p;}' $*.orig.gbk) >$@
 
 %.gbk.png: %.gbk
 	drawgenemap --format png --infile $< --outfile $<
