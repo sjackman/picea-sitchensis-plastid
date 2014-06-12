@@ -42,7 +42,7 @@ plastids/%:
 		|sed '/rrn/s/mRNA/rRNA/;/trn/s/mRNA/tRNA/' >$@
 
 %.gb: %.gff %.fa
-	bin/gff_to_genbank.py $^ >$@
+	bin/gff_to_genbank.py $^
 
 %.gbk: %-header.gbk %.gb
 	(cat $< && sed -En '/^FEATURES/,$${ \
