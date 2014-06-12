@@ -24,5 +24,5 @@ pid_rm_blastx=0.4 #Blastx Percent Identity Threshold For Transposbale Element Ma
 eval_rm_blastx=1e-06 #Blastx eval cutoff for transposable element masking
 bit_rm_blastx=30 #Blastx bit cutoff for transposable element masking
 
-ep_score_limit=20 #Exonerate protein percent of maximal score threshold
+ep_score_limit=40 #Exonerate protein percent of maximal score threshold
 en_score_limit=20 #Exonerate nucleotide percent of maximal score threshold
