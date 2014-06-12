@@ -37,9 +37,13 @@ plastids/%:
 	maker -fix_nucleotides
 	touch $@
 
-%.gff: %.maker.output/stamp
-	gff3_merge -s -g -n -d $*.maker.output/$*_master_datastore_index.log \
-		|sed '/rrn/s/mRNA/rRNA/;/trn/s/mRNA/tRNA/' >$@
+%.orig.gff: %.maker.output/stamp
+	gff3_merge -s -g -n -d $*.maker.output/$*_master_datastore_index.log >$@
+
+%.gff: %.orig.gff
+	gsed '/rrn/s/mRNA/rRNA/; \
+		/trn/s/mRNA/tRNA/; \
+		/\tmRNA\t/d' $< >$@
 
 %.orig.gbk: %.gff %.fa
 	bin/gff_to_genbank.py $^
