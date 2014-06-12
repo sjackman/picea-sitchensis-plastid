@@ -4,7 +4,7 @@ ref=NC_021456
 # Picea abies chloroplast complete genome
 edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] RefSeq[Keyword]'
 
-all: $(name).gbk.png
+all: $(name).gff.gene $(name).gbk.png
 
 clean:
 	rm -f $(name).gb $(name).gbk $(name).gff $(name).gbk.png
