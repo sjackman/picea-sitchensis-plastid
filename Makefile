@@ -55,8 +55,9 @@ plastids/%:
 		s/gene="([^|"]*)\|[^"]*"/gene="\1"/; \
 		p;}' $*.orig.gbk) >$@
 
-%.gbk.png: %.gbk
-	drawgenemap --format png --infile $< --outfile $<
+%.gbk.png: %.gbk %.ircoord
+	drawgenemap --format png --infile $< --outfile $< \
+		--ircoord `<$*.ircoord`
 
 %.gff.png: %.gff
 	gt sketch $@ $<
