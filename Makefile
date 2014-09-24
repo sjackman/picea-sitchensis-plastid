@@ -42,8 +42,7 @@ plastids/%:
 
 %.gff: %.orig.gff
 	gsed '/rrn/s/mRNA/rRNA/; \
-		/trn/s/mRNA/tRNA/; \
-		/\tmRNA\t/d' $< >$@
+		/trn/s/mRNA/tRNA/' $< >$@
 
 %.orig.gbk: %.gff %.fa
 	bin/gff_to_genbank.py $^
