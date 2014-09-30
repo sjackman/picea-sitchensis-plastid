@@ -511,10 +511,10 @@
 1	manual	exon	63302	63310	.	-	.	Parent=mRNA42
 1	manual	CDS	63302	63310	.	-	0	Parent=mRNA42
 ###
-1	maker	gene	9559	9672	.	+	.	ID=gene83-1;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8-gene;exception=trans-splicing
-1	maker	gene	112442	113241	.	+	.	ID=gene83-2;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8-gene;exception=trans-splicing
-1	maker	mRNA	9559	9672	.	+	.	ID=mRNA43;Parent=gene83-1,gene83-2;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8;exception=trans-splicing
-1	maker	mRNA	112442	113241	.	+	.	ID=mRNA43;Parent=gene83-1,gene83-2;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8;exception=trans-splicing
+1	maker	gene	9559	9672	.	+	.	ID=gene83;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8-gene;exception=trans-splicing
+1	maker	gene	112442	113241	.	+	.	ID=gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8-gene;exception=trans-splicing
+1	maker	mRNA	9559	9672	.	+	.	ID=mRNA43;Parent=gene83,gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8;exception=trans-splicing
+1	maker	mRNA	112442	113241	.	+	.	ID=mRNA43;Parent=gene83,gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8;exception=trans-splicing
 1	manual	exon	9559	9672	.	+	.	Parent=mRNA43
 1	manual	CDS	9559	9672	.	+	0	Parent=mRNA43
 1	manual	exon	112442	112673	.	+	.	Parent=mRNA43
@@ -523,158 +523,158 @@
 1	manual	exon	113216	113241	.	+	.	Parent=mRNA43
 1	manual	CDS	113216	113241	.	+	2	Parent=mRNA43
 ###
-1	maker	gene	79567	79866	.	+	.	ID=gene84;Name=rps14|lcl|NC_021456.1_cdsid_YP_008082857.1_62-gene
-1	maker	mRNA	79567	79866	33.3	+	.	ID=mRNA44;Parent=gene84;Name=rps14|lcl|NC_021456.1_cdsid_YP_008082857.1_62;_AED=0.47;_eAED=0.47;_QI=0|-1|0|1|-1|0|1|0|99
+1	maker	gene	79567	79866	.	+	.	ID=gene85;Name=rps14|lcl|NC_021456.1_cdsid_YP_008082857.1_62-gene
+1	maker	mRNA	79567	79866	33.3	+	.	ID=mRNA44;Parent=gene85;Name=rps14|lcl|NC_021456.1_cdsid_YP_008082857.1_62;_AED=0.47;_eAED=0.47;_QI=0|-1|0|1|-1|0|1|0|99
 1	maker	exon	79567	79866	.	+	.	Parent=mRNA44
 1	maker	CDS	79567	79866	.	+	0	Parent=mRNA44
 ###
-1	maker	gene	11001	11282	.	-	.	ID=gene85;Name=rps18|lcl|NC_021456.1_cdsid_YP_008082805.1_10-gene
-1	maker	mRNA	11001	11282	33.3	-	.	ID=mRNA45;Parent=gene85;Name=rps18|lcl|NC_021456.1_cdsid_YP_008082805.1_10;_AED=0.28;_eAED=0.28;_QI=0|-1|0|1|-1|0|1|0|93
+1	maker	gene	11001	11282	.	-	.	ID=gene86;Name=rps18|lcl|NC_021456.1_cdsid_YP_008082805.1_10-gene
+1	maker	mRNA	11001	11282	33.3	-	.	ID=mRNA45;Parent=gene86;Name=rps18|lcl|NC_021456.1_cdsid_YP_008082805.1_10;_AED=0.28;_eAED=0.28;_QI=0|-1|0|1|-1|0|1|0|93
 1	maker	exon	11001	11282	.	-	.	Parent=mRNA45
 1	maker	CDS	11001	11282	.	-	0	Parent=mRNA45
 ###
-1	maker	gene	64504	64782	.	-	.	ID=gene86;Name=rps19|lcl|NC_021456.1_cdsid_YP_008082850.1_55-gene
-1	maker	mRNA	64504	64782	33	-	.	ID=mRNA46;Parent=gene86;Name=rps19|lcl|NC_021456.1_cdsid_YP_008082850.1_55;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|92
+1	maker	gene	64504	64782	.	-	.	ID=gene87;Name=rps19|lcl|NC_021456.1_cdsid_YP_008082850.1_55-gene
+1	maker	mRNA	64504	64782	33	-	.	ID=mRNA46;Parent=gene87;Name=rps19|lcl|NC_021456.1_cdsid_YP_008082850.1_55;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|92
 1	maker	exon	64504	64782	.	-	.	Parent=mRNA46
 1	maker	CDS	64504	64782	.	-	0	Parent=mRNA46
 ###
-1	maker	gene	66369	66644	.	-	.	ID=gene87;Name=rpl23|lcl|NC_021456.1_cdsid_YP_008082852.1_57-gene
-1	maker	mRNA	66369	66644	33	-	.	ID=mRNA47;Parent=gene87;Name=rpl23|lcl|NC_021456.1_cdsid_YP_008082852.1_57;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|91
+1	maker	gene	66369	66644	.	-	.	ID=gene88;Name=rpl23|lcl|NC_021456.1_cdsid_YP_008082852.1_57-gene
+1	maker	mRNA	66369	66644	33	-	.	ID=mRNA47;Parent=gene88;Name=rpl23|lcl|NC_021456.1_cdsid_YP_008082852.1_57;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|91
 1	maker	exon	66369	66644	.	-	.	Parent=mRNA47
 1	maker	CDS	66369	66644	.	-	0	Parent=mRNA47
 ###
-1	maker	gene	103140	103406	.	+	.	ID=gene88;Name=rps15|lcl|NC_021456.1_cdsid_YP_008082864.1_69-gene
-1	maker	mRNA	103140	103406	33.3	+	.	ID=mRNA48;Parent=gene88;Name=rps15|lcl|NC_021456.1_cdsid_YP_008082864.1_69;_AED=0.48;_eAED=0.48;_QI=0|-1|0|1|-1|0|1|0|88
+1	maker	gene	103140	103406	.	+	.	ID=gene89;Name=rps15|lcl|NC_021456.1_cdsid_YP_008082864.1_69-gene
+1	maker	mRNA	103140	103406	33.3	+	.	ID=mRNA48;Parent=gene89;Name=rps15|lcl|NC_021456.1_cdsid_YP_008082864.1_69;_AED=0.48;_eAED=0.48;_QI=0|-1|0|1|-1|0|1|0|88
 1	maker	exon	103140	103406	.	+	.	Parent=mRNA48
 1	maker	CDS	103140	103406	.	+	0	Parent=mRNA48
 ###
-1	maker	gene	14431	14682	.	+	.	ID=gene89;Name=psbE|lcl|NC_021456.1_cdsid_YP_008082810.1_15-gene
-1	maker	mRNA	14431	14682	33.3	+	.	ID=mRNA49;Parent=gene89;Name=psbE|lcl|NC_021456.1_cdsid_YP_008082810.1_15;_AED=0.30;_eAED=0.30;_QI=0|-1|0|1|-1|0|1|0|83
+1	maker	gene	14431	14682	.	+	.	ID=gene90;Name=psbE|lcl|NC_021456.1_cdsid_YP_008082810.1_15-gene
+1	maker	mRNA	14431	14682	33.3	+	.	ID=mRNA49;Parent=gene90;Name=psbE|lcl|NC_021456.1_cdsid_YP_008082810.1_15;_AED=0.30;_eAED=0.30;_QI=0|-1|0|1|-1|0|1|0|83
 1	maker	exon	14431	14682	.	+	.	Parent=mRNA49
 1	maker	CDS	14431	14682	.	+	0	Parent=mRNA49
 ###
-1	maker	gene	80457	80705	.	-	.	ID=gene90;Name=psbZ|lcl|NC_021456.1_cdsid_YP_008082858.1_63-gene
-1	maker	mRNA	80457	80705	33.3	-	.	ID=mRNA50;Parent=gene90;Name=psbZ|lcl|NC_021456.1_cdsid_YP_008082858.1_63;_AED=0.26;_eAED=0.26;_QI=0|-1|0|1|-1|0|1|0|82
+1	maker	gene	80457	80705	.	-	.	ID=gene91;Name=psbZ|lcl|NC_021456.1_cdsid_YP_008082858.1_63-gene
+1	maker	mRNA	80457	80705	33.3	-	.	ID=mRNA50;Parent=gene91;Name=psbZ|lcl|NC_021456.1_cdsid_YP_008082858.1_63;_AED=0.26;_eAED=0.26;_QI=0|-1|0|1|-1|0|1|0|82
 1	maker	exon	80457	80705	.	-	.	Parent=mRNA50
 1	maker	CDS	80457	80705	.	-	0	Parent=mRNA50
 ###
-1	maker	gene	47762	48007	.	+	.	ID=gene91;Name=atpH|lcl|NC_021456.1_cdsid_YP_008082831.1_36-gene
-1	maker	mRNA	47762	48007	33.3	+	.	ID=mRNA51;Parent=gene91;Name=atpH|lcl|NC_021456.1_cdsid_YP_008082831.1_36;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|81
+1	maker	gene	47762	48007	.	+	.	ID=gene92;Name=atpH|lcl|NC_021456.1_cdsid_YP_008082831.1_36-gene
+1	maker	mRNA	47762	48007	33.3	+	.	ID=mRNA51;Parent=gene92;Name=atpH|lcl|NC_021456.1_cdsid_YP_008082831.1_36;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|81
 1	maker	exon	47762	48007	.	+	.	Parent=mRNA51
 1	maker	CDS	47762	48007	.	+	0	Parent=mRNA51
 ###
-1	maker	gene	104769	105014	.	+	.	ID=gene92;Name=psaC|lcl|NC_021456.1_cdsid_YP_008082865.1_70-gene
-1	maker	mRNA	104769	105014	32.9	+	.	ID=mRNA52;Parent=gene92;Name=psaC|lcl|NC_021456.1_cdsid_YP_008082865.1_70;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|81
+1	maker	gene	104769	105014	.	+	.	ID=gene93;Name=psaC|lcl|NC_021456.1_cdsid_YP_008082865.1_70-gene
+1	maker	mRNA	104769	105014	32.9	+	.	ID=mRNA52;Parent=gene93;Name=psaC|lcl|NC_021456.1_cdsid_YP_008082865.1_70;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|81
 1	maker	exon	104769	105014	.	+	.	Parent=mRNA52
 1	maker	CDS	104769	105014	.	+	0	Parent=mRNA52
 ###
-1	maker	gene	60636	60872	.	-	.	ID=gene93;Name=infA|lcl|NC_021456.1_cdsid_YP_008082844.1_49-gene
-1	maker	mRNA	60636	60872	33.3	-	.	ID=mRNA53;Parent=gene93;Name=infA|lcl|NC_021456.1_cdsid_YP_008082844.1_49;_AED=0.47;_eAED=0.47;_QI=0|-1|0|1|-1|0|1|0|78
+1	maker	gene	60636	60872	.	-	.	ID=gene94;Name=infA|lcl|NC_021456.1_cdsid_YP_008082844.1_49-gene
+1	maker	mRNA	60636	60872	33.3	-	.	ID=mRNA53;Parent=gene94;Name=infA|lcl|NC_021456.1_cdsid_YP_008082844.1_49;_AED=0.47;_eAED=0.47;_QI=0|-1|0|1|-1|0|1|0|78
 1	maker	exon	60636	60872	.	-	.	Parent=mRNA53
 1	maker	CDS	60636	60872	.	-	0	Parent=mRNA53
 ###
-1	maker	gene	55498	55725	.	+	.	ID=gene94;Name=psbH|lcl|NC_021456.1_cdsid_YP_008082838.1_43-gene
-1	maker	mRNA	55498	55725	32.9	+	.	ID=mRNA54;Parent=gene94;Name=psbH|lcl|NC_021456.1_cdsid_YP_008082838.1_43;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|75
+1	maker	gene	55498	55725	.	+	.	ID=gene95;Name=psbH|lcl|NC_021456.1_cdsid_YP_008082838.1_43-gene
+1	maker	mRNA	55498	55725	32.9	+	.	ID=mRNA54;Parent=gene95;Name=psbH|lcl|NC_021456.1_cdsid_YP_008082838.1_43;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|75
 1	maker	exon	55498	55725	.	+	.	Parent=mRNA54
 1	maker	CDS	55498	55725	.	+	0	Parent=mRNA54
 ###
-1	maker	gene	109471	109683	.	-	.	ID=gene95;Name=rpl32|lcl|NC_021456.1_cdsid_YP_008082867.1_72-gene
-1	maker	mRNA	109471	109683	33.3	-	.	ID=mRNA55;Parent=gene95;Name=rpl32|lcl|NC_021456.1_cdsid_YP_008082867.1_72;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|70
+1	maker	gene	109471	109683	.	-	.	ID=gene96;Name=rpl32|lcl|NC_021456.1_cdsid_YP_008082867.1_72-gene
+1	maker	mRNA	109471	109683	33.3	-	.	ID=mRNA55;Parent=gene96;Name=rpl32|lcl|NC_021456.1_cdsid_YP_008082867.1_72;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|70
 1	maker	exon	109471	109683	.	-	.	Parent=mRNA55
 1	maker	CDS	109471	109683	.	-	0	Parent=mRNA55
 ###
-1	maker	gene	11406	11612	.	-	.	ID=gene96;Name=rpl33|lcl|NC_021456.1_cdsid_YP_008082806.1_11-gene
-1	maker	mRNA	11406	11612	33.3	-	.	ID=mRNA56;Parent=gene96;Name=rpl33|lcl|NC_021456.1_cdsid_YP_008082806.1_11;_AED=0.34;_eAED=0.34;_QI=0|-1|0|1|-1|0|1|0|68
+1	maker	gene	11406	11612	.	-	.	ID=gene97;Name=rpl33|lcl|NC_021456.1_cdsid_YP_008082806.1_11-gene
+1	maker	mRNA	11406	11612	33.3	-	.	ID=mRNA56;Parent=gene97;Name=rpl33|lcl|NC_021456.1_cdsid_YP_008082806.1_11;_AED=0.34;_eAED=0.34;_QI=0|-1|0|1|-1|0|1|0|68
 1	maker	exon	11406	11612	.	-	.	Parent=mRNA56
 1	maker	CDS	11406	11612	.	-	0	Parent=mRNA56
 ###
-1	maker	gene	13011	13199	.	-	.	ID=gene97;Name=petL|lcl|NC_021456.1_cdsid_YP_008082809.1_14-gene
-1	maker	mRNA	13011	13199	32.3	-	.	ID=mRNA57;Parent=gene97;Name=petL|lcl|NC_021456.1_cdsid_YP_008082809.1_14;_AED=0.51;_eAED=0.51;_QI=0|-1|0|1|-1|0|1|0|62
+1	maker	gene	13011	13199	.	-	.	ID=gene98;Name=petL|lcl|NC_021456.1_cdsid_YP_008082809.1_14-gene
+1	maker	mRNA	13011	13199	32.3	-	.	ID=mRNA57;Parent=gene98;Name=petL|lcl|NC_021456.1_cdsid_YP_008082809.1_14;_AED=0.51;_eAED=0.51;_QI=0|-1|0|1|-1|0|1|0|62
 1	maker	exon	13011	13199	.	-	.	Parent=mRNA57
 1	maker	CDS	13011	13199	.	-	0	Parent=mRNA57
 ###
-1	maker	gene	6881	7060	.	+	.	ID=gene98;Name=psbK|lcl|NC_021456.1_cdsid_YP_008082799.1_4-gene
-1	maker	mRNA	6881	7060	33.3	+	.	ID=mRNA58;Parent=gene98;Name=psbK|lcl|NC_021456.1_cdsid_YP_008082799.1_4;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|59
+1	maker	gene	6881	7060	.	+	.	ID=gene99;Name=psbK|lcl|NC_021456.1_cdsid_YP_008082799.1_4-gene
+1	maker	mRNA	6881	7060	33.3	+	.	ID=mRNA58;Parent=gene99;Name=psbK|lcl|NC_021456.1_cdsid_YP_008082799.1_4;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|59
 1	maker	exon	6881	7060	.	+	.	Parent=mRNA58
 1	maker	CDS	6881	7060	.	+	0	Parent=mRNA58
 ###
-1	maker	gene	55287	55418	.	-	.	ID=gene99;Name=psbN|lcl|NC_021456.1_cdsid_YP_008082837.1_42-gene
-1	maker	mRNA	55287	55418	33.3	-	.	ID=mRNA59;Parent=gene99;Name=psbN|lcl|NC_021456.1_cdsid_YP_008082837.1_42;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|43
+1	maker	gene	55287	55418	.	-	.	ID=gene100;Name=psbN|lcl|NC_021456.1_cdsid_YP_008082837.1_42-gene
+1	maker	mRNA	55287	55418	33.3	-	.	ID=mRNA59;Parent=gene100;Name=psbN|lcl|NC_021456.1_cdsid_YP_008082837.1_42;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|43
 1	maker	exon	55287	55418	.	-	.	Parent=mRNA59
 1	maker	CDS	55287	55418	.	-	0	Parent=mRNA59
 ###
-1	maker	gene	11930	12058	.	-	.	ID=gene100;Name=psaJ|lcl|NC_021456.1_cdsid_YP_008082807.1_12-gene
-1	maker	mRNA	11930	12058	33.3	-	.	ID=mRNA60;Parent=gene100;Name=psaJ|lcl|NC_021456.1_cdsid_YP_008082807.1_12;_AED=0.41;_eAED=0.41;_QI=0|-1|0|1|-1|0|1|0|42
+1	maker	gene	11930	12058	.	-	.	ID=gene101;Name=psaJ|lcl|NC_021456.1_cdsid_YP_008082807.1_12-gene
+1	maker	mRNA	11930	12058	33.3	-	.	ID=mRNA60;Parent=gene101;Name=psaJ|lcl|NC_021456.1_cdsid_YP_008082807.1_12;_AED=0.41;_eAED=0.41;_QI=0|-1|0|1|-1|0|1|0|42
 1	maker	exon	11930	12058	.	-	.	Parent=mRNA60
 1	maker	CDS	11930	12058	.	-	0	Parent=mRNA60
 ###
-1	maker	gene	15080	15202	.	+	.	ID=gene101;Name=psbJ|lcl|NC_021456.1_cdsid_YP_008082813.1_18-gene
-1	maker	mRNA	15080	15202	33.3	+	.	ID=mRNA61;Parent=gene101;Name=psbJ|lcl|NC_021456.1_cdsid_YP_008082813.1_18;_AED=0.41;_eAED=0.41;_QI=0|-1|0|1|-1|0|1|0|40
+1	maker	gene	15080	15202	.	+	.	ID=gene102;Name=psbJ|lcl|NC_021456.1_cdsid_YP_008082813.1_18-gene
+1	maker	mRNA	15080	15202	33.3	+	.	ID=mRNA61;Parent=gene102;Name=psbJ|lcl|NC_021456.1_cdsid_YP_008082813.1_18;_AED=0.41;_eAED=0.41;_QI=0|-1|0|1|-1|0|1|0|40
 1	maker	exon	15080	15202	.	+	.	Parent=mRNA61
 1	maker	CDS	15080	15202	.	+	0	Parent=mRNA61
 ###
-1	maker	gene	14692	14811	.	+	.	ID=gene102;Name=psbF|lcl|NC_021456.1_cdsid_YP_008082811.1_16-gene
-1	maker	mRNA	14692	14811	33.3	+	.	ID=mRNA62;Parent=gene102;Name=psbF|lcl|NC_021456.1_cdsid_YP_008082811.1_16;_AED=0.42;_eAED=0.42;_QI=0|-1|0|1|-1|0|1|0|39
+1	maker	gene	14692	14811	.	+	.	ID=gene103;Name=psbF|lcl|NC_021456.1_cdsid_YP_008082811.1_16-gene
+1	maker	mRNA	14692	14811	33.3	+	.	ID=mRNA62;Parent=gene103;Name=psbF|lcl|NC_021456.1_cdsid_YP_008082811.1_16;_AED=0.42;_eAED=0.42;_QI=0|-1|0|1|-1|0|1|0|39
 1	maker	exon	14692	14811	.	+	.	Parent=mRNA62
 1	maker	CDS	14692	14811	.	+	0	Parent=mRNA62
 ###
-1	maker	gene	14845	14961	.	+	.	ID=gene103;Name=psbL|lcl|NC_021456.1_cdsid_YP_008082812.1_17-gene
-1	maker	mRNA	14845	14961	33.3	+	.	ID=mRNA63;Parent=gene103;Name=psbL|lcl|NC_021456.1_cdsid_YP_008082812.1_17;_AED=0.42;_eAED=0.42;_QI=0|-1|0|1|-1|0|1|0|38
+1	maker	gene	14845	14961	.	+	.	ID=gene104;Name=psbL|lcl|NC_021456.1_cdsid_YP_008082812.1_17-gene
+1	maker	mRNA	14845	14961	33.3	+	.	ID=mRNA63;Parent=gene104;Name=psbL|lcl|NC_021456.1_cdsid_YP_008082812.1_17;_AED=0.42;_eAED=0.42;_QI=0|-1|0|1|-1|0|1|0|38
 1	maker	exon	14845	14961	.	+	.	Parent=mRNA63
 1	maker	CDS	14845	14961	.	+	0	Parent=mRNA63
 ###
-1	maker	gene	33601	33714	.	+	.	ID=gene104;Name=psbM|lcl|NC_021456.1_cdsid_YP_008082824.1_29-gene
-1	maker	mRNA	33601	33714	33.3	+	.	ID=mRNA64;Parent=gene104;Name=psbM|lcl|NC_021456.1_cdsid_YP_008082824.1_29;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|37
+1	maker	gene	33601	33714	.	+	.	ID=gene105;Name=psbM|lcl|NC_021456.1_cdsid_YP_008082824.1_29-gene
+1	maker	mRNA	33601	33714	33.3	+	.	ID=mRNA64;Parent=gene105;Name=psbM|lcl|NC_021456.1_cdsid_YP_008082824.1_29;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|37
 1	maker	exon	33601	33714	.	+	.	Parent=mRNA64
 1	maker	CDS	33601	33714	.	+	0	Parent=mRNA64
 ###
-1	maker	gene	12793	12906	.	-	.	ID=gene105;Name=petG|lcl|NC_021456.1_cdsid_YP_008082808.1_13-gene
-1	maker	mRNA	12793	12906	33.3	-	.	ID=mRNA65;Parent=gene105;Name=petG|lcl|NC_021456.1_cdsid_YP_008082808.1_13;_AED=0.25;_eAED=0.25;_QI=0|-1|0|1|-1|0|1|0|37
+1	maker	gene	12793	12906	.	-	.	ID=gene106;Name=petG|lcl|NC_021456.1_cdsid_YP_008082808.1_13-gene
+1	maker	mRNA	12793	12906	33.3	-	.	ID=mRNA65;Parent=gene106;Name=petG|lcl|NC_021456.1_cdsid_YP_008082808.1_13;_AED=0.25;_eAED=0.25;_QI=0|-1|0|1|-1|0|1|0|37
 1	maker	exon	12793	12906	.	-	.	Parent=mRNA65
 1	maker	CDS	12793	12906	.	-	0	Parent=mRNA65
 ###
-1	maker	gene	60420	60533	.	-	.	ID=gene106;Name=rpl36|lcl|NC_021456.1_cdsid_YP_008082843.1_48-gene
-1	maker	mRNA	60420	60533	33.3	-	.	ID=mRNA66;Parent=gene106;Name=rpl36|lcl|NC_021456.1_cdsid_YP_008082843.1_48;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|37
+1	maker	gene	60420	60533	.	-	.	ID=gene107;Name=rpl36|lcl|NC_021456.1_cdsid_YP_008082843.1_48-gene
+1	maker	mRNA	60420	60533	33.3	-	.	ID=mRNA66;Parent=gene107;Name=rpl36|lcl|NC_021456.1_cdsid_YP_008082843.1_48;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|37
 1	maker	exon	60420	60533	.	-	.	Parent=mRNA66
 1	maker	CDS	60420	60533	.	-	0	Parent=mRNA66
 ###
-1	maker	gene	7544	7654	.	+	.	ID=gene107;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5-gene
-1	maker	mRNA	7544	7654	33.3	+	.	ID=mRNA67;Parent=gene107;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
+1	maker	gene	7544	7654	.	+	.	ID=gene108;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5-gene
+1	maker	mRNA	7544	7654	33.3	+	.	ID=mRNA67;Parent=gene108;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
 1	maker	exon	7544	7654	.	+	.	Parent=mRNA67
 1	maker	CDS	7544	7654	.	+	0	Parent=mRNA67
 ###
-1	maker	gene	20166	20276	.	-	.	ID=gene108;Name=psaI|lcl|NC_021456.1_cdsid_YP_008082817.1_22-gene
-1	maker	mRNA	20166	20276	33.3	-	.	ID=mRNA68;Parent=gene108;Name=psaI|lcl|NC_021456.1_cdsid_YP_008082817.1_22;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
+1	maker	gene	20166	20276	.	-	.	ID=gene109;Name=psaI|lcl|NC_021456.1_cdsid_YP_008082817.1_22-gene
+1	maker	mRNA	20166	20276	33.3	-	.	ID=mRNA68;Parent=gene109;Name=psaI|lcl|NC_021456.1_cdsid_YP_008082817.1_22;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
 1	maker	exon	20166	20276	.	-	.	Parent=mRNA68
 1	maker	CDS	20166	20276	.	-	0	Parent=mRNA68
 ###
-1	maker	gene	31718	31828	.	-	.	ID=gene109;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5-gene
-1	maker	mRNA	31718	31828	33.3	-	.	ID=mRNA69;Parent=gene109;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
+1	maker	gene	31718	31828	.	-	.	ID=gene110;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5-gene
+1	maker	mRNA	31718	31828	33.3	-	.	ID=mRNA69;Parent=gene110;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
 1	maker	exon	31718	31828	.	-	.	Parent=mRNA69
 1	maker	CDS	31718	31828	.	-	0	Parent=mRNA69
 ###
-1	maker	gene	55098	55205	.	+	.	ID=gene110;Name=psbT|lcl|NC_021456.1_cdsid_YP_008082836.1_41-gene
-1	maker	mRNA	55098	55205	32.4	+	.	ID=mRNA70;Parent=gene110;Name=psbT|lcl|NC_021456.1_cdsid_YP_008082836.1_41;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|35
+1	maker	gene	55098	55205	.	+	.	ID=gene111;Name=psbT|lcl|NC_021456.1_cdsid_YP_008082836.1_41-gene
+1	maker	mRNA	55098	55205	32.4	+	.	ID=mRNA70;Parent=gene111;Name=psbT|lcl|NC_021456.1_cdsid_YP_008082836.1_41;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|35
 1	maker	exon	55098	55205	.	+	.	Parent=mRNA70
 1	maker	CDS	55098	55205	.	+	0	Parent=mRNA70
 ###
-1	maker	gene	8280	8381	.	+	.	ID=gene111;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39-gene
-1	maker	mRNA	8280	8381	33.3	+	.	ID=mRNA71;Parent=gene111;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|33
+1	maker	gene	8280	8381	.	+	.	ID=gene112;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39-gene
+1	maker	mRNA	8280	8381	33.3	+	.	ID=mRNA71;Parent=gene112;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|33
 1	maker	exon	8280	8381	.	+	.	Parent=mRNA71
 1	maker	CDS	8280	8381	.	+	0	Parent=mRNA71
 ###
-1	maker	gene	52638	52739	.	-	.	ID=gene112;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39-gene
-1	maker	mRNA	52638	52739	33.3	-	.	ID=mRNA72;Parent=gene112;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|33
+1	maker	gene	52638	52739	.	-	.	ID=gene113;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39-gene
+1	maker	mRNA	52638	52739	33.3	-	.	ID=mRNA72;Parent=gene113;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|33
 1	maker	exon	52638	52739	.	-	.	Parent=mRNA72
 1	maker	CDS	52638	52739	.	-	0	Parent=mRNA72
 ###
-1	maker	gene	31246	31338	.	+	.	ID=gene113;Name=psaM|lcl|NC_021456.1_cdsid_YP_008082822.1_27-gene
-1	maker	mRNA	31246	31338	33.3	+	.	ID=mRNA73;Parent=gene113;Name=psaM|lcl|NC_021456.1_cdsid_YP_008082822.1_27;_AED=0.26;_eAED=0.26;_QI=0|-1|0|1|-1|0|1|0|30
+1	maker	gene	31246	31338	.	+	.	ID=gene114;Name=psaM|lcl|NC_021456.1_cdsid_YP_008082822.1_27-gene
+1	maker	mRNA	31246	31338	33.3	+	.	ID=mRNA73;Parent=gene114;Name=psaM|lcl|NC_021456.1_cdsid_YP_008082822.1_27;_AED=0.26;_eAED=0.26;_QI=0|-1|0|1|-1|0|1|0|30
 1	maker	exon	31246	31338	.	+	.	Parent=mRNA73
 1	maker	CDS	31246	31338	.	+	0	Parent=mRNA73
 ###
-1	maker	gene	34607	34696	.	-	.	ID=gene114;Name=petN|lcl|NC_021456.1_cdsid_YP_008082825.1_30-gene
-1	maker	mRNA	34607	34696	33.3	-	.	ID=mRNA74;Parent=gene114;Name=petN|lcl|NC_021456.1_cdsid_YP_008082825.1_30;_AED=0.24;_eAED=0.24;_QI=0|-1|0|1|-1|0|1|0|29
+1	maker	gene	34607	34696	.	-	.	ID=gene115;Name=petN|lcl|NC_021456.1_cdsid_YP_008082825.1_30-gene
+1	maker	mRNA	34607	34696	33.3	-	.	ID=mRNA74;Parent=gene115;Name=petN|lcl|NC_021456.1_cdsid_YP_008082825.1_30;_AED=0.24;_eAED=0.24;_QI=0|-1|0|1|-1|0|1|0|29
 1	maker	exon	34607	34696	.	-	.	Parent=mRNA74
 1	maker	CDS	34607	34696	.	-	0	Parent=mRNA74
 ###
