@@ -41,9 +41,9 @@ plastids/%:
 	gff3_merge -s -g -n -d $*.maker.output/$*_master_datastore_index.log >$@
 
 %.gff: %.orig.gff
-	gt gff3 -addintrons $< \
-	|gsed '/rrn/s/mRNA/rRNA/; \
-		/trn/s/mRNA/tRNA/' >$@
+	gsed '/rrn/s/mRNA/rRNA/; \
+		/trn/s/mRNA/tRNA/' $< \
+	|gt gff3 -addintrons - >$@
 
 %.orig.gbk: %.gff %.fa
 	bin/gff_to_genbank.py $^
