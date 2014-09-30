@@ -414,10 +414,10 @@
 1	maker	CDS	45329	46033	.	+	0	Parent=mRNA26
 ###
 1	manual	gene	55880	57317	.	+	.	ID=gene67;Name=petB|lcl|NC_021456.1_cdsid_YP_008082839.1_44-gene
-1	manual	mRNA	55880	57317	33	+	.	ID=mRNA27;Parent=gene67;Name=petB|lcl|NC_021456.1_cdsid_YP_008082839.1_44;_AED=0.04;_eAED=0.04;_QI=0|-1|0|1|-1|0|1|0|233
+1	manual	mRNA	55880	57317	.	+	.	ID=mRNA27;Parent=gene67;Name=petB|lcl|NC_021456.1_cdsid_YP_008082839.1_44
 1	manual	exon	55880	55885	.	+	.	Parent=mRNA27
 1	manual	CDS	55880	55885	.	+	0	Parent=mRNA27
-1	.	intron	55886	56675	.	+	.	Parent=mRNA27
+1	manual	intron	55886	56675	.	+	.	Parent=mRNA27
 1	manual	exon	56676	57317	.	+	.	Parent=mRNA27
 1	manual	CDS	56676	57317	.	+	0	Parent=mRNA27
 ###
@@ -461,10 +461,10 @@
 1	maker	CDS	74161	74316	.	+	0	ID=CDS8;Parent=mRNA33
 ###
 1	manual	gene	57527	58766	.	+	.	ID=gene74;Name=petD|lcl|NC_021456.1_cdsid_YP_008082840.1_45-gene
-1	manual	mRNA	57527	58766	32.6	+	.	ID=mRNA34;Parent=gene74;Name=petD|lcl|NC_021456.1_cdsid_YP_008082840.1_45;_AED=0.06;_eAED=0.06;_QI=0|-1|0|1|-1|0|1|0|157
+1	manual	mRNA	57527	58766	.	+	.	ID=mRNA34;Parent=gene74;Name=petD|lcl|NC_021456.1_cdsid_YP_008082840.1_45
 1	manual	exon	57527	57534	.	+	.	Parent=mRNA34
 1	manual	CDS	57527	57534	.	+	0	Parent=mRNA34
-1	.	intron	57535	58237	.	+	.	Parent=mRNA34
+1	manual	intron	57535	58237	.	+	.	Parent=mRNA34
 1	manual	exon	58238	58766	.	+	.	Parent=mRNA34
 1	manual	CDS	58238	58766	.	+	1	Parent=mRNA34
 ###
@@ -504,17 +504,17 @@
 1	maker	CDS	10382	10741	.	+	0	Parent=mRNA41
 ###
 1	manual	gene	62039	63310	.	-	.	ID=gene82;Name=rpl16|lcl|NC_021456.1_cdsid_YP_008082847.1_52-gene
-1	manual	mRNA	62039	63310	32.6	-	.	ID=mRNA42;Parent=gene82;Name=rpl16|lcl|NC_021456.1_cdsid_YP_008082847.1_52;_AED=0.44;_eAED=0.44;_QI=0|-1|0|1|-1|0|1|0|118
+1	manual	mRNA	62039	63310	.	-	.	ID=mRNA42;Parent=gene82;Name=rpl16|lcl|NC_021456.1_cdsid_YP_008082847.1_52
 1	manual	exon	62039	62434	.	-	.	Parent=mRNA42
 1	manual	CDS	62039	62434	.	-	0	Parent=mRNA42
-1	.	intron	62435	63301	.	-	.	Parent=mRNA42
+1	manual	intron	62435	63301	.	-	.	Parent=mRNA42
 1	manual	exon	63302	63310	.	-	.	Parent=mRNA42
 1	manual	CDS	63302	63310	.	-	0	Parent=mRNA42
 ###
-1	maker	gene	9559	9672	.	+	.	ID=gene83;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8-gene;exception=trans-splicing
-1	maker	gene	112442	113241	.	+	.	ID=gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8-gene;exception=trans-splicing
-1	maker	mRNA	9559	9672	.	+	.	ID=mRNA43;Parent=gene83,gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8;exception=trans-splicing
-1	maker	mRNA	112442	113241	.	+	.	ID=mRNA43;Parent=gene83,gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8;exception=trans-splicing
+1	manual	gene	9559	9672	.	+	.	ID=gene83;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8-gene;exception=trans-splicing
+1	manual	gene	112442	113241	.	+	.	ID=gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8-gene;exception=trans-splicing
+1	manual	mRNA	9559	9672	.	+	.	ID=mRNA43;Parent=gene83,gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8;exception=trans-splicing
+1	manual	mRNA	112442	113241	.	+	.	ID=mRNA43;Parent=gene83,gene84;Name=rps12|lcl|NC_021456.1_cdsid_YP_008082803.1_8;exception=trans-splicing
 1	manual	exon	9559	9672	.	+	.	Parent=mRNA43
 1	manual	CDS	9559	9672	.	+	0	Parent=mRNA43
 1	manual	exon	112442	112673	.	+	.	Parent=mRNA43
