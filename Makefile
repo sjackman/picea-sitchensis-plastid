@@ -57,7 +57,7 @@ plastids/%:
 
 %.gbk.png: %.gbk %.ircoord
 	drawgenemap --format png --infile $< --outfile $< \
-		--ircoord `<$*.ircoord`
+		--gc --ircoord `<$*.ircoord`
 
 %.gff.png: %.gff
 	gt sketch $@ $<
