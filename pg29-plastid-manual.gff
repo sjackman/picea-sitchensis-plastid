@@ -208,11 +208,11 @@
 1	maker	CDS	51355	51378	.	-	0	Parent=tRNA26
 1	maker	five_prime_UTR	51379	51392	.	-	.	Parent=tRNA26
 ###
-1	maker	gene	51611	51664	.	-	.	ID=gene31;Name=trnG-GCC-gene
-1	maker	tRNA	51611	51664	74.6	-	.	ID=tRNA27;Parent=gene31;Name=trnG-GCC;_AED=0.28;_eAED=0.28;_QI=27|-1|1|1|-1|0|1|0|9
-1	maker	CDS	51611	51637	.	-	0	Parent=tRNA27
-1	maker	exon	51611	51664	.	-	.	Parent=tRNA27
-1	maker	five_prime_UTR	51638	51664	.	-	.	Parent=tRNA27
+1	manual	gene	51611	52452	.	-	.	ID=gene31;Name=trnG-GCC-gene
+1	manual	tRNA	51611	52452	.	-	.	ID=tRNA27;Parent=gene31;Name=trnG-GCC
+1	manual	exon	51611	51659	.	-	.	Parent=tRNA27
+1	manual	intron	51660	52430	.	-	.	Parent=tRNA27
+1	manual	exon	52431	52452	.	-	.	Parent=tRNA27
 ###
 1	maker	gene	66980	67053	.	-	.	ID=gene32;Name=trnI-CAU-gene
 1	maker	tRNA	66980	67053	100	-	.	ID=tRNA28;Parent=gene32;Name=trnI-CAU;_AED=0.49;_eAED=0.49;_QI=6|-1|1|1|-1|0|1|29|12
