@@ -4,7 +4,7 @@ ref=NC_021456
 # Picea abies chloroplast complete genome
 edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] RefSeq[Keyword]'
 
-all: $(name).gff.gene $(name).gbk.png
+all: $(name).gff.gene $(name).gbk.png $(name)-manual.sqn
 
 clean:
 	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png
@@ -70,3 +70,12 @@ plastids/%:
 		s/^.*Name=([^|;]*).*$$/\1/; \
 		s/-gene//; \
 		p' >$@
+
+# Generate a tbl file for tbl2asn and GenBank submission
+
+%.fsa: %.fa
+	sed s'/^>/>scaffold/' $< >$@
+
+%.sqn: %.fsa %.sbt %.tbl
+	mkdir -p tbl2asn
+	tbl2asn -i $< -t $*.sbt -Vbv
