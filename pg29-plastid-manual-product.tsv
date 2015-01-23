@@ -102,8 +102,8 @@ trnV-UAC	tRNA-Val
 trnW-CCA	tRNA-Trp
 trnY-GUA	tRNA-Tyr
 trnfM-CAU	tRNA-Met
-ycf1	hypothetical protein
-ycf12	hypothetical protein
-ycf2	hypothetical protein
-ycf3	hypothetical chloroplast RF34
+ycf1	hypothetical chloroplast protein
+ycf12	photosystem II reaction center protein ycf12
+ycf2	hypothetical chloroplast protein
+ycf3	photosystem I assembly protein Ycf3
 ycf4	photosystem I assembly protein Ycf4
