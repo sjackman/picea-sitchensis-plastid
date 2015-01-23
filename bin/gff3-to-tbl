@@ -38,7 +38,7 @@ def subfeatures(f):
 	else:
 		return reversed(f.sub_features)
 
-def print_mrna(f, locus_tag, gene_product_table):
+def print_mrna(f, locus_tag, product):
 	""" Print a mRNA feature.
 	"""
 	if len(f.sub_features) == 0:
@@ -54,7 +54,7 @@ def print_mrna(f, locus_tag, gene_product_table):
 			print_coord(sf)
 	name = f.qualifiers['Name'][0]
 	gene = name.partition('|')[0]
-	print "\t\t\tproduct\t%s" % gene_product_table[gene]
+	print "\t\t\tproduct\t%s" % product
 	print "\t\t\tprotein_id\tgnl|%s|%s" % (protein_id_dbname, locus_tag)
 	if 'exception' in f.qualifiers:
 		print "\t\t\texception\t%s" % f.qualifiers['exception'][0]
@@ -83,6 +83,7 @@ def print_gene(f, gene_product_table):
 	name = f.qualifiers['Name'][0].rpartition('-gene')[0]
 	gene = name.partition('|')[0]
 	locus_tag = "%s_%s" % (locus_tag_prefix, f.qualifiers['ID'][0])
+	product = gene_product_table[gene]
 	print "\t\t\tgene\t%s" % gene
 	print "\t\t\tlocus_tag\t%s" % locus_tag
 	if 'exception' in f.qualifiers:
@@ -90,16 +91,16 @@ def print_gene(f, gene_product_table):
 
 	for sf in subfeatures(f):
 		if sf.type == 'mRNA':
-			print_mrna(sf, locus_tag, gene_product_table)
+			print_mrna(sf, locus_tag, product)
 		elif sf.type == 'rRNA':
 			print_coord_type(sf)
 			size = name.partition('rrn')[2]
-			print "\t\t\tproduct\t%sS ribosomal RNA" % size
+			print "\t\t\tproduct\t%s" % product
 		elif sf.type == 'tRNA':
 			print_coord_type(sf)
 			aa = name[3]
 			anticodon = name.partition('-')[2]
-			print "\t\t\tproduct\ttRNA-%s" % aa
+			print "\t\t\tproduct\t%s" % product
 			print "\t\t\tnote\tanticodon:%s" % anticodon
 
 def main(gff_file, gene_product_file):
