@@ -82,7 +82,7 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 		&& sed -En 's/%2C/,/g;s~%2F~/~g; \
 			s/^.*gene=([^;]*);.*product=([^;]*).*$$/\1	\2/p' $< |sort -u) >$@
 
-%.tbl: %.gff NC_021456-gene-product.tsv
+%.tbl: %.gff %-product.tsv
 	bin/gff3-to-tbl $^ >$@
 
 %.fsa: %.fa
