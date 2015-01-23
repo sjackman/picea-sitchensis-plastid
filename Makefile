@@ -89,8 +89,8 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 	(echo '>1 [organism=Picea glauca] [location=chloroplast] [completeness=complete] [topology=circular] [gcode=11]'; \
 		tail -n +2 $<) >$@
 
-%.gbf %.sqn: %.fsa %.sbt %.tbl
-	tbl2asn -i $< -t $*.sbt -Z $*.discrep -Vbv
+%.gbf %.sqn: %.fsa %.sbt %.tbl %.cmt
+	tbl2asn -i $< -t $*.sbt -w $*.cmt -Z $*.discrep -Vbv
 
 # Symlinks
 
