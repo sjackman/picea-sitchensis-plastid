@@ -59,9 +59,17 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 		s/gene="([^|"]*)\|[^"]*"/gene="\1"/; \
 		p;}' $*.orig.gbk) >$@
 
+# Organellar Genome Draw
+
+%.gbf.png: %.gbf %.ircoord
+	drawgenemap --format png --infile $< --outfile $< \
+		--gc --ircoord `<$*.ircoord`
+
 %.gbk.png: %.gbk %.ircoord
 	drawgenemap --format png --infile $< --outfile $< \
 		--gc --ircoord `<$*.ircoord`
+
+# GenomeTools sketch
 
 %.gff.png: %.gff
 	gt sketch $@ $<
@@ -91,6 +99,7 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 
 %.gbf %.sqn: %.fsa %.sbt %.tbl %.cmt
 	tbl2asn -i $< -t $*.sbt -w $*.cmt -Z $*.discrep -Vbv
+	gsed -i 's/DEFINITION  Picea glauca/& chloroplast complete genome/' $*.gbf
 
 # Symlinks
 
