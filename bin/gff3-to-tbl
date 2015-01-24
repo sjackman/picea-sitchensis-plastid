@@ -4,10 +4,13 @@
 
 from BCBio import GFF
 import csv
+import re
 import sys
 
 locus_tag_prefix = "AAA"
 protein_id_dbname = "X"
+
+cdsid_regex = re.compile(r"_cdsid_(YP_.........\..)_")
 
 def print_coord(f):
 	""" Print the coordinates of this feature.
@@ -58,6 +61,10 @@ def print_mrna(f, locus_tag, product):
 	print "\t\t\tprotein_id\tgnl|%s|%s" % (protein_id_dbname, locus_tag)
 	if 'exception' in f.qualifiers:
 		print "\t\t\texception\t%s" % f.qualifiers['exception'][0]
+	# Check whether the Name contains a RefSeq identifier of a similar protein.
+	match = cdsid_regex.search(name)
+	if match:
+		print "\t\t\tinference\tsimilar to AA sequence:RefSeq:%s" % match.group(1)
 
 def trans_spliced(f):
 	""" Return whether this feature is trans-spliced.
