@@ -37,6 +37,15 @@ plastids/%:
 %.frn: plastids/%.frn
 	sed 's/^>.*\[gene=/>/;s/\].*$$//' $< >$@
 
+# ARAGORN
+
+# Annotate tRNA using ARAGORN
+%.aragorn.tsv: %.fa
+	aragorn -gcbact -i -c -w -o $@ $<
+
+# MAKER
+
+# Annotate genes using MAKER
 pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn cds_aa.fa
 	maker -fix_nucleotides
 	touch $@
