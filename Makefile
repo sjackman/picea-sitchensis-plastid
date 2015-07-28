@@ -1,3 +1,6 @@
+# Annotate and visualize the white spruce plastid genome
+# Written by Shaun Jackman @sjackman
+
 name=pg29-plastid
 ref=NC_021456
 
@@ -72,11 +75,15 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 
 %.gbf.png: %.gbf %.ircoord
 	drawgenemap --format png --infile $< --outfile $< \
-		--gc --ircoord `<$*.ircoord`
+		--gc --ircoord `<$*.ircoord` \
+		--density 126
+	mogrify -units PixelsPerInch -density 300 $@
 
 %.gbk.png: %.gbk %.ircoord
 	drawgenemap --format png --infile $< --outfile $< \
-		--gc --ircoord `<$*.ircoord`
+		--gc --ircoord `<$*.ircoord` \
+		--density 126
+	mogrify -units PixelsPerInch -density 300 $@
 
 # GenomeTools sketch
 
