@@ -3,7 +3,8 @@ Submit-block ::= {
     contact {
       name name {
         last "Jackman",
-        first "Shaun"
+        first "Shaun",
+        initials "S.D.",
       },
       affil std {
         affil "BC Cancer Agency Genome Sciences Centre",
@@ -27,8 +28,87 @@ Submit-block ::= {
             last "Jackman",
             first "Shaun",
             initials "S.D.",
-            suffix ""
           }
+        },
+        {
+          name name {
+            last "Warren",
+            first "Rene",
+            initials "R.",
+          }
+        },
+        {
+          name name {
+            last "Gibb",
+            first "Ewan",
+            initials "E.",
+          }
+        },
+        {
+          name name {
+            last "Vandervalk",
+            first "Ben",
+            initials "B.",
+          }
+        },
+        {
+          name name {
+            last "Mohamadi",
+            first "Hamid",
+            initials "H.",
+          }
+        },
+        {
+          name name {
+            last "Chu",
+            first "Justin",
+            initials "J.",
+          }
+        },
+        {
+          name name {
+            last "Raymond",
+            first "Anthony",
+            initials "A.",
+          }
+        },
+        {
+          name name {
+            last "Coope",
+            first "Robin",
+            initials "R.",
+          }
+        },
+        {
+          name name {
+            last "Ritland",
+            first "Carol",
+            initials "C.",
+          }
+        },
+        {
+          name name {
+            last "Jones",
+            first "Steven",
+            initials "S.J.M.",
+          }
+        },
+        {
+          name name {
+            last "Bohlmann",
+            first "Joerg",
+            initials "J.C.",
+          }
+        },
+        {
+          name name {
+            last "Birol",
+            first "Inanc",
+            initials "I.",
+          }
+        },
+        {
+          name consortium "SMarTForests"
         }
       },
       affil std {
@@ -56,8 +136,87 @@ Seqdesc ::= pub {
               last "Jackman",
               first "Shaun",
               initials "S.D.",
-              suffix ""
             }
+          },
+          {
+            name name {
+              last "Warren",
+              first "Rene",
+              initials "R.",
+            }
+          },
+          {
+            name name {
+              last "Gibb",
+              first "Ewan",
+              initials "E.",
+            }
+          },
+          {
+            name name {
+              last "Vandervalk",
+              first "Ben",
+              initials "B.",
+            }
+          },
+          {
+            name name {
+              last "Mohamadi",
+              first "Hamid",
+              initials "H.",
+            }
+          },
+          {
+            name name {
+              last "Chu",
+              first "Justin",
+              initials "J.",
+            }
+          },
+          {
+            name name {
+              last "Raymond",
+              first "Anthony",
+              initials "A.",
+            }
+          },
+          {
+            name name {
+              last "Coope",
+              first "Robin",
+              initials "R.",
+            }
+          },
+          {
+            name name {
+              last "Ritland",
+              first "Carol",
+              initials "C.",
+            }
+          },
+          {
+            name name {
+              last "Jones",
+              first "Steven",
+              initials "S.J.M.",
+            }
+          },
+          {
+            name name {
+              last "Bohlmann",
+              first "Joerg",
+              initials "J.C.",
+            }
+          },
+          {
+            name name {
+              last "Birol",
+              first "Inanc",
+              initials "I.",
+            }
+          },
+          {
+            name consortium "SMarTForests"
           }
         },
         affil std {
@@ -70,8 +229,7 @@ Seqdesc ::= pub {
           postal-code "V5Z 4S6"
         }
       },
-      title "Organellar Genomes of White Spruce (Picea glauca): Assembly and
- Annotation"
+      title "Organellar Genomes of White Spruce (Picea glauca): Assembly and Annotation"
     }
   }
 }
