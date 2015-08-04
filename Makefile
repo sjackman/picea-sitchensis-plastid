@@ -7,10 +7,10 @@ ref=NC_021456
 # Picea abies chloroplast complete genome
 edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] RefSeq[Keyword]'
 
-all: $(name).gff.gene $(name).gbk.png $(name)-manual.gbk.png
+all: $(name).gff.gene $(name).gbk.png $(name)-manual.gbk.png $(name)-manual.sqn
 
 clean:
-	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png
+	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png $(name)-manual.sqn
 
 install-deps:
 	brew install edirect genometools maker ogdraw tbl2asn
@@ -61,6 +61,17 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 		/trn/s/mRNA/tRNA/' $< \
 	|gt gff3 -addintrons - >$@
 
+# Extract DNA sequences of GFF CDS features from a FASTA file
+%.gff.CDS.fa: %.gff %.fa
+	gt extractfeat -type CDS -join -coords -matchdescstart -retainids -seqid -seqfile $*.fa $< >$@
+
+# Extract aa sequences of GFF CDS features from a FASTA file
+# Hack: The gene chlL uses an alternative GUG start codon.
+%.gff.aa.fa: %.gff %.fa
+	gt extractfeat -type CDS -join -translate -coords -matchdescstart -retainids -seqid -seqfile $*.fa $< | \
+		sed 's/^VKIAVYGKGG/MKIAVYGKGG/' >$@
+
+# Convert GFF to GenBank format
 %.orig.gbk: %.gff %.fa
 	bin/gff_to_genbank.py $^
 	mv $*.gb $@
@@ -106,13 +117,18 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 		&& sed -En 's/%2C/,/g;s~%2F~/~g; \
 			s/^.*gene=([^;]*);.*product=([^;]*).*$$/\1	\2/p' $< |sort -u) >$@
 
-%.tbl: %.gff %-product.tsv
-	bin/gff3-to-tbl $^ >$@
+# Convert GFF to TBL
+%.tbl: %.gff %-product.tsv %.gff.aa.fa
+	bin/gff3-to-tbl --centre=BCGSC --locustag=OU3CP $^ >$@
 
+# Add structured comments to the FASTA file
 %.fsa: %.fa
 	(echo '>1 [organism=Picea glauca] [location=chloroplast] [completeness=complete] [topology=circular] [gcode=11]'; \
 		tail -n +2 $<) >$@
 
+# tbl2asn
+
+# Convert TBL to GBF and SQN
 %.gbf %.sqn: %.fsa %.sbt %.tbl %.cmt
 	tbl2asn -i $< -t $*.sbt -w $*.cmt -Z $*.discrep -Vbv
 	gsed -i 's/DEFINITION  Picea glauca/& chloroplast complete genome/' $*.gbf
