@@ -70,38 +70,27 @@ rrn16	16S ribosomal RNA
 rrn23	23S ribosomal RNA
 rrn4.5	4.5S ribosomal RNA
 rrn5	5S ribosomal RNA
-trnA-UGC	tRNA-Ala
-trnC-GCA	tRNA-Cys
-trnD-GUC	tRNA-Asp
-trnE-UUC	tRNA-Glu
-trnF-GAA	tRNA-Phe
-trnG-GCC	tRNA-Gly
-trnG-UCC	tRNA-Gly
-trnH-GUG	tRNA-His
-trnI-CAU	tRNA-Ile
-trnI-GAU	tRNA-Ile
-trnK-UUU	tRNA-Lys
-trnL-CAA	tRNA-Leu
-trnL-UAA	tRNA-Leu
-trnL-UAG	tRNA-Leu
-trnM-CAU	tRNA-Met
-trnN-GUU	tRNA-Asn
-trnP-GGG	tRNA-Pro
-trnP-UGG	tRNA-Pro
-trnQ-UUG	tRNA-Gln
-trnR-ACG	tRNA-Arg
-trnR-CCG	tRNA-Arg
-trnR-UCU	tRNA-Arg
-trnS-GCU	tRNA-Ser
-trnS-GGA	tRNA-Ser
-trnS-UGA	tRNA-Ser
-trnT-GGU	tRNA-Thr
-trnT-UGU	tRNA-Thr
-trnV-GAC	tRNA-Val
-trnV-UAC	tRNA-Val
-trnW-CCA	tRNA-Trp
-trnY-GUA	tRNA-Tyr
-trnfM-CAU	tRNA-Met
+trnA	tRNA-Ala
+trnC	tRNA-Cys
+trnD	tRNA-Asp
+trnE	tRNA-Glu
+trnF	tRNA-Phe
+trnG	tRNA-Gly
+trnH	tRNA-His
+trnI	tRNA-Ile
+trnK	tRNA-Lys
+trnL	tRNA-Leu
+trnM	tRNA-Met
+trnN	tRNA-Asn
+trnP	tRNA-Pro
+trnQ	tRNA-Gln
+trnR	tRNA-Arg
+trnS	tRNA-Ser
+trnT	tRNA-Thr
+trnV	tRNA-Val
+trnW	tRNA-Trp
+trnY	tRNA-Tyr
+trnfM	tRNA-Met
 ycf1	hypothetical chloroplast protein
 ycf12	photosystem II reaction center protein ycf12
 ycf2	hypothetical chloroplast protein
