@@ -7,10 +7,12 @@ ref=NC_021456
 # Picea abies chloroplast complete genome
 edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] RefSeq[Keyword]'
 
-all: $(name).gff.gene $(name).gbk.png $(name)-manual.gbk.png $(name)-manual.sqn
+all: $(name).gff.gene $(name).gbk.png $(name)-manual.gbk.png \
+	$(name)-manual.tbl $(name)-manual.tbl.gene $(name)-manual.sqn
 
 clean:
-	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png $(name)-manual.sqn
+	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png \
+		$(name)-manual.tbl $(name)-manual.tbl.gene $(name)-manual.sqn
 
 install-deps:
 	brew install edirect genometools maker ogdraw tbl2asn
@@ -120,6 +122,10 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 # Convert GFF to TBL
 %.tbl: %.gff %-product.tsv %.gff.aa.fa
 	bin/gff3-to-tbl --centre=BCGSC --locustag=OU3CP $^ >$@
+
+# Extract the names of genes from a TBL file
+%.tbl.gene: %.tbl
+	awk '$$1 == "gene" {print $$2}' $< >$@
 
 # Add structured comments to the FASTA file
 %.fsa: %.fa
