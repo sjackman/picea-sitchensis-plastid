@@ -7,13 +7,9 @@
 ###
 1	maker	gene	1534	4115	.	-	.	ID=gene2;Name=trnK-UUU-gene
 1	maker	tRNA	1534	4115	100	-	.	ID=tRNA1;Parent=gene2;Name=trnK-UUU;_AED=0.48;_eAED=0.48;_QI=12|1|1|1|0|0|2|1|19
-1	maker	three_prime_UTR	1534	1534	.	-	.	Parent=tRNA1
 1	maker	exon	1534	1568	.	-	.	Parent=tRNA1
-1	maker	CDS	1535	1568	.	-	1	ID=CDS1;Parent=tRNA1
 1	.	intron	1569	4080	.	-	.	Parent=tRNA1
-1	maker	CDS	4081	4103	.	-	0	ID=CDS1;Parent=tRNA1
 1	maker	exon	4081	4115	.	-	.	Parent=tRNA1
-1	maker	five_prime_UTR	4104	4115	.	-	.	Parent=tRNA1
 ###
 1	maker	gene	1750	3297	.	-	.	ID=gene3;Name=matK|lcl|NC_021456.1_cdsid_YP_008082797.1_2-gene
 1	maker	mRNA	1750	3297	33.2	-	.	ID=mRNA2;Parent=gene3;Name=matK|lcl|NC_021456.1_cdsid_YP_008082797.1_2;_AED=0.02;_eAED=0.02;_QI=0|-1|0|1|-1|0|1|0|515
@@ -27,10 +23,7 @@
 ###
 1	maker	gene	6453	6524	.	-	.	ID=gene5;Name=trnQ-UUG-gene
 1	maker	tRNA	6453	6524	100	-	.	ID=tRNA2;Parent=gene5;Name=trnQ-UUG;_AED=0.48;_eAED=0.48;_QI=1|-1|1|1|-1|0|1|2|23
-1	maker	three_prime_UTR	6453	6454	.	-	.	Parent=tRNA2
 1	maker	exon	6453	6524	.	-	.	Parent=tRNA2
-1	maker	CDS	6455	6523	.	-	0	Parent=tRNA2
-1	maker	five_prime_UTR	6524	6524	.	-	.	Parent=tRNA2
 ###
 1	maker	gene	6881	7060	.	+	.	ID=gene6;Name=psbK|lcl|NC_021456.1_cdsid_YP_008082799.1_4-gene
 1	maker	mRNA	6881	7060	33.3	+	.	ID=mRNA4;Parent=gene6;Name=psbK|lcl|NC_021456.1_cdsid_YP_008082799.1_4;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|59
@@ -44,10 +37,7 @@
 ###
 1	maker	gene	7731	7818	.	-	.	ID=gene8;Name=trnS-GCU-gene
 1	maker	tRNA	7731	7818	100	-	.	ID=tRNA3;Parent=gene8;Name=trnS-GCU;_AED=0.00;_eAED=0.00;_QI=6|-1|1|1|-1|0|1|49|10
-1	maker	three_prime_UTR	7731	7779	.	-	.	Parent=tRNA3
 1	maker	exon	7731	7818	.	-	.	Parent=tRNA3
-1	maker	CDS	7780	7812	.	-	0	Parent=tRNA3
-1	maker	five_prime_UTR	7813	7818	.	-	.	Parent=tRNA3
 ###
 1	maker	gene	8280	8381	.	+	.	ID=gene9;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39-gene
 1	maker	mRNA	8280	8381	33.3	+	.	ID=mRNA6;Parent=gene9;Name=ycf12|lcl|NC_021456.1_cdsid_YP_008082834.1_39;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|33
@@ -93,16 +83,11 @@
 ###
 1	maker	gene	12356	12429	.	+	.	ID=gene17;Name=trnP-UGG-gene
 1	maker	tRNA	12356	12429	100	+	.	ID=tRNA4;Parent=gene17;Name=trnP-UGG;_AED=0.25;_eAED=0.25;_QI=44|-1|1|1|-1|0|1|0|10
-1	maker	five_prime_UTR	12356	12399	.	+	.	Parent=tRNA4
 1	maker	exon	12356	12429	.	+	.	Parent=tRNA4
-1	maker	CDS	12400	12429	.	+	0	Parent=tRNA4
 ###
 1	maker	gene	12597	12670	.	+	.	ID=gene18;Name=trnW-CCA-gene
 1	maker	tRNA	12597	12670	100	+	.	ID=tRNA5;Parent=gene18;Name=trnW-CCA;_AED=0.25;_eAED=0.25;_QI=44|-1|1|1|-1|0|1|21|2
-1	maker	five_prime_UTR	12597	12640	.	+	.	Parent=tRNA5
 1	maker	exon	12597	12670	.	+	.	Parent=tRNA5
-1	maker	CDS	12641	12649	.	+	0	Parent=tRNA5
-1	maker	three_prime_UTR	12650	12670	.	+	.	Parent=tRNA5
 ###
 1	maker	gene	12793	12906	.	-	.	ID=gene19;Name=petG|lcl|NC_021456.1_cdsid_YP_008082808.1_13-gene
 1	maker	mRNA	12793	12906	33.3	-	.	ID=mRNA13;Parent=gene19;Name=petG|lcl|NC_021456.1_cdsid_YP_008082808.1_13;_AED=0.25;_eAED=0.25;_QI=0|-1|0|1|-1|0|1|0|37
@@ -161,10 +146,7 @@
 ###
 1	maker	gene	22050	22123	.	-	.	ID=gene30;Name=trnR-CCG-gene
 1	maker	tRNA	22050	22123	100	-	.	ID=tRNA6;Parent=gene30;Name=trnR-CCG;_AED=0.49;_eAED=0.49;_QI=28|-1|1|1|-1|0|1|4|13
-1	maker	three_prime_UTR	22050	22053	.	-	.	Parent=tRNA6
 1	maker	exon	22050	22123	.	-	.	Parent=tRNA6
-1	maker	CDS	22054	22095	.	-	0	Parent=tRNA6
-1	maker	five_prime_UTR	22096	22123	.	-	.	Parent=tRNA6
 ###
 1	maker	gene	22443	23870	.	-	.	ID=gene31;Name=rbcL|lcl|NC_021456.1_cdsid_YP_008082819.1_24-gene
 1	maker	mRNA	22443	23870	32.8	-	.	ID=mRNA24;Parent=gene31;Name=rbcL|lcl|NC_021456.1_cdsid_YP_008082819.1_24;_AED=0.21;_eAED=0.21;_QI=0|-1|0|1|-1|0|1|0|475
@@ -183,32 +165,21 @@
 ###
 1	maker	gene	26588	26660	.	-	.	ID=gene34;Name=trnM-CAU-gene
 1	maker	tRNA	26588	26660	100	-	.	ID=tRNA7;Parent=gene34;Name=trnM-CAU;_AED=0.00;_eAED=0.00;_QI=0|-1|1|1|-1|0|1|1|24
-1	maker	three_prime_UTR	26588	26588	.	-	.	Parent=tRNA7
 1	maker	exon	26588	26660	.	-	.	Parent=tRNA7
-1	maker	CDS	26589	26660	.	-	0	Parent=tRNA7
 ###
 1	maker	gene	26850	27468	.	+	.	ID=gene35;Name=trnV-UAC-gene
 1	maker	tRNA	26850	27468	100	+	.	ID=tRNA8;Parent=gene35;Name=trnV-UAC;_AED=0.48;_eAED=0.48;_QI=0|1|1|1|0|0|2|1|25
 1	maker	exon	26850	26888	.	+	.	Parent=tRNA8
-1	maker	CDS	26850	26888	.	+	0	ID=CDS2;Parent=tRNA8
 1	.	intron	26889	27431	.	+	.	Parent=tRNA8
-1	maker	CDS	27432	27467	.	+	0	ID=CDS2;Parent=tRNA8
 1	maker	exon	27432	27468	.	+	.	Parent=tRNA8
-1	maker	three_prime_UTR	27468	27468	.	+	.	Parent=tRNA8
 ###
 1	maker	gene	29758	29832	.	+	.	ID=gene36;Name=trnH-GUG-gene
 1	maker	tRNA	29758	29832	100	+	.	ID=tRNA9;Parent=gene36;Name=trnH-GUG;_AED=0.00;_eAED=0.00;_QI=1|-1|1|1|-1|0|1|2|24
-1	maker	five_prime_UTR	29758	29758	.	+	.	Parent=tRNA9
 1	maker	exon	29758	29832	.	+	.	Parent=tRNA9
-1	maker	CDS	29759	29830	.	+	0	Parent=tRNA9
-1	maker	three_prime_UTR	29831	29832	.	+	.	Parent=tRNA9
 ###
 1	maker	gene	29956	30026	.	-	.	ID=gene37;Name=trnT-GGU-gene
 1	maker	tRNA	29956	30026	91.7	-	.	ID=tRNA10;Parent=gene37;Name=trnT-GGU;_AED=0.00;_eAED=0.00;_QI=29|-1|1|1|-1|0|1|6|11
-1	maker	three_prime_UTR	29956	29961	.	-	.	Parent=tRNA10
 1	maker	exon	29956	30026	.	-	.	Parent=tRNA10
-1	maker	CDS	29962	29997	.	-	0	Parent=tRNA10
-1	maker	five_prime_UTR	29998	30026	.	-	.	Parent=tRNA10
 ###
 1	maker	gene	31246	31338	.	+	.	ID=gene38;Name=psaM|lcl|NC_021456.1_cdsid_YP_008082822.1_27-gene
 1	maker	mRNA	31246	31338	33.3	+	.	ID=mRNA27;Parent=gene38;Name=psaM|lcl|NC_021456.1_cdsid_YP_008082822.1_27;_AED=0.26;_eAED=0.26;_QI=0|-1|0|1|-1|0|1|0|30
@@ -217,10 +188,7 @@
 ###
 1	maker	gene	31554	31641	.	+	.	ID=gene39;Name=trnS-GCU-gene
 1	maker	tRNA	31554	31641	100	+	.	ID=tRNA11;Parent=gene39;Name=trnS-GCU;_AED=0.25;_eAED=0.25;_QI=6|-1|1|1|-1|0|1|49|10
-1	maker	five_prime_UTR	31554	31559	.	+	.	Parent=tRNA11
 1	maker	exon	31554	31641	.	+	.	Parent=tRNA11
-1	maker	CDS	31560	31592	.	+	0	Parent=tRNA11
-1	maker	three_prime_UTR	31593	31641	.	+	.	Parent=tRNA11
 ###
 1	maker	gene	31718	31828	.	-	.	ID=gene40;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5-gene
 1	maker	mRNA	31718	31828	33.3	-	.	ID=mRNA28;Parent=gene40;Name=psbI|lcl|NC_021456.1_cdsid_YP_008082800.1_5;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
@@ -229,21 +197,15 @@
 ###
 1	maker	gene	32126	32198	.	+	.	ID=gene41;Name=trnE-UUC-gene
 1	maker	tRNA	32126	32198	100	+	.	ID=tRNA12;Parent=gene41;Name=trnE-UUC;_AED=0.34;_eAED=0.34;_QI=1|-1|1|1|-1|0|1|0|24
-1	maker	five_prime_UTR	32126	32126	.	+	.	Parent=tRNA12
 1	maker	exon	32126	32198	.	+	.	Parent=tRNA12
-1	maker	CDS	32127	32198	.	+	0	Parent=tRNA12
 ###
 1	maker	gene	32271	32354	.	+	.	ID=gene42;Name=trnY-GUA-gene
 1	maker	tRNA	32271	32354	100	+	.	ID=tRNA13;Parent=gene42;Name=trnY-GUA;_AED=0.32;_eAED=0.32;_QI=6|-1|1|1|-1|0|1|0|26
-1	maker	five_prime_UTR	32271	32276	.	+	.	Parent=tRNA13
 1	maker	exon	32271	32354	.	+	.	Parent=tRNA13
-1	maker	CDS	32277	32354	.	+	0	Parent=tRNA13
 ###
 1	maker	gene	32614	32687	.	+	.	ID=gene43;Name=trnD-GUC-gene
 1	maker	tRNA	32614	32687	100	+	.	ID=tRNA14;Parent=gene43;Name=trnD-GUC;_AED=0.34;_eAED=0.34;_QI=0|-1|1|1|-1|0|1|2|24
-1	maker	CDS	32614	32685	.	+	0	Parent=tRNA14
 1	maker	exon	32614	32687	.	+	.	Parent=tRNA14
-1	maker	three_prime_UTR	32686	32687	.	+	.	Parent=tRNA14
 ###
 1	maker	gene	33601	33714	.	+	.	ID=gene44;Name=psbM|lcl|NC_021456.1_cdsid_YP_008082824.1_29-gene
 1	maker	mRNA	33601	33714	33.3	+	.	ID=mRNA29;Parent=gene44;Name=psbM|lcl|NC_021456.1_cdsid_YP_008082824.1_29;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|37
@@ -257,9 +219,7 @@
 ###
 1	maker	gene	35017	35087	.	-	.	ID=gene46;Name=trnC-GCA-gene
 1	maker	tRNA	35017	35087	100	-	.	ID=tRNA15;Parent=gene46;Name=trnC-GCA;_AED=0.28;_eAED=0.28;_QI=2|-1|1|1|-1|0|1|0|23
-1	maker	CDS	35017	35085	.	-	0	Parent=tRNA15
 1	maker	exon	35017	35087	.	-	.	Parent=tRNA15
-1	maker	five_prime_UTR	35086	35087	.	-	.	Parent=tRNA15
 ###
 1	maker	gene	35507	38737	.	+	.	ID=gene47;Name=rpoB|lcl|NC_021456.1_cdsid_YP_008082826.1_31-gene
 1	maker	mRNA	35507	38737	33.3	+	.	ID=mRNA31;Parent=gene47;Name=rpoB|lcl|NC_021456.1_cdsid_YP_008082826.1_31;_AED=0.35;_eAED=0.35;_QI=0|-1|0|1|-1|0|1|0|1076
@@ -309,10 +269,7 @@
 ###
 1	maker	gene	51323	51392	.	-	.	ID=gene55;Name=trnR-UCU-gene
 1	maker	tRNA	51323	51392	100	-	.	ID=tRNA16;Parent=gene55;Name=trnR-UCU;_AED=0.22;_eAED=0.22;_QI=14|-1|1|1|-1|0|1|32|7
-1	maker	three_prime_UTR	51323	51354	.	-	.	Parent=tRNA16
 1	maker	exon	51323	51392	.	-	.	Parent=tRNA16
-1	maker	CDS	51355	51378	.	-	0	Parent=tRNA16
-1	maker	five_prime_UTR	51379	51392	.	-	.	Parent=tRNA16
 ###
 1	manual	gene	51611	52452	.	-	.	ID=gene56;Name=trnG-GCC-gene
 1	manual	tRNA	51611	52452	.	-	.	ID=tRNA17;Parent=gene56;Name=trnG-GCC
@@ -429,33 +386,21 @@
 ###
 1	maker	gene	66980	67053	.	-	.	ID=gene76;Name=trnI-CAU-gene
 1	maker	tRNA	66980	67053	100	-	.	ID=tRNA18;Parent=gene76;Name=trnI-CAU;_AED=0.49;_eAED=0.49;_QI=6|-1|1|1|-1|0|1|29|12
-1	maker	three_prime_UTR	66980	67008	.	-	.	Parent=tRNA18
 1	maker	exon	66980	67053	.	-	.	Parent=tRNA18
-1	maker	CDS	67009	67047	.	-	0	Parent=tRNA18
-1	maker	five_prime_UTR	67048	67053	.	-	.	Parent=tRNA18
 ###
 1	maker	gene	68895	68967	.	-	.	ID=gene77;Name=trnF-GAA-gene
 1	maker	tRNA	68895	68967	100	-	.	ID=tRNA19;Parent=gene77;Name=trnF-GAA;_AED=0.28;_eAED=0.28;_QI=0|-1|1|1|-1|0|1|1|24
-1	maker	three_prime_UTR	68895	68895	.	-	.	Parent=tRNA19
 1	maker	exon	68895	68967	.	-	.	Parent=tRNA19
-1	maker	CDS	68896	68967	.	-	0	Parent=tRNA19
 ###
 1	maker	gene	69348	69920	.	-	.	ID=gene78;Name=trnL-UAA-gene
 1	maker	tRNA	69348	69920	90.1	-	.	ID=tRNA20;Parent=gene78;Name=trnL-UAA;_AED=0.22;_eAED=0.22;_QI=6|1|1|1|0|0|2|1|28
-1	maker	three_prime_UTR	69348	69348	.	-	.	Parent=tRNA20
 1	maker	exon	69348	69386	.	-	.	Parent=tRNA20
-1	maker	CDS	69349	69386	.	-	2	ID=CDS6;Parent=tRNA20
 1	.	intron	69387	69868	.	-	.	Parent=tRNA20
-1	maker	CDS	69869	69914	.	-	0	ID=CDS6;Parent=tRNA20
 1	maker	exon	69869	69920	.	-	.	Parent=tRNA20
-1	maker	five_prime_UTR	69915	69920	.	-	.	Parent=tRNA20
 ###
 1	maker	gene	70336	70408	.	+	.	ID=gene79;Name=trnT-UGU-gene
 1	maker	tRNA	70336	70408	100	+	.	ID=tRNA21;Parent=gene79;Name=trnT-UGU;_AED=0.45;_eAED=0.45;_QI=42|-1|1|1|-1|0|1|1|10
-1	maker	five_prime_UTR	70336	70377	.	+	.	Parent=tRNA21
 1	maker	exon	70336	70408	.	+	.	Parent=tRNA21
-1	maker	CDS	70378	70407	.	+	0	Parent=tRNA21
-1	maker	three_prime_UTR	70408	70408	.	+	.	Parent=tRNA21
 ###
 1	maker	gene	70666	71271	.	+	.	ID=gene80;Name=rps4|lcl|NC_021456.1_cdsid_YP_008082853.1_58-gene
 1	maker	mRNA	70666	71271	33.3	+	.	ID=mRNA58;Parent=gene80;Name=rps4|lcl|NC_021456.1_cdsid_YP_008082853.1_58;_AED=0.11;_eAED=0.11;_QI=0|-1|0|1|-1|0|1|0|201
@@ -464,9 +409,7 @@
 ###
 1	maker	gene	71572	71658	.	+	.	ID=gene81;Name=trnS-GGA-gene
 1	maker	tRNA	71572	71658	100	+	.	ID=tRNA22;Parent=gene81;Name=trnS-GGA;_AED=0.44;_eAED=0.44;_QI=54|-1|1|1|-1|0|1|0|11
-1	maker	five_prime_UTR	71572	71625	.	+	.	Parent=tRNA22
 1	maker	exon	71572	71658	.	+	.	Parent=tRNA22
-1	maker	CDS	71626	71658	.	+	0	Parent=tRNA22
 ###
 1	maker	gene	72381	74316	.	+	.	ID=gene82;Name=ycf3|lcl|NC_021456.1_cdsid_YP_008082854.1_59-gene
 1	maker	mRNA	72381	74316	33.1	+	.	ID=mRNA59;Parent=gene82;Name=ycf3|lcl|NC_021456.1_cdsid_YP_008082854.1_59;_AED=0.01;_eAED=0.01;_QI=0|0|0|1|0|0|3|0|170
@@ -496,16 +439,11 @@
 ###
 1	maker	gene	80002	80075	.	+	.	ID=gene86;Name=trnfM-CAU-gene
 1	maker	tRNA	80002	80075	100	+	.	ID=tRNA23;Parent=gene86;Name=trnfM-CAU;_AED=0.49;_eAED=0.49;_QI=10|-1|1|1|-1|0|1|1|21
-1	maker	five_prime_UTR	80002	80011	.	+	.	Parent=tRNA23
 1	maker	exon	80002	80075	.	+	.	Parent=tRNA23
-1	maker	CDS	80012	80074	.	+	0	Parent=tRNA23
-1	maker	three_prime_UTR	80075	80075	.	+	.	Parent=tRNA23
 ###
 1	maker	gene	80212	80282	.	-	.	ID=gene87;Name=trnG-UCC-gene
 1	maker	tRNA	80212	80282	100	-	.	ID=tRNA24;Parent=gene87;Name=trnG-UCC;_AED=0.36;_eAED=0.36;_QI=14|-1|1|1|-1|0|1|0|19
-1	maker	CDS	80212	80268	.	-	0	Parent=tRNA24
 1	maker	exon	80212	80282	.	-	.	Parent=tRNA24
-1	maker	five_prime_UTR	80269	80282	.	-	.	Parent=tRNA24
 ###
 1	maker	gene	80457	80705	.	-	.	ID=gene88;Name=psbZ|lcl|NC_021456.1_cdsid_YP_008082858.1_63-gene
 1	maker	mRNA	80457	80705	33.3	-	.	ID=mRNA63;Parent=gene88;Name=psbZ|lcl|NC_021456.1_cdsid_YP_008082858.1_63;_AED=0.26;_eAED=0.26;_QI=0|-1|0|1|-1|0|1|0|82
@@ -514,9 +452,7 @@
 ###
 1	maker	gene	80995	81081	.	+	.	ID=gene89;Name=trnS-UGA-gene
 1	maker	tRNA	80995	81081	100	+	.	ID=tRNA25;Parent=gene89;Name=trnS-UGA;_AED=0.00;_eAED=0.00;_QI=6|-1|1|1|-1|0|1|0|27
-1	maker	five_prime_UTR	80995	81000	.	+	.	Parent=tRNA25
 1	maker	exon	80995	81081	.	+	.	Parent=tRNA25
-1	maker	CDS	81001	81081	.	+	0	Parent=tRNA25
 ###
 1	maker	gene	81276	82697	.	-	.	ID=gene90;Name=psbC|lcl|NC_021456.1_cdsid_YP_008082859.1_64-gene
 1	maker	mRNA	81276	82697	33.3	-	.	ID=mRNA64;Parent=gene90;Name=psbC|lcl|NC_021456.1_cdsid_YP_008082859.1_64;_AED=0.21;_eAED=0.21;_QI=0|-1|0|1|-1|0|1|0|473
@@ -530,67 +466,43 @@
 ###
 1	maker	gene	85012	85082	.	-	.	ID=gene92;Name=trnT-GGU-gene
 1	maker	tRNA	85012	85082	98.6	-	.	ID=tRNA26;Parent=gene92;Name=trnT-GGU;_AED=0.00;_eAED=0.00;_QI=29|-1|1|1|-1|0|1|6|11
-1	maker	three_prime_UTR	85012	85017	.	-	.	Parent=tRNA26
 1	maker	exon	85012	85082	.	-	.	Parent=tRNA26
-1	maker	CDS	85018	85053	.	-	0	Parent=tRNA26
-1	maker	five_prime_UTR	85054	85082	.	-	.	Parent=tRNA26
 ###
 1	maker	gene	85409	86899	.	+	.	ID=gene93;Name=rrn16-gene
 1	maker	rRNA	85409	86899	100	+	.	ID=rRNA1;Parent=gene93;Name=rrn16;_AED=0.34;_eAED=0.34;_QI=852|-1|1|1|-1|0|1|462|58
-1	maker	five_prime_UTR	85409	86260	.	+	.	Parent=rRNA1
 1	maker	exon	85409	86899	.	+	.	Parent=rRNA1
-1	maker	CDS	86261	86437	.	+	0	Parent=rRNA1
-1	maker	three_prime_UTR	86438	86899	.	+	.	Parent=rRNA1
 ###
 1	maker	gene	87282	88326	.	+	.	ID=gene94;Name=trnI-GAU-gene
 1	maker	tRNA	87282	88326	100	+	.	ID=tRNA27;Parent=gene94;Name=trnI-GAU;_AED=0.49;_eAED=0.49;_QI=2|1|1|1|0|0|2|0|25
-1	maker	five_prime_UTR	87282	87283	.	+	.	Parent=tRNA27
 1	maker	exon	87282	87323	.	+	.	Parent=tRNA27
-1	maker	CDS	87284	87323	.	+	0	ID=CDS8;Parent=tRNA27
 1	.	intron	87324	88291	.	+	.	Parent=tRNA27
 1	maker	exon	88292	88326	.	+	.	Parent=tRNA27
-1	maker	CDS	88292	88326	.	+	2	ID=CDS8;Parent=tRNA27
 ###
 1	maker	gene	88399	89255	.	+	.	ID=gene95;Name=trnA-UGC-gene
 1	maker	tRNA	88399	89255	100	+	.	ID=tRNA28;Parent=gene95;Name=trnA-UGC;_AED=0.49;_eAED=0.49;_QI=43|1|1|1|0|0|2|0|10
 1	maker	exon	88399	88436	.	+	.	Parent=tRNA28
-1	maker	five_prime_UTR	88399	88436	.	+	.	ID=five_prime_UTR1;Parent=tRNA28
 1	.	intron	88437	89220	.	+	.	Parent=tRNA28
-1	maker	five_prime_UTR	89221	89225	.	+	.	ID=five_prime_UTR1;Parent=tRNA28
 1	maker	exon	89221	89255	.	+	.	Parent=tRNA28
-1	maker	CDS	89226	89255	.	+	0	Parent=tRNA28
 ###
 1	maker	gene	89403	92209	.	+	.	ID=gene96;Name=rrn23-gene
 1	maker	rRNA	89403	92209	100	+	.	ID=rRNA2;Parent=gene96;Name=rrn23;_AED=0.20;_eAED=0.20;_QI=1156|-1|1|1|-1|0|1|1444|68
-1	maker	five_prime_UTR	89403	90558	.	+	.	Parent=rRNA2
 1	maker	exon	89403	92209	.	+	.	Parent=rRNA2
-1	maker	CDS	90559	90765	.	+	0	Parent=rRNA2
-1	maker	three_prime_UTR	90766	92209	.	+	.	Parent=rRNA2
 ###
 1	maker	gene	92313	92415	.	+	.	ID=gene97;Name=rrn4.5-gene
 1	maker	rRNA	92313	92415	100	+	.	ID=rRNA3;Parent=gene97;Name=rrn4.5;_AED=0.49;_eAED=0.49;_QI=64|-1|1|1|-1|0|1|0|13
-1	maker	five_prime_UTR	92313	92376	.	+	.	Parent=rRNA3
 1	maker	exon	92313	92415	.	+	.	Parent=rRNA3
-1	maker	CDS	92377	92415	.	+	0	Parent=rRNA3
 ###
 1	maker	gene	92662	92782	.	+	.	ID=gene98;Name=rrn5-gene
 1	maker	rRNA	92662	92782	100	+	.	ID=rRNA4;Parent=gene98;Name=rrn5;_AED=0.49;_eAED=0.49;_QI=0|-1|1|1|-1|0|1|1|40
-1	maker	CDS	92662	92781	.	+	0	Parent=rRNA4
 1	maker	exon	92662	92782	.	+	.	Parent=rRNA4
-1	maker	three_prime_UTR	92782	92782	.	+	.	Parent=rRNA4
 ###
 1	maker	gene	92991	93064	.	+	.	ID=gene99;Name=trnR-ACG-gene
 1	maker	tRNA	92991	93064	100	+	.	ID=tRNA29;Parent=gene99;Name=trnR-ACG;_AED=0.49;_eAED=0.49;_QI=0|-1|1|1|-1|0|1|2|24
-1	maker	CDS	92991	93062	.	+	0	Parent=tRNA29
 1	maker	exon	92991	93064	.	+	.	Parent=tRNA29
-1	maker	three_prime_UTR	93063	93064	.	+	.	Parent=tRNA29
 ###
 1	maker	gene	93800	93871	.	-	.	ID=gene100;Name=trnN-GUU-gene
 1	maker	tRNA	93800	93871	100	-	.	ID=tRNA30;Parent=gene100;Name=trnN-GUU;_AED=0.00;_eAED=0.00;_QI=2|-1|1|1|-1|0|1|31|12
-1	maker	three_prime_UTR	93800	93830	.	-	.	Parent=tRNA30
 1	maker	exon	93800	93871	.	-	.	Parent=tRNA30
-1	maker	CDS	93831	93869	.	-	0	Parent=tRNA30
-1	maker	five_prime_UTR	93870	93871	.	-	.	Parent=tRNA30
 ###
 1	maker	gene	94157	95032	.	+	.	ID=gene101;Name=chlL|lcl|NC_021456.1_cdsid_YP_008082861.1_66-gene
 1	maker	mRNA	94157	95032	33.2	+	.	ID=mRNA66;Parent=gene101;Name=chlL|lcl|NC_021456.1_cdsid_YP_008082861.1_66;_AED=0.31;_eAED=0.31;_QI=0|-1|0|1|-1|0|1|0|291
@@ -624,16 +536,11 @@
 ###
 1	maker	gene	108062	108139	.	-	.	ID=gene107;Name=trnL-UAG-gene
 1	maker	tRNA	108062	108139	100	-	.	ID=tRNA31;Parent=gene107;Name=trnL-UAG;_AED=0.46;_eAED=0.46;_QI=6|-1|1|1|-1|0|1|0|24
-1	maker	CDS	108062	108133	.	-	0	Parent=tRNA31
 1	maker	exon	108062	108139	.	-	.	Parent=tRNA31
-1	maker	five_prime_UTR	108134	108139	.	-	.	Parent=tRNA31
 ###
 1	maker	gene	108296	108369	.	+	.	ID=gene108;Name=trnP-GGG-gene
 1	maker	tRNA	108296	108369	100	+	.	ID=tRNA32;Parent=gene108;Name=trnP-GGG;_AED=0.00;_eAED=0.00;_QI=6|-1|1|1|-1|0|1|2|22
-1	maker	five_prime_UTR	108296	108301	.	+	.	Parent=tRNA32
 1	maker	exon	108296	108369	.	+	.	Parent=tRNA32
-1	maker	CDS	108302	108367	.	+	0	Parent=tRNA32
-1	maker	three_prime_UTR	108368	108369	.	+	.	Parent=tRNA32
 ###
 1	maker	gene	109471	109683	.	-	.	ID=gene109;Name=rpl32|lcl|NC_021456.1_cdsid_YP_008082867.1_72-gene
 1	maker	mRNA	109471	109683	33.3	-	.	ID=mRNA72;Parent=gene109;Name=rpl32|lcl|NC_021456.1_cdsid_YP_008082867.1_72;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|70
@@ -642,10 +549,7 @@
 ###
 1	maker	gene	110811	110882	.	-	.	ID=gene110;Name=trnV-GAC-gene
 1	maker	tRNA	110811	110882	100	-	.	ID=tRNA33;Parent=gene110;Name=trnV-GAC;_AED=0.50;_eAED=0.50;_QI=35|-1|1|1|-1|0|1|1|12
-1	maker	three_prime_UTR	110811	110811	.	-	.	Parent=tRNA33
 1	maker	exon	110811	110882	.	-	.	Parent=tRNA33
-1	maker	CDS	110812	110847	.	-	0	Parent=tRNA33
-1	maker	five_prime_UTR	110848	110882	.	-	.	Parent=tRNA33
 ###
 1	maker	gene	113290	113757	.	+	.	ID=gene111;Name=rps7|lcl|NC_021456.1_cdsid_YP_008082868.1_73-gene
 1	maker	mRNA	113290	113757	33.3	+	.	ID=mRNA73;Parent=gene111;Name=rps7|lcl|NC_021456.1_cdsid_YP_008082868.1_73;_AED=0.00;_eAED=0.00;_QI=0|-1|0|1|-1|0|1|0|155
@@ -654,10 +558,7 @@
 ###
 1	maker	gene	115332	115412	.	+	.	ID=gene112;Name=trnL-CAA-gene
 1	maker	tRNA	115332	115412	100	+	.	ID=tRNA34;Parent=gene112;Name=trnL-CAA;_AED=0.00;_eAED=0.00;_QI=14|-1|1|1|-1|0|1|31|11
-1	maker	five_prime_UTR	115332	115345	.	+	.	Parent=tRNA34
 1	maker	exon	115332	115412	.	+	.	Parent=tRNA34
-1	maker	CDS	115346	115381	.	+	0	Parent=tRNA34
-1	maker	three_prime_UTR	115382	115412	.	+	.	Parent=tRNA34
 ###
 1	maker	gene	116102	122482	.	-	.	ID=gene113;Name=ycf2|lcl|NC_021456.1_cdsid_YP_008082869.1_74-gene
 1	maker	mRNA	116102	122482	33.1	-	.	ID=mRNA74;Parent=gene113;Name=ycf2|lcl|NC_021456.1_cdsid_YP_008082869.1_74;_AED=0.06;_eAED=0.06;_QI=0|-1|0|1|-1|0|1|0|2126
@@ -666,15 +567,9 @@
 ###
 1	maker	gene	122664	122738	.	-	.	ID=gene114;Name=trnH-GUG-gene
 1	maker	tRNA	122664	122738	98.7	-	.	ID=tRNA35;Parent=gene114;Name=trnH-GUG;_AED=0.49;_eAED=0.49;_QI=1|-1|1|1|-1|0|1|2|24
-1	maker	three_prime_UTR	122664	122665	.	-	.	Parent=tRNA35
 1	maker	exon	122664	122738	.	-	.	Parent=tRNA35
-1	maker	CDS	122666	122737	.	-	0	Parent=tRNA35
-1	maker	five_prime_UTR	122738	122738	.	-	.	Parent=tRNA35
 ###
 1	maker	gene	123043	123116	.	+	.	ID=gene115;Name=trnI-CAU-gene
 1	maker	tRNA	123043	123116	100	+	.	ID=tRNA36;Parent=gene115;Name=trnI-CAU;_AED=0.00;_eAED=0.00;_QI=6|-1|1|1|-1|0|1|29|12
-1	maker	five_prime_UTR	123043	123048	.	+	.	Parent=tRNA36
 1	maker	exon	123043	123116	.	+	.	Parent=tRNA36
-1	maker	CDS	123049	123087	.	+	0	Parent=tRNA36
-1	maker	three_prime_UTR	123088	123116	.	+	.	Parent=tRNA36
 ###
