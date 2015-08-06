@@ -73,6 +73,10 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 	gt extractfeat -type CDS -join -translate -coords -matchdescstart -retainids -seqid -seqfile $*.fa $< | \
 		sed 's/^VKIAVYGKGG/MKIAVYGKGG/' >$@
 
+# Extract sequences of GFF intron features
+%.gff.intron.fa: %.gff %.fa
+	gt extractfeat -type intron -coords -matchdescstart -retainids -seqid -seqfile $*.fa $< >$@
+
 # Convert GFF to GenBank format
 %.orig.gbk: %.gff %.fa
 	bin/gff_to_genbank.py $^
