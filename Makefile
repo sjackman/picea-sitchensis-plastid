@@ -150,3 +150,6 @@ pg29-plastid-manual.fa: pg29-plastid.fa
 
 pg29-plastid-manual.ircoord: pg29-plastid.ircoord
 	ln -s $< $@
+
+pg29-plastid-manual-header.gbk: pg29-plastid-header.gbk
+	ln -s $< $@
