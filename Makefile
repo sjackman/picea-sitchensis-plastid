@@ -42,6 +42,20 @@ plastids/%:
 %.frn: plastids/%.frn
 	sed 's/^>.*\[gene=/>/;s/\].*$$//' $< >$@
 
+# Prodigal
+
+# Annotate genes using Prodigal
+%.prodigal.gff: %.fa
+	prodigal -c -m -g 11 -p meta -f gff -a $*.prodigal.faa -d $*.prodigal.ffn -s $*.prodigal.tsv -i $< -o $@
+
+# Select Prodigal annotations not overlapping manual annotations using bedtools
+%.prodigal.orf.gff: %.prodigal.gff %-manual.gff
+	bedtools intersect -v -header -a $< -b $*-manual.gff |gt gff3 -sort - >$@
+
+# Extract DNA sequences of ORF features from a FASTA file
+%.prodigal.orf.gff.fa: %.prodigal.orf.gff %.fa
+	gt extractfeat -type CDS -coords -matchdescstart -retainids -seqid -seqfile $*.fa $< >$@
+
 # ARAGORN
 
 # Annotate tRNA using ARAGORN
