@@ -115,6 +115,8 @@ def incomplete_cds(f, translations):
 	"""
 	for sf in subfeatures(f):
 		if sf.type == 'mRNA':
+			if not 'ID' in sf.qualifiers:
+				continue
 			id = sf.qualifiers['ID'][0]
 			seq = translations[id]
 			# ACG codes for T and is edited to AUG, which codes for M.
@@ -150,6 +152,8 @@ def print_gene(f, gene_product_table, translations):
 	print "\t\t\tlocus_tag\t%s" % locus_tag
 	if 'exception' in f.qualifiers:
 		print "\t\t\texception\t%s" % f.qualifiers['exception'][0]
+	if 'pseudo' in f.qualifiers:
+		print "\t\t\tpseudo"
 
 	for sf in subfeatures(f):
 		if sf.type == 'mRNA':
