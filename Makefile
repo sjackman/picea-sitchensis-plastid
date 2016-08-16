@@ -137,10 +137,10 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 		s/gene="([^|"]*)\|[^"]*"/gene="\1"/; \
 		p;}' $*.orig.gbk) >$@
 
-# Merge manual and automated annotations.
-# Currently there are no manual annotations.
-%-manual.gff: %.gff
-	gt gff3 -sort -force -o $@ $<
+# Merge manual and MAKER annotations using bedtools.
+%-manual.gff: %.gff %.manual.gff
+	bedtools intersect -v -header -a $< -b $*.manual.gff \
+		|gt gff3 -sort $*.manual.gff - >$@
 
 # Organellar Genome Draw
 
