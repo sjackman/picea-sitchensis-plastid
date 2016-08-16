@@ -43,17 +43,17 @@ cds_aa.orig.fa cds_na.orig.fa: %.fa:
 	esearch -db nuccore -query $(edirect_query) \
 		|efetch -format fasta_$* >$@
 
-cds_aa.fa cds_na.fa: %.fa: %.orig.fa
-	sed -E 's/^>(.*gene=([^]]*).*)$$/>\2|\1/' $< >$@
-
-$(ref).gene.fa:
+$(ref).gene.orig.fa:
 	efetch -db nuccore -id $(ref) -format gene_fasta |seqtk seq >$@
 
-$(ref).gene.tsv:
-	esearch -db gene -query NC_021456 |efetch -format tabular |cut -f1-17 >$@
+cds_aa.fa cds_na.fa $(ref).gene.fa: %.fa: %.orig.fa
+	sed -E 's/^>(.*gene=([^]]*).*)$$/>\2|\1/' $< >$@
 
 %.ncrna.fa: %.gene.fa
 	paste -d'\t' - - <$< |egrep 'rrn|trn' |tr '\t' '\n' >$@
+
+$(ref).gene.tsv:
+	esearch -db gene -query NC_021456 |efetch -format tabular |cut -f1-17 >$@
 
 %.product.tsv: %.gene.tsv
 	mlr --tsvlite cut -f Symbol,description $< |mlr --tsvlite sort -f Symbol |uniq >$@
