@@ -179,7 +179,7 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 
 # Convert GFF to TBL
 %.tbl: %.gff %-product.tsv %.gff.aa.fa
-	bin/gff3-to-tbl --centre=BCGSC --locustag=OU3CP $^ >$@
+	bin/gff3-to-tbl --centre=BCGSC --locustag=Q903CP $^ >$@
 
 # Extract the names of genes from a TBL file
 %.tbl.gene: %.tbl
