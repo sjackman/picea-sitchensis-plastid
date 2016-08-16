@@ -69,6 +69,26 @@ plastids/%:
 %.frn: plastids/%.frn
 	sed 's/^>.*\[gene=/>/;s/\].*$$//' $< >$@
 
+# BWA
+
+# Index the target genome.
+%.fa.bwt: %.fa
+	bwa index $<
+
+# Align sequences to the target genome.
+$(name).%.sam: %.fa $(name).fa.bwt
+	bwa mem $(name).fa $< >$@
+
+# samtools
+
+# Sort a SAM file and produce a sorted BAM file.
+%.bam: %.sam
+	samtools sort -o $@ $<
+
+# Index a BAM file.
+%.bam.bai: %.bam
+	samtools index $<
+
 # Prodigal
 
 # Annotate genes using Prodigal
