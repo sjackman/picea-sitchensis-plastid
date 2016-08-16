@@ -1,5 +1,6 @@
 brew 'gnu-sed'
 tap 'homebrew/science'
+brew 'bedtools'
 brew 'edirect'
 brew 'genometools'
 brew 'maker'

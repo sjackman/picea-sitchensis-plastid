@@ -20,7 +20,7 @@ clean:
 install-deps:
 	brew install gnu-sed
 	brew tap homebrew/science
-	brew install edirect genometools maker ogdraw seqtk tbl2asn
+	brew install bedtools edirect genometools maker ogdraw seqtk tbl2asn
 	pip install --upgrade biopython bcbio-gff
 
 .PHONY: all clean install-deps
