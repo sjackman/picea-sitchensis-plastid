@@ -36,6 +36,9 @@ $(name).fa $(ref).fa: %.fa:
 $(name).gb $(ref).gb: %.gb:
 	efetch -db nuccore -id $* -format gb >$@
 
+$(ref).tbl: %.tbl:
+	efetch -db nuccore -id $* -format ft >$@
+
 cds_aa.orig.fa cds_na.orig.fa: %.fa:
 	esearch -db nuccore -query $(edirect_query) \
 		|efetch -format fasta_$* >$@
@@ -124,6 +127,10 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 %-header.gbk: %.gb
 	sed '/Assembly-Data-END/q' $< >$@
 
+# Extract the assembly comment from a GenBank record.
+%.cmt: %.gb
+	sed -n 's/^  *//;/Assembly-Data-START/,/Assembly-Data-END/p' $< >$@
+
 %.gbk: %-header.gbk %.orig.gbk
 	(cat $< && sed -En '/^FEATURES/,$${ \
 		s/Name=/gene=/; \
@@ -133,7 +140,7 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 # Merge manual and automated annotations.
 # Currently there are no manual annotations.
 %-manual.gff: %.gff
-	gt gff3 -sort -o $@ $<
+	gt gff3 -sort -force -o $@ $<
 
 # Organellar Genome Draw
 
@@ -180,7 +187,7 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 
 # Add structured comments to the FASTA file
 %.fsa: %.fa
-	(echo '>1 [organism=Picea glauca] [location=chloroplast] [completeness=complete] [topology=circular] [gcode=11]'; \
+	(echo '>1 [organism=Picea sitchensis] [location=chloroplast] [completeness=complete] [topology=circular] [gcode=11]'; \
 		tail -n +2 $<) >$@
 
 # tbl2asn
@@ -197,5 +204,14 @@ $(name)-manual.fa: $(name).fa
 $(name)-manual.ircoord: $(name).ircoord
 	ln -s $< $@
 
+$(name)-manual.cmt: $(name).cmt
+	ln -s $< $@
+
+$(name)-manual.sbt: $(name).sbt
+	ln -s $< $@
+
 $(name)-manual-header.gbk: $(name)-header.gbk
+	ln -s $< $@
+
+$(name)-manual-product.tsv: $(name)-product.tsv
 	ln -s $< $@
