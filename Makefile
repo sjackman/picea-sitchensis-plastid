@@ -1,7 +1,10 @@
-# Annotate and visualize the white spruce plastid genome
+# Annotate and visualize the Sitka spruce (Picea sitchensis) plastid genome
 # Written by Shaun Jackman @sjackman
 
-name=pg29-plastid
+# Target genome, Picea sitchensis
+name=KU215903
+
+# Reference genome, Picea abies
 ref=NC_021456
 
 # Picea abies chloroplast complete genome
@@ -15,7 +18,9 @@ clean:
 		$(name)-manual.tbl $(name)-manual.tbl.gene $(name)-manual.sqn
 
 install-deps:
-	brew install edirect genometools maker ogdraw tbl2asn
+	brew install gnu-sed
+	brew tap homebrew/science
+	brew install edirect genometools maker ogdraw seqtk tbl2asn
 	pip install --upgrade biopython bcbio-gff
 
 .PHONY: all clean install-deps
@@ -24,12 +29,31 @@ install-deps:
 
 # Fetch data from NCBI
 
+$(name).fa $(ref).fa: %.fa:
+	efetch -db nuccore -id $* -format fasta |seqtk seq \
+		|sed 's/^>/>$* /' >$@
+
+$(name).gb $(ref).gb: %.gb:
+	efetch -db nuccore -id $* -format gb >$@
+
 cds_aa.orig.fa cds_na.orig.fa: %.fa:
 	esearch -db nuccore -query $(edirect_query) \
 		|efetch -format fasta_$* >$@
 
 cds_aa.fa cds_na.fa: %.fa: %.orig.fa
 	sed -E 's/^>(.*gene=([^]]*).*)$$/>\2|\1/' $< >$@
+
+$(ref).gene.fa:
+	efetch -db nuccore -id $(ref) -format gene_fasta |seqtk seq >$@
+
+$(ref).gene.tsv:
+	esearch -db gene -query NC_021456 |efetch -format tabular |cut -f1-17 >$@
+
+%.ncrna.fa: %.gene.fa
+	paste -d'\t' - - <$< |egrep 'rrn|trn' |tr '\t' '\n' >$@
+
+%.product.tsv: %.gene.tsv
+	mlr --tsvlite cut -f Symbol,description $< |mlr --tsvlite sort -f Symbol |uniq >$@
 
 # asn,faa,ffn,fna,frn,gbk,gff,ptt,rnt,rpt,val
 plastids/%:
@@ -65,7 +89,7 @@ plastids/%:
 # MAKER
 
 # Annotate genes using MAKER
-pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn cds_aa.fa
+$(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn cds_aa.fa
 	maker -fix_nucleotides
 	touch $@
 
@@ -96,11 +120,20 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 	bin/gff_to_genbank.py $^
 	mv $*.gb $@
 
+# Extract the header from a GenBank record.
+%-header.gbk: %.gb
+	sed '/Assembly-Data-END/q' $< >$@
+
 %.gbk: %-header.gbk %.orig.gbk
 	(cat $< && sed -En '/^FEATURES/,$${ \
 		s/Name=/gene=/; \
 		s/gene="([^|"]*)\|[^"]*"/gene="\1"/; \
 		p;}' $*.orig.gbk) >$@
+
+# Merge manual and automated annotations.
+# Currently there are no manual annotations.
+%-manual.gff: %.gff
+	gt gff3 -sort -o $@ $<
 
 # Organellar Genome Draw
 
@@ -155,15 +188,14 @@ pg29-plastid.maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref
 # Convert TBL to GBF and SQN
 %.gbf %.sqn: %.fsa %.sbt %.tbl %.cmt
 	tbl2asn -i $< -t $*.sbt -w $*.cmt -Z $*.discrep -Vbv
-	gsed -i 's/DEFINITION  Picea glauca/& chloroplast complete genome/' $*.gbf
 
 # Symlinks
 
-pg29-plastid-manual.fa: pg29-plastid.fa
+$(name)-manual.fa: $(name).fa
 	ln -s $< $@
 
-pg29-plastid-manual.ircoord: pg29-plastid.ircoord
+$(name)-manual.ircoord: $(name).ircoord
 	ln -s $< $@
 
-pg29-plastid-manual-header.gbk: pg29-plastid-header.gbk
+$(name)-manual-header.gbk: $(name)-header.gbk
 	ln -s $< $@

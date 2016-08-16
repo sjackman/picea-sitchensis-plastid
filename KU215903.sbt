@@ -2,9 +2,9 @@ Submit-block ::= {
   contact {
     contact {
       name name {
-        last "Jackman",
-        first "Shaun",
-        initials "S.D.",
+        last "Warren",
+        first "Rene",
+        initials "R.",
       },
       affil std {
         affil "BC Cancer Agency Genome Sciences Centre",
@@ -25,9 +25,9 @@ Submit-block ::= {
       names std {
         {
           name name {
-            last "Jackman",
-            first "Shaun",
-            initials "S.D.",
+            last "Coombe",
+            first "Lauren",
+            initials "L.",
           }
         },
         {
@@ -39,9 +39,9 @@ Submit-block ::= {
         },
         {
           name name {
-            last "Gibb",
-            first "Ewan",
-            initials "E.",
+            last "Jackman",
+            first "Shaun",
+            initials "S.D.",
           }
         },
         {
@@ -53,23 +53,16 @@ Submit-block ::= {
         },
         {
           name name {
-            last "Mohamadi",
-            first "Hamid",
-            initials "H.",
+            last "Jones",
+            first "Steven",
+            initials "S.J.M.",
           }
         },
         {
           name name {
-            last "Chu",
-            first "Justin",
-            initials "J.",
-          }
-        },
-        {
-          name name {
-            last "Raymond",
-            first "Anthony",
-            initials "A.",
+            last "Moore",
+            first "Richard",
+            initials "R.A.",
           }
         },
         {
@@ -88,37 +81,16 @@ Submit-block ::= {
         },
         {
           name name {
-            last "Wildung",
-            first "Mark",
-            initials "M.R.",
-          }
-        },
-        {
-          name name {
-            last "Ritland",
-            first "Carol",
-            initials "C.E.",
-          }
-        },
-        {
-          name name {
-            last "Bousquet",
-            first "Jean",
-            initials "J.",
-          }
-        },
-        {
-          name name {
-            last "Jones",
-            first "Steven",
-            initials "S.J.M.",
-          }
-        },
-        {
-          name name {
             last "Bohlmann",
             first "Joerg",
             initials "J.C.",
+          }
+        },
+        {
+          name name {
+            last "Holt",
+            first "Robert",
+            initials "R.A",
           }
         },
         {
@@ -154,6 +126,20 @@ Seqdesc ::= pub {
         names std {
           {
             name name {
+              last "Coombe",
+              first "Lauren",
+              initials "L.",
+            }
+          },
+          {
+            name name {
+              last "Warren",
+              first "Rene",
+              initials "R.L.",
+            }
+          },
+          {
+            name name {
               last "Jackman",
               first "Shaun",
               initials "S.D.",
@@ -161,16 +147,9 @@ Seqdesc ::= pub {
           },
           {
             name name {
-              last "Warren",
-              first "Rene",
-              initials "R.",
-            }
-          },
-          {
-            name name {
-              last "Gibb",
-              first "Ewan",
-              initials "E.",
+              last "Yang",
+              first "Chen",
+              initials "C.",
             }
           },
           {
@@ -182,23 +161,9 @@ Seqdesc ::= pub {
           },
           {
             name name {
-              last "Mohamadi",
-              first "Hamid",
-              initials "H.",
-            }
-          },
-          {
-            name name {
-              last "Chu",
-              first "Justin",
-              initials "J.",
-            }
-          },
-          {
-            name name {
-              last "Raymond",
-              first "Anthony",
-              initials "A.",
+              last "Moore",
+              first "Richard",
+              initials "R.A.",
             }
           },
           {
@@ -212,35 +177,7 @@ Seqdesc ::= pub {
             name name {
               last "Coope",
               first "Robin",
-              initials "R.",
-            }
-          },
-          {
-            name name {
-              last "Wildung",
-              first "Mark",
-              initials "M.R.",
-            }
-          },
-          {
-            name name {
-              last "Ritland",
-              first "Carol",
-              initials "C.E.",
-            }
-          },
-          {
-            name name {
-              last "Bousquet",
-              first "Jean",
-              initials "J.",
-            }
-          },
-          {
-            name name {
-              last "Jones",
-              first "Steven",
-              initials "S.J.M.",
+              initials "R.J.",
             }
           },
           {
@@ -252,13 +189,24 @@ Seqdesc ::= pub {
           },
           {
             name name {
+              last "Holt",
+              first "Robert",
+              initials "R.A.",
+            }
+          },
+          {
+            name name {
+              last "Jones",
+              first "Steven",
+              initials "S.J.M.",
+            }
+          },
+          {
+            name name {
               last "Birol",
               first "Inanc",
               initials "I.",
             }
-          },
-          {
-            name consortium "SMarTForests"
           }
         },
         affil std {
@@ -271,7 +219,7 @@ Seqdesc ::= pub {
           postal-code "V5Z 4S6"
         }
       },
-      title "Organellar Genomes of White Spruce (Picea glauca): Assembly and Annotation"
+      title "Assembly of the complete Sitka spruce chloroplast genome using 10X Genomics GemCode sequencing data"
     }
   }
 }
@@ -283,14 +231,14 @@ Seqdesc ::= user {
       label str "BioProject",
       num 1,
       data strs {
-        "PRJNA83435"
+        "PRJNA304257"
       }
     },
     {
       label str "BioSample",
       num 1,
       data strs {
-        "SAMN01120252"
+        "SAMN04296985"
       }
     }
   }

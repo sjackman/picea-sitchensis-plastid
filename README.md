@@ -1,4 +1,2 @@
-Annotate the plastid genome of white spruce (Picea glauca)
+Annotate the Sitka spruce (*Picea sitchensis*) plastid genome
 ================================================================================
-
-+ [GFF](https://github.com/sjackman/pgcpdna/blob/master/pg29-plastid-manual.gff)
