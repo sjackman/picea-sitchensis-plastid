@@ -1,0 +1,8 @@
+brew 'gnu-sed'
+tap 'homebrew/science'
+brew 'edirect'
+brew 'genometools'
+brew 'maker'
+brew 'ogdraw'
+brew 'seqtk'
+brew 'tbl2asn'
