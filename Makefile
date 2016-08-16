@@ -147,10 +147,6 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 %-header.gbk: %.gb
 	sed '/Assembly-Data-END/q' $< >$@
 
-# Extract the assembly comment from a GenBank record.
-%.cmt: %.gb
-	sed -n 's/^  *//;/Assembly-Data-START/,/Assembly-Data-END/p' $< >$@
-
 %.gbk: %-header.gbk %.orig.gbk
 	(cat $< && sed -En '/^FEATURES/,$${ \
 		s/Name=/gene=/; \

@@ -1,0 +1,4 @@
+StructuredCommentPrefix	##Genome-Assembly-Data-START##
+Assembly Method	ABySS v. 1.9.0; LINKS v. 1.5.2
+Genome Coverage	15x
+Sequencing Technology	10x Genomics GemCode; Illumina HiSeq
