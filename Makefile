@@ -207,7 +207,7 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 
 # Add structured comments to the FASTA file
 %.fsa: %.fa
-	(echo '>1 [organism=Picea sitchensis] [location=chloroplast] [completeness=complete] [topology=circular] [gcode=11]'; \
+	(echo '>$(name) [organism=Picea sitchensis] [location=chloroplast] [completeness=complete] [topology=circular] [gcode=11]'; \
 		tail -n +2 $<) >$@
 
 # tbl2asn
