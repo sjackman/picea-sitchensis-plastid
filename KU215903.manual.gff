@@ -1,0 +1,54 @@
+##gff-version 3
+##sequence-region   KU215903 1 124049
+KU215903	manual	gene	1586	4172	.	-	.	ID=gene1;Name=trnK-UUU-gene
+KU215903	manual	tRNA	1586	4172	.	-	.	ID=tRNA1;Parent=gene1;Name=trnK-UUU
+KU215903	manual	exon	1586	1620	.	-	.	Parent=tRNA1
+KU215903	manual	intron	1621	4137	.	-	.	Parent=tRNA1
+KU215903	manual	exon	4138	4172	.	-	.	Parent=tRNA1
+###
+KU215903	manual	gene	1802	3349	.	-	.	ID=gene2;Name=matK|lcl|NC_021456.1_prot_YP_008082797.1_2-gene
+KU215903	manual	mRNA	1802	3349	.	-	.	ID=mRNA1;Parent=gene2;Name=matK|lcl|NC_021456.1_prot_YP_008082797.1_2
+KU215903	manual	exon	1802	3349	.	-	.	Parent=mRNA1
+KU215903	manual	CDS	1802	3349	.	-	0	Parent=mRNA1
+###
+KU215903	manual	gene	9802	9915	.	+	.	ID=gene3;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8-gene;exception=trans-splicing
+KU215903	manual	gene	113225	114024	.	+	.	ID=gene4;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8-gene;exception=trans-splicing
+KU215903	manual	mRNA	9802	9915	.	+	.	ID=mRNA2;Parent=gene3,gene4;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8;exception=trans-splicing
+KU215903	manual	exon	9802	9915	.	+	.	Parent=mRNA2
+KU215903	manual	CDS	9802	9915	.	+	0	Parent=mRNA2
+KU215903	manual	exon	113225	113456	.	+	.	Parent=mRNA2
+KU215903	manual	CDS	113225	113456	.	+	0	Parent=mRNA2
+KU215903	manual	intron	113457	113998	.	+	.	Parent=mRNA2
+KU215903	manual	exon	113999	114024	.	+	.	Parent=mRNA2
+KU215903	manual	CDS	113999	114024	.	+	2	Parent=mRNA2
+KU215903	manual	mRNA	113225	114024	.	+	.	ID=mRNA2;Parent=gene3,gene4;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8;exception=trans-splicing
+###
+KU215903	manual	gene	64162	64818	.	-	.	ID=gene5;Name=rps3|lcl|NC_021456.1_prot_YP_008082848.1_53-gene
+KU215903	manual	mRNA	64162	64818	.	-	.	ID=mRNA3;Parent=gene5;Name=rps3|lcl|NC_021456.1_prot_YP_008082848.1_53
+KU215903	manual	exon	64162	64818	.	-	.	Parent=mRNA3
+KU215903	manual	CDS	64162	64818	.	-	0	Parent=mRNA3
+###
+KU215903	manual	gene	64803	65231	.	-	.	ID=gene6;Name=rpl22|lcl|NC_021456.1_prot_YP_008082849.1_54-gene
+KU215903	manual	mRNA	64803	65231	.	-	.	ID=mRNA4;Parent=gene6;Name=rpl22|lcl|NC_021456.1_prot_YP_008082849.1_54
+KU215903	manual	exon	64803	65231	.	-	.	Parent=mRNA4
+KU215903	manual	CDS	64803	65231	.	-	0	Parent=mRNA4
+###
+KU215903	manual	gene	67497	67583	.	+	.	ID=gene7;Name=psbA|lcl|NC_021456.1_gene_75-gene;pseudo=true
+KU215903	manual	mRNA	67497	67583	.	+	.	Parent=gene7;Name=psbA|lcl|NC_021456.1_gene_75-gene;pseudo=true
+###
+KU215903	manual	gene	82007	83428	.	-	.	ID=gene8;Name=psbC|lcl|NC_021456.1_prot_YP_008082859.1_64-gene
+KU215903	manual	mRNA	82007	83428	.	-	.	ID=mRNA5;Parent=gene8;Name=psbC|lcl|NC_021456.1_prot_YP_008082859.1_64
+KU215903	manual	exon	82007	83428	.	-	.	Parent=mRNA5
+KU215903	manual	CDS	82007	83428	.	-	0	Parent=mRNA5
+###
+KU215903	manual	gene	83376	84437	.	-	.	ID=gene9;Name=psbD|lcl|NC_021456.1_prot_YP_008082860.1_65-gene
+KU215903	manual	mRNA	83376	84437	.	-	.	ID=mRNA6;Parent=gene9;Name=psbD|lcl|NC_021456.1_prot_YP_008082860.1_65
+KU215903	manual	exon	83376	84437	.	-	.	Parent=mRNA6
+KU215903	manual	CDS	83376	84437	.	-	0	Parent=mRNA6
+###
+KU215903	manual	gene	88034	89093	.	-	.	ID=gene10;Name=trnI-GAU-gene
+KU215903	manual	tRNA	88034	89093	.	-	.	ID=tRNA2;Parent=gene10;Name=trnI-GAU
+KU215903	manual	exon	88034	88075	.	-	.	Parent=tRNA2
+KU215903	manual	intron	88076	89058	.	-	.	Parent=tRNA2
+KU215903	manual	exon	89059	89093	.	-	.	Parent=tRNA2
+###
