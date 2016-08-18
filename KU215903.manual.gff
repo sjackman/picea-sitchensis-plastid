@@ -15,12 +15,12 @@ KU215903	manual	gene	9802	9915	.	+	.	ID=gene3;Name=rps12|lcl|NC_021456.1_prot_YP
 KU215903	manual	gene	113225	114024	.	+	.	ID=gene4;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8-gene;exception=trans-splicing
 KU215903	manual	mRNA	9802	9915	.	+	.	ID=mRNA2;Parent=gene3,gene4;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8;exception=trans-splicing
 KU215903	manual	exon	9802	9915	.	+	.	Parent=mRNA2
-KU215903	manual	CDS	9802	9915	.	+	0	Parent=mRNA2
+KU215903	manual	CDS	9802	9915	.	+	0	ID=CDS1;Parent=mRNA2
 KU215903	manual	exon	113225	113456	.	+	.	Parent=mRNA2
-KU215903	manual	CDS	113225	113456	.	+	0	Parent=mRNA2
+KU215903	manual	CDS	113225	113456	.	+	0	ID=CDS1;Parent=mRNA2
 KU215903	manual	intron	113457	113998	.	+	.	Parent=mRNA2
 KU215903	manual	exon	113999	114024	.	+	.	Parent=mRNA2
-KU215903	manual	CDS	113999	114024	.	+	2	Parent=mRNA2
+KU215903	manual	CDS	113999	114024	.	+	2	ID=CDS1;Parent=mRNA2
 KU215903	manual	mRNA	113225	114024	.	+	.	ID=mRNA2;Parent=gene3,gene4;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8;exception=trans-splicing
 ###
 KU215903	manual	gene	64162	64818	.	-	.	ID=gene5;Name=rps3|lcl|NC_021456.1_prot_YP_008082848.1_53-gene
