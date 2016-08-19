@@ -74,6 +74,14 @@ plastids/%:
 %.frn: plastids/%.frn
 	sed 's/^>.*\[gene=/>/;s/\].*$$//' $< >$@
 
+# MUMmer
+
+%.delta: %.fa
+	nucmer -p $* $< $<
+
+%.delta.png: %.delta
+	mummerplot -png -p $< $<
+
 # seqtk
 
 # Interlave paired-end FASTQ files and drop orphaned reads.
