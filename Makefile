@@ -10,6 +10,9 @@ ref=NC_021456
 # Picea abies chloroplast complete genome
 edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] RefSeq[Keyword]'
 
+# Number of threads
+t=64
+
 all: $(name)-manual.tbl \
 	$(name)-manual.tbl.gene \
 	$(name)-manual.sqn \
@@ -71,6 +74,12 @@ plastids/%:
 %.frn: plastids/%.frn
 	sed 's/^>.*\[gene=/>/;s/\].*$$//' $< >$@
 
+# seqtk
+
+# Interlave paired-end FASTQ files and drop orphaned reads.
+%.fq.gz: %_1.fq.gz %_2.fq.gz
+	gunzip -c $^ | paste - - - - | sort | tr '\t' '\n' | seqtk dropse >$@
+
 # BWA
 
 # Index the target genome.
@@ -79,17 +88,39 @@ plastids/%:
 
 # Align sequences to the target genome.
 $(name).%.sam: %.fa $(name).fa.bwt
-	bwa mem $(name).fa $< >$@
+	bwa mem -t$t -xintractg $(name).fa $< >$@
+
+# Align paired-end reads to the target genome.
+$(name).%.bam: %.fq.gz $(name).fa.bwt
+	bwa mem -t$t -p $(name).fa $< | samtools view -h -F4 | samtools sort -@$t -o $@
 
 # samtools
 
 # Sort a SAM file and produce a sorted BAM file.
 %.bam: %.sam
-	samtools sort -o $@ $<
+	samtools sort -@$t -o $@ $<
 
 # Index a BAM file.
 %.bam.bai: %.bam
 	samtools index $<
+
+# Select properly paired reads.
+%.proper.bam: %.bam
+	samtools view -Obam -f2 -o $@ $<
+
+# bcftools
+
+# Call variants of reads aligned to a reference.
+%.vcf.gz: %.bam $(name).fa
+	samtools mpileup -u -f $(name).fa $< | bcftools call -c -v --ploidy=1 -Oz >$@
+
+# Filter variants to select locations that differ from the reference.
+%.filter.vcf.gz: %.vcf.gz
+	bcftools filter -Oz -i '(DP4[0]+DP4[1]) < (DP4[2]+DP4[3]) && DP4[2] > 0 && DP4[3] > 0' $< >$@
+
+# Index a VCF file.
+%.vcf.gz.csi: %.vcf.gz
+	bcftools index $<
 
 # Prodigal
 
