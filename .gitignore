@@ -1,6 +1,8 @@
+*.depth.tsv
 *.diff
 *.fa
 *.fai
+*.fq.gz
 *.gb
 *.gbk
 *.gff
@@ -9,6 +11,8 @@
 *.maker.output
 *.orig
 *.png
+*.vcf.gz
+*.vcf.gz.csi
 KU215903-manual.*
 KU215903-manual-product.tsv
 NC_021456.*
