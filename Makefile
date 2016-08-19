@@ -108,6 +108,10 @@ $(name).%.bam: %.fq.gz $(name).fa.bwt
 %.proper.bam: %.bam
 	samtools view -Obam -f2 -o $@ $<
 
+# Calculate depth of coverage.
+%.depth.tsv: %.bam
+	(printf "Seq\tPos\tDepth\n"; samtools depth -a $<) >$@
+
 # bcftools
 
 # Call variants of reads aligned to a reference.
