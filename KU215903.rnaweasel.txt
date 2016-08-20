@@ -1,0 +1,182 @@
+
+Identified RNA structure
+
+                                    Retained # 
+                                   of solution
+tRNAs without introns                       30
+tRNAs mt with intron                         0
+tRNAs cp with intron                         1
+rnpB (mito + plastid)                        0
+rnpB, derived (mito + plastid)               0
+5S RNA (complete)                            1
+5S RNA (only core region)                    0
+rns (complete)                               1
+rns (5' portion)                             0
+rns (3' portion)                             0
+intron IB (complete)                         0
+intron IB (extra insertion)                  0
+intron IB (5', partial)                      0
+intron IB (3', partial)                      0
+intron IA                                    0
+intron IA (5' partial)                       0
+intron I (derived, A)                        0
+intron I (derived, B1)                       0
+intron ID                                    0
+intron IB (extra group)                      0
+intron IC1                                   0
+intron IC2                                   0
+intron IA3                                   0
+intron I (derived, B2)                       0
+intron II (domainV)                         12
+intron II, derived                           1
+----------------------------------------------
+Total number of introns                     44
+
+******************************************************************************
+
+
+List of identified tRNAs without introns (positions including discriminator) :
+
+                                               tRNA   tRNA tRNA  Anti  
+Species name                   tRNA # Strand  Begin    End Type Codon  E-value
+------------------------------ ------ ------ ------ ------ ---- ----- --------
+KU215903 gi|1002096507|gb|KU21      1     FW  12600  12673  Pro   TGG 1.10e-12
+KU215903 gi|1002096507|gb|KU21      2     FW  12841  12914  Trp   CCA 6.02e-14
+KU215903 gi|1002096507|gb|KU21      3     FW  30370  30444  His   GTG 2.87e-13
+KU215903 gi|1002096507|gb|KU21      4     FW  32183  32270  Ser   GCT 8.80e-14
+KU215903 gi|1002096507|gb|KU21      5     FW  32760  32832  Glu   TTC 1.99e-08
+KU215903 gi|1002096507|gb|KU21      6     FW  32905  32988  Tyr   GTA 2.64e-08
+KU215903 gi|1002096507|gb|KU21      7     FW  33248  33321  Asp   GTC 2.12e-09
+KU215903 gi|1002096507|gb|KU21      8     FW  71077  71149  Thr   TGT 1.27e-11
+KU215903 gi|1002096507|gb|KU21      9     FW  80739  80812  Met   CAT 6.22e-13
+KU215903 gi|1002096507|gb|KU21     10     FW  81727  81813  Ser   TGA 1.69e-12
+KU215903 gi|1002096507|gb|KU21     11     FW  93761  93834  Arg   ACG 1.41e-09
+KU215903 gi|1002096507|gb|KU21     12     FW 108965 109038  Pro   GGG 1.80e-09
+KU215903 gi|1002096507|gb|KU21     13     FW 116107 116187  Leu   CAA 7.85e-14
+KU215903 gi|1002096507|gb|KU21     14     FW 123826 123899  Met   CAT 1.11e-12
+KU215903 gi|1002096507|gb|KU21     15     RC   6771   6700  Gln   TTG 4.36e-12
+KU215903 gi|1002096507|gb|KU21     16     RC   8065   7978  Ser   GCT 6.52e-14
+KU215903 gi|1002096507|gb|KU21     17     RC  22357  22284  Arg   CCG 1.43e-12
+KU215903 gi|1002096507|gb|KU21     18     RC  26879  26807  Met   CAT 5.57e-10
+KU215903 gi|1002096507|gb|KU21     19     RC  30639  30568  Thr   GGT 2.57e-11
+KU215903 gi|1002096507|gb|KU21     20     RC  35706  35636  Cys   GCA 5.79e-09
+KU215903 gi|1002096507|gb|KU21     21     RC  52175  52104  Arg   TCT 4.01e-11
+KU215903 gi|1002096507|gb|KU21     22     RC  67807  67734  Met   CAT 1.02e-12
+KU215903 gi|1002096507|gb|KU21     23     RC  69708  69636  Phe   GAA 3.32e-14
+KU215903 gi|1002096507|gb|KU21     24     RC  72410  72324  Ser   GGA 6.65e-13
+KU215903 gi|1002096507|gb|KU21     25     RC  81019  80949  Gly   GCC 2.33e-14
+KU215903 gi|1002096507|gb|KU21     26     RC  85831  85760  Thr   GGT 7.99e-07
+KU215903 gi|1002096507|gb|KU21     27     RC  94641  94570  Asn   GTT 3.55e-12
+KU215903 gi|1002096507|gb|KU21     28     RC 108808 108729  Leu   TAG 2.16e-14
+KU215903 gi|1002096507|gb|KU21     29     RC 111560 111489  Val   GAC 2.38e-10
+KU215903 gi|1002096507|gb|KU21     30     RC 123526 123452  His   GTG 2.31e-13
+
++ tRNAs cp with intron
+KU215903 gi|1002096507|gb|KU21      1     FW  89166  90022  Ala   TGC 3.75e-34
+
+List of identified rns (complete) prediction of complete structure :
+
+                                                RNA    RNA
+Species name                    RNA # Strand  Begin    End             E-value
+------------------------------ ------ ------ ------ ------ ---- ----- --------
+KU215903 gi|1002096507|gb|KU21      1     FW  86162  87651            7.08e-46
+
+
+
+*************************************************
+Condensed alignment for tRNA(s) (without discriminator position)
+*************************************************
+
+30 match(es) for tRNAs without introns
+
+Species name                       E-value   # of nt     Start..Stop      Str  #  Structure
+------------------------------  ---------- --------- -------------------- --- --- ------------------
+                                                                                 [[[[[[[    [[[[                   ]]]]     [[[[[            ]]]]]                                [[[[[         ]]]]] ]]]]]]] 
+KU215903                      |   1.10e-12    124049     12600..12672     FW   1 AGGGATG TA GCGC AGC T- t  GGT a   GCGT a   TTTGT TT tgg  GT ACAAA atgtc                          GCAGG TTCAAAT CCTGT CATCCCT  
+KU215903                      |   6.02e-14    124049     12841..12913     FW   2 GCGCTCT TA GTTC AGT T- c  GGT a   GAAC g   TAGGT CT cca  AA ACCTG atgcc                          GTAGG TTCAAAT CCTAC AGAGCGT  
+KU215903                      |   2.87e-13    124049     30371..30443     FW   3 GCGGACG TA GCCA AGT       GGA cca AGGC a   GTGGA TT gtg  AA TCCAC cacgc                          GCGGG TTCAATT CCCGT CGTTCGC  
+KU215903                      |   8.80e-14    124049     32183..32269     FW   4 GGAGAGA TG GCTG AGC       GGA cca AAGC g   GCGGA TT gct  AA TCCGT agt...(19)...acc               GAGGG TTCGAAT CCCTC TCTCTCC  
+KU215903                      |   1.99e-08    124049     32760..32831     FW   5 GCCCCTA TC GTCT AGT       GGA tca GGAC a   TCTCT CT ttc  AA GGAGG caac                           GGGGA TTCGACT TCCCC TAGGGGT  
+KU215903                      |   2.64e-08    124049     32905..32987     FW   6 GGGTCGA TG CCCG AGT       GGT taa TGAG g   ACGGA CT gta  AA TCCGT tggcaatatgcctac                GCTGG TTCAAAT CCAGC TCGACCC  
+KU215903                      |   2.12e-09    124049     33248..33320     FW   7 GGGATTG TA GTTC AAT T-    GGT ta  GAGT a   CCGCC CT gtc  AA GACGG aagtt                          GCGGG TTCGAGC CCCGT CAGTCCC  
+KU215903                      |   1.27e-11    124049     71077..71148     FW   8 GCCTGCT TA GCTC AGA       GGT ta  GAGC a   TCGCA CT tgt  AA TGCGA tggtc                          ATCGG TTCGATC CCGAT AGCTGGC  
+KU215903                      |   6.22e-13    124049     80739..80811     FW   9 TGCGGAG TA GAGT AGT -C t  GGT a   GCTC g   CAAGG CT cat  AA CCTTG aggtc                          ACGGG TTCAAAT CCCGT CTCCGCC  
+KU215903                      |   1.69e-12    124049     81727..81812     FW  10 GGAGAGA TG GCCG AGT       GGT tga TGGC t   CCGGT CT tga  AA ACCGG tat...(18)...atc               GAGGG TTCGAAT CCCTC TCTCTCC  
+KU215903                      |   1.41e-09    124049     93761..93833     FW  11 GGGCCTG TA GCTC AGA       GGA tta GAGC a   CGTGG CT acg  AA CCACG gtgtc                          GGGGG TTCGAAT CCCTC CTCGCCC  
+KU215903                      |   1.80e-09    124049    108965..109037    FW  12 CGGAGCA TG GCGC AGC T- t  GGT a   GCGT g   CCATC TT ggg  GT GATGG aggtc                          GTGGG TTCAGAT CCCGC TGCTCCG  
+KU215903                      |   7.85e-14    124049    116107..116186    FW  13 GCCTTGA TG GTGA AAT       GGT ag  ACAC g   CGAGA CT caa  AA TCTCG tgcttaagagcgt                  GGAGG TTCGAGT CCTCT TCAAGGC  
+KU215903                      |   1.11e-12    124049    123826..123898    FW  14 GCATCCA TG GCTG AAT       GGT ta  AAGC g   CCCAA CT cat  AA TTGGT gaactc                         GCGGG TTCAATT CCTGC TGGATGC  
+KU215903                      |   4.36e-12    124049      6771..6701      RC  15 TGGGGCG TG GCCA AGC       GGT a   AGGC a   GCAGG TT ttg  AT CCTGT tattc                          GGAGG TTCGAAT CCTTC CGTCCCA  
+KU215903                      |   6.52e-14    124049      8065..7979      RC  16 GGAGAGA TG GCTG AGC       GGA cca AAGC g   GCGGA TT gct  AA TCCGT agt...(19)...acc               GAGGG TTCGAAT CCCTC TCTCTCC  
+KU215903                      |   1.43e-12    124049     22357..22285     RC  17 GGGTTGG TA GCTC AGT       GGA tca GAGC t   CATGG TT ccg  GA CCATG aagtc                          AAGGG TTCAAAT CCCTT CTAGCCC  
+KU215903                      |   5.57e-10    124049     26879..26808     RC  18 ACCCACT TA ACTC AGT       GGT ta  GAGT a   TCGCT TT cat  AC GGCGA gagtc                          GTTGG TTCAAAT CCAAT AGTAGGT  
+KU215903                      |   2.57e-11    124049     30639..30569     RC  19 GCCCTTT TA ACTC AGC       GGT a   GAGT a   ACGCC AT ggt  AA GGCGT aagtc                          ATCGG TTCAAGT CCGAT AAAGGGC  
+KU215903                      |   5.79e-09    124049     35706..35637     RC  20 GGCGACA TA GCCA AGC       GGT a   AGGC a   GAGGA CT gca  AA TCCTC catc                           CCCAG TTCGAAT CCGGG TGTCGCC  
+KU215903                      |   4.01e-11    124049     52175..52105     RC  21 GCGTCCA TT GTCT AAT       GGA ta  GGAC a   GAGGT CT tct  AA ACCTT tagt                           ATAGG TTCAAAT CCTAT TGGACGT  
+KU215903                      |   1.02e-12    124049     67807..67735     RC  22 GCATCCA TG GCTG AAT       GGT ta  AAGC g   CCCAA CT cat  AA TTGGT gaactc                         GCGGG TTCAATT CCTGC TGGATGC  
+KU215903                      |   3.32e-14    124049     69708..69637     RC  23 GCCGGGA TA GCTC AGT T-    GGT a   GAGC a   GAGGA CT gaa  AA TCCTC gtgcc                          ACCAG TTCAAAT CTGGT TCCTGGC  
+KU215903                      |   6.65e-13    124049     72410..72325     RC  24 GGAAAGA TG GCCG AGC       GGT tca AGGC g   TAGCA TT gga  AC TGCTA tgt...(18)...acc               GAGGG TTCGAAT CCCTC TCTTTCC  
+KU215903                      |   2.33e-14    124049     81019..80950     RC  25 GCGGGTA TG GTTG AAT       GGT a   AAAT t   TCTCT TT gcc  AA GGAGA agat                           GCGGG TTCGATC CCCGC TACCCGC  
+KU215903                      |   7.99e-07    124049     85831..85761     RC  26 ACCCTTT CG ACTC AGT       AGT a   GAGT a   ACGCC AT ggt  AA GGCGT aagtc                          ATCGG TTCAAGT CCGGT AAAGGGC  
+KU215903                      |   3.55e-12    124049     94641..94571     RC  27 TCCTCAG TA GCTC AGT       GGT a   GAGC g   GTCGG CT gtt  AA CTGAC tggtc                          GTAGG TTCGAAT CCTAC TTGGGGA  
+KU215903                      |   2.16e-14    124049    108808..108730    RC  28 GCCGCCA TG GTGA AAT T-    GGT ag  ACAC g   CTGCT CT tag  GA AGCAG tgcgagagcat                    CTCGG TTCAAAT CCGAG TGGCGGC  
+KU215903                      |   2.38e-10    124049    111560..111490    RC  29 AGGGATA TA ACTC AGC       GGT a   GAGT g   TCACC TT gac  AT GGTGG aagtc                          ATCAG TTCGAGC CTGAT TATCCCT  
+KU215903                      |   2.31e-13    124049    123525..123453    RC  30 GCGGACG TA GCCA AGT       GGA cca AGGC a   GTGGA TT gtg  AA TCCAC cacgc                          GCGGG TTCAATT CCCGT CGTTCGC  
+
+1 match(es) for tRNAs cp with intron
+
+Species name                       E-value   # of nt     Start..Stop      Str  #  Structure
+------------------------------  ---------- --------- -------------------- --- --- ------------------
+                                                                                 [[[[[[[    [[[[               ]]]]   [[[[[                            [[[[[[[[[ [[[[[       ]]]]]    ]]]]]]]]]                  ]]]]]        [[[[[         ]]]]] ]]]]]]]
+KU215903                      |   3.75e-34    124049     89166..90021     FW   1 GGGGATA TA GCTC  AGT t GGT  A GAGC t CCGCT CT tgc AA ttg..(672)...gga GAGCACAGT ACGAT GAAA  GTTGT GA GCTGTGTTC ggg...(78)...tgt GGCGG atgtc  AGCGG TTCGAGT CCGCT TATCTCC 
+
+*************************************************
+Condensed alignment for rrn5
+*************************************************
+
+1 match(es) for 5S RNA (complete)
+
+Species name                       E-value   # of nt     Start..Stop      Str  #  Structure
+------------------------------  ---------- --------- -------------------- --- --- ------------------
+                                                                                 [[[[[[[[          [[ [[[[[         [[[   [[[                ]]]          ]]]       ]]]]]   ]] [[[[[[ [[[[[[[[                 ]]]]]]]]  ]]]]]]            ]]]]]]]]
+KU215903                      |   7.00e-08    124049     93432..93547     FW   1 TCTGGTGT cccag    GC GTAGA ggaac   CAC A CCA ACCCAT-CCCGAAC TTG gtg      GTT aaac  TCTAC t GC GGTGAC GATACTAT aggggaagccct    GCGGGAAA  ATAGCT cg         GTGCCAGG 
+
+*************************************************
+Condensed alignment for rns
+*************************************************
+
+1 match(es) for rns (complete)
+
+Species name                       E-value   # of nt     Start..Stop      Str  #  Structure
+------------------------------  ---------- --------- -------------------- --- --- ------------------
+                                                                                 [[[[[         ]]]]]                                                                                                                                     [[[[[[[[[[[    ]]]]]]]]]]]
+KU215903                      |   7.08e-46    124049     86170..87638     FW   1 GAGTT TGATCCT GGCTC AGGATGAACGCTGGCGGCATGCT-TAACACATGCAAGTCG gac...(21)...cag TGGCGGACGGGTGAGTAA cgc..(1334)..gag                   TGAAGTCGTAACA---AGG TAGCCGTACTG GA AGGTGCGGCTG 
+
+*************************************************
+Condensed alignment for intronII
+*************************************************
+
+12 match(es) for intron II (domainV)
+
+Species name                       E-value   # of nt     Start..Stop      Str  #  Structure
+------------------------------  ---------- --------- -------------------- --- --- ------------------
+                                                                                 [[[[[[[[[ [[[[               ]]]]     ]]]]]]]]]                 
+KU215903                      |   9.07e-03    124049     27572..27612     FW   1 GAGCCCAAT GCGA     TAAA      ATGC -AT GTTGGGTTC ttg       GAACAG 
+KU215903                      |   2.07e-05    124049     40434..40476     FW   2 GAGCCGGAT GAGA g   GAAA c    TTTC -AT GTCCGATCC tga       GGGGGG 
+KU215903                      |   9.03e-06    124049     49945..49986     FW   3 GAGCCGAAT GAAT c   GAAA g    ATTC -GT GTTCGGTTT gg        GAAGAG 
+KU215903                      |   7.58e-09    124049     57358..57400     FW   4 AAGCCGTAT GAAG g   GAAA t    TCTC -AT GTACGGTTT tca       GAGGGG 
+KU215903                      |   1.14e-08    124049     73885..73928     FW   5 GAGCCGTAT GAGG tg  GGAA      TCTC -AT GTACGGTTT tgaa      GCGGAG 
+KU215903                      |   4.04e-11    124049     74825..74869     FW   6 GAGCCGTAT GAGG tag GAAA c    TCTC -AA GTACGGTTC tga       GGGAAG 
+KU215903                      |   4.56e-04    124049     89876..89915     FW   7 GAGCACAGT ACGA t   GAAA g    TTGT -GA GCTGTGTTC           GGGGGG 
+KU215903                      |   5.49e-08    124049    113150..113190    FW   8 AAGCCGTAT GAGG t   GCAA a    TCTC -AT GTACGGTTT t         GTAGAG 
+KU215903                      |   5.37e-08    124049    113927..113966    FW   9 AAGCCGTAT TCGA c   GAAA g    TCGT -AT GTACGGTTT           GGAGGG 
+KU215903                      |   7.21e-10    124049      1708..1667      RC  10 AAGCCGTGT GCGA t   GAGA a    TTGC -AA GCACGGTTT gg        GGAGAG 
+KU215903                      |   1.59e-06    124049     52511..52466     RC  11 GAGCCGAAT GACA t   GAAA t    TCTC -AT GTTCGGTTC tgaatt    AGAGGC 
+KU215903                      |   6.50e-08    124049     63268..63220     RC  12 GAGCCGGAT GAGA a   GAAA c    TTTC -AT GTCCGGTTC tggattaga GATGGG 
+
+1 match(es) for intron II, derived
+
+Species name                       E-value   # of nt     Start..Stop      Str  #  Structure
+------------------------------  ---------- --------- -------------------- --- --- ------------------
+                                                                                 [[[[[[[[[ [[[[[        ]]]]]     ]]]]]]]]]                   
+KU215903                      |   8.14e-06    124049     66097..66054     RC   5 AAGCTGTAT GCCCT  GAGA  GAGGC -TT GTACAGTTT gg        GAAGGGAT 
