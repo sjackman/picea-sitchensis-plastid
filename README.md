@@ -15,3 +15,25 @@ The 15 introns seen in white spruce and Norway spruce are also found in Sitka sp
 We identify 14 open reading frames (ORFs), 13 of which are larger than 150 bp, and 4 of which are larger than 300 bp. Of these 15 ORFs, four (including three ORFs larger than 300 bp) hit genes of other *Picea* and *Pinus* species, *ndhB*, *ndhK*, *rps4* and *ycf2*, but did not represent the full length of the homologous gene, indicating possible pseudogenes of Sitka spruce. Nine ORFs hit open reading frames and cDNA of *Picea* and *Pinus* species, predominantly Korean pine (*Pinus koraiensis*) and Japanese black pine (*Pinus thunbergii*). One ORF of 288 bp has no significant BLASTX hit to the NCBI nr protein database, but many hits to various confier genomes in the NR nucleotide database.
 
 The two-copy inverted repeat of Sitka spruce is 440 bp, the same size as Norway spruce, and slightly smaller than the 445 bp inverted repeat of white spruce. The inverted repeat of Norway spruce has perfect sequence identity between the two copies. White spruce observed a single nucleotide mismatch between its two copies. Unusually, Sitka spruce has three nucleotide mismatches between its two copies.
+
+# Tables
+
+Table: Best BLASTX hits of the 14 open reading frames (ORFs) to the NCBI nr protein database. Four ORFs hit annotated genes. Nine ORFs hit open reading frames. One ORF has no significant hits. Excluding this ORF with no hits, every ORF has a significant hit to either a *Pinus* or *Picea* species, though it may not be the best hit.
+
+| ORF   | Start  | End    | Strand | Length (bp) | Best hit            | Gene         | Species                 | Score | E value |
+|-------|-------:|-------:|--------|-------------|---------------------|--------------|-------------------------|------:|--------:|
+| orf1  |  4398  |   4523 | +      |         126 | ref\|YP_001152057.1 | ORF41a       | Pinus koraiensis        |  79.3 | 5e-19   |
+| orf2  |  14197 |  14526 | +      |         330 | dbj\|BAA04352.1     | ORF42a       | Pinus thunbergii        |  66.2 | 1e-12   |
+| orf3  |  20645 |  20848 | +      |         204 | ref\|NP_042408.1    | ORF119       | Pinus thunbergii        |  36.6 | 0.47    |
+| orf4  |  28478 |  28681 | +      |         204 | ref\|NP_817199.1    | ORF67e       | Pinus koraiensis        |  85.1 | 2e-20   |
+| orf5  |  30837 |  31148 | +      |         312 | gb\|AAP80884.1      | rps4         | Picea smithiana         | 154   | 6e-46   |
+| orf6  |  35749 |  35904 | -      |         156 | ref\|YP_001152092.1 | ORF100       | Pinus koraiensis        |  77.8 | 1e-17   |
+| orf7  |  53589 |  53807 | -      |         219 | gb\|ACN39997.1      | unknown      | Picea sitchensis        |  76.3 | 7e-17   |
+| orf8  |  68781 |  69188 | +      |         408 | ref\|YP_009158607.1 | ndhK         | Encephalartos lehmannii | 131   | 3e-35   |
+| orf9  |  85089 |  85292 | -      |         204 | ref\|NP_042472.1    | ORF77        | Pinus thunbergii        |  78.2 | 1e-17   |
+| orf10 | 110595 | 111131 | -      |         537 | ref\|YP_009232295.1 | ycf2         | Picea jezoensis         | 335   | 1e-103  |
+| orf11 | 112748 | 112930 | +      |         183 | gb\|KJB79837.1      | hypothetical | Gossypium raimondii     |  49.3 | 6e-06   |
+| orf12 | 115029 | 115187 | +      |         159 | gb\|AKJ77598.1      | ndhB         | Dioscorea nipponica     |  85.9 | 4e-19   |
+| orf13 | 115241 | 115528 | +      |         288 | No hits found       | NA           | NA                      | NA    | NA      |
+| orf14 | 116390 | 116575 | +      |         186 | ref\|YP_001152258.1 | ORF40z       | Pinus koraiensis        |  32.7 | 3.7     |
+
