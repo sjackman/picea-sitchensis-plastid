@@ -146,8 +146,18 @@ $(name).%.bam: %.fq.gz $(name).fa.bwt
 	prodigal -c -m -g 11 -p meta -f gff -a $*.prodigal.faa -d $*.prodigal.ffn -s $*.prodigal.tsv -i $< -o $@
 
 # Select Prodigal annotations not overlapping manual annotations using bedtools
-%.prodigal.orf.gff: %.prodigal.gff %-manual.gff
-	bedtools intersect -v -header -a $< -b $*-manual.gff |gt gff3 -sort - >$@
+%.prodigal.orf.orig.gff: %.prodigal.gff %.maker.manual.gff
+	bedtools intersect -v -header -a $< -b $*.maker.manual.gff |gt gff3 -sort - >$@
+
+# Convert the Prodigal GFF file to GFF 3.
+%.prodigal.orf.gff: %.prodigal.orf.orig.gff
+	awk -F'\t' -vOFS='\t' '/^##/ { print } !/^#/ { ++i; \
+			$$3 = "gene"; $$8 = "."; $$9 = "ID=gene" i ";Name=orf" i; print; \
+			$$3 = "mRNA"; $$9 = "ID=mRNA" i ";Parent=gene" i ";Name=orf" i; print; \
+			$$3 = "exon"; $$9 = "Parent=mRNA" i; print; \
+			$$3 = "CDS"; $$8 = "0"; $$9 = "Parent=mRNA" i; print; \
+			}' $< \
+		| gt gff3 -sort - >$@
 
 # Extract DNA sequences of ORF features from a FASTA file
 %.prodigal.orf.gff.fa: %.prodigal.orf.gff %.fa
@@ -203,10 +213,15 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 		s/gene="([^|"]*)\|[^"]*"/gene="\1"/; \
 		p;}' $*.orig.gbk) >$@
 
-# Merge manual and MAKER annotations using bedtools.
-%-manual.gff: %.gff %.manual.gff
+# Merge MAKER and manual annotations using bedtools.
+%.maker.manual.gff: %.gff %.manual.gff
 	bedtools intersect -v -header -a $< -b $*.manual.gff \
 		|gt gff3 -sort $*.manual.gff - >$@
+
+# Merge MAKER, manual and Prodigal ORF annotations using bedtools.
+%-manual.gff: %.gff %.manual.gff %.prodigal.orf.gff
+	bedtools intersect -v -header -a $< -b $*.manual.gff \
+		|gt gff3 -sort - $*.manual.gff $*.prodigal.orf.gff >$@
 
 # Organellar Genome Draw
 
