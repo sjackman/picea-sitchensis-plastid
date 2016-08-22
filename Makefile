@@ -74,6 +74,11 @@ plastids/%:
 %.frn: plastids/%.frn
 	sed 's/^>.*\[gene=/>/;s/\].*$$//' $< >$@
 
+# BLAST
+
+%.fa.blastx: %.fa
+	blastx -remote -db nr -query $< -out $@
+
 # MUMmer
 
 %.delta: %.fa
