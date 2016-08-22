@@ -150,8 +150,12 @@ $(name).%.bam: %.fq.gz $(name).fa.bwt
 	bedtools intersect -v -header -a $< -b $*.maker.manual.gff |gt gff3 -sort - >$@
 
 # Convert the Prodigal GFF file to GFF 3.
+# Hack: Change the start coordinate of an ORF from a TTG start codon to the
+# first ATG start codon.
 %.prodigal.orf.gff: %.prodigal.orf.orig.gff
-	awk -F'\t' -vOFS='\t' '/^##/ { print } !/^#/ { ++i; \
+	awk -F'\t' -vOFS='\t' '/^##/ { print } \
+			$$5 == 35946 { $$5 = 35904 } \
+			!/^#/ { ++i; \
 			$$3 = "gene"; $$8 = "."; $$9 = "ID=gene" i ";Name=orf" i; print; \
 			$$3 = "mRNA"; $$9 = "ID=mRNA" i ";Parent=gene" i ";Name=orf" i; print; \
 			$$3 = "exon"; $$9 = "Parent=mRNA" i; print; \
