@@ -281,3 +281,7 @@ $(name)-manual-header.gbk: $(name)-header.gbk
 
 $(name)-manual-product.tsv: $(name)-product.tsv
 	ln -s $< $@
+
+# Render Markdown to HTML using Pandoc
+%.html: %.md %.bib
+	pandoc -s -F pandoc-citeproc --bibliography=$*.bib -o $@ $<
