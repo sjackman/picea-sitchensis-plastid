@@ -127,9 +127,15 @@ $(name).%.bam: %.fq.gz $(name).fa.bwt
 
 # bcftools
 
+# Convert ambiguity codes to a base not included in that ambiguity code.
+# bcftools won't call variants at sites of ambiguity codes.
+# See https://github.com/samtools/bcftools/issues/473
+%.unamb.fa: %.fa
+	sed '/^>/n;s/M/T/g;s/R/C/g;s/W/C/g;s/S/A/g;s/Y/A/g;s/K/A/g;s/V/T/g;s/H/G/g;s/D/C/g;s/B/A/g' $< >$@
+
 # Call variants of reads aligned to a reference.
-%.vcf.gz: %.bam $(name).fa
-	samtools mpileup -u -f $(name).fa $< | bcftools call -c -v --ploidy=1 -Oz >$@
+%.vcf.gz: %.bam $(name).unamb.fa
+	samtools mpileup -u -f $(name).unamb.fa $< | bcftools call -c -v --ploidy=1 -Oz >$@
 
 # Filter variants to select locations that differ from the reference.
 %.filter.vcf.gz: %.vcf.gz
@@ -138,6 +144,10 @@ $(name).%.bam: %.fq.gz $(name).fa.bwt
 # Index a VCF file.
 %.vcf.gz.csi: %.vcf.gz
 	bcftools index $<
+
+# Call the consensus FASTA sequence of a VCF file
+%.vcf.fa: %.vcf.gz %.vcf.gz.csi $(name).unamb.fa
+	bcftools consensus -f $(name).unamb.fa $< | seqtk seq >$@
 
 # Prodigal
 
