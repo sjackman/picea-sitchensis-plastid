@@ -147,8 +147,7 @@ def print_gene(f, gene_product_table, translations):
 	product = "hypothetical protein" if gene.startswith("orf") else \
 		gene_product_table[re.sub("-.*$", "", gene)]
 
-	if not gene.startswith("orf"):
-		print "\t\t\tgene\t%s" % gene
+	print "\t\t\tgene\t%s" % gene
 	print "\t\t\tlocus_tag\t%s" % locus_tag
 	if 'exception' in f.qualifiers:
 		print "\t\t\texception\t%s" % f.qualifiers['exception'][0]
