@@ -1,0 +1,746 @@
+##gff-version 3
+##sequence-region   KU215903 1 124049
+KU215903	maker	gene	1	1062	.	-	.	ID=gene1;Name=psbA|lcl|NC_021456.1_prot_YP_008082796.1_1-gene
+KU215903	maker	mRNA	1	1062	33.2	-	.	ID=mRNA1;Parent=gene1;Name=psbA|lcl|NC_021456.1_prot_YP_008082796.1_1;_AED=0.00;_eAED=0.00;_QI=0|-1|0|1|-1|0|1|0|353
+KU215903	maker	exon	1	1062	.	-	.	Parent=mRNA1
+KU215903	maker	CDS	1	1062	.	-	0	Parent=mRNA1
+###
+KU215903	manual	gene	1586	4172	.	-	.	ID=gene2;Name=trnK-UUU-gene
+KU215903	manual	tRNA	1586	4172	.	-	.	ID=tRNA1;Parent=gene2;Name=trnK-UUU
+KU215903	manual	exon	1586	1620	.	-	.	Parent=tRNA1
+KU215903	manual	intron	1621	4137	.	-	.	Parent=tRNA1
+KU215903	manual	exon	4138	4172	.	-	.	Parent=tRNA1
+###
+KU215903	manual	gene	1802	3349	.	-	.	ID=gene3;Name=matK|lcl|NC_021456.1_prot_YP_008082797.1_2-gene
+KU215903	manual	mRNA	1802	3349	.	-	.	ID=mRNA2;Parent=gene3;Name=matK|lcl|NC_021456.1_prot_YP_008082797.1_2
+KU215903	manual	exon	1802	3349	.	-	.	Parent=mRNA2
+KU215903	manual	CDS	1802	3349	.	-	0	Parent=mRNA2
+###
+KU215903	Prodigal_v2.6.2	gene	4398	4523	2	+	.	ID=gene4;Name=orf1
+KU215903	Prodigal_v2.6.2	mRNA	4398	4523	2	+	.	ID=mRNA3;Parent=gene4;Name=orf1
+KU215903	Prodigal_v2.6.2	exon	4398	4523	2	+	.	Parent=mRNA3
+KU215903	Prodigal_v2.6.2	CDS	4398	4523	2	+	0	Parent=mRNA3
+###
+KU215903	maker	gene	4954	6495	.	-	.	ID=gene5;Name=chlB|lcl|NC_021456.1_prot_YP_008082798.1_3-gene
+KU215903	maker	mRNA	4954	6495	33.3	-	.	ID=mRNA4;Parent=gene5;Name=chlB|lcl|NC_021456.1_prot_YP_008082798.1_3;_AED=0.02;_eAED=0.02;_QI=0|-1|0|1|-1|0|1|0|513
+KU215903	maker	exon	4954	6495	.	-	.	Parent=mRNA4
+KU215903	maker	CDS	4954	6495	.	-	0	Parent=mRNA4
+###
+KU215903	maker	gene	6700	6771	.	-	.	ID=gene6;Name=trnQ-UUG-gene
+KU215903	maker	tRNA	6700	6771	100	-	.	ID=tRNA2;Parent=gene6;Name=trnQ-UUG;_AED=0.48;_eAED=0.48;_QI=1|-1|1|1|-1|0|1|2|23
+KU215903	maker	three_prime_UTR	6700	6701	.	-	.	Parent=tRNA2
+KU215903	maker	exon	6700	6771	.	-	.	Parent=tRNA2
+KU215903	maker	CDS	6702	6770	.	-	0	Parent=tRNA2
+KU215903	maker	five_prime_UTR	6771	6771	.	-	.	Parent=tRNA2
+###
+KU215903	maker	gene	7128	7307	.	+	.	ID=gene7;Name=psbK|lcl|NC_021456.1_prot_YP_008082799.1_4-gene
+KU215903	maker	mRNA	7128	7307	33.3	+	.	ID=mRNA5;Parent=gene7;Name=psbK|lcl|NC_021456.1_prot_YP_008082799.1_4;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|59
+KU215903	maker	exon	7128	7307	.	+	.	Parent=mRNA5
+KU215903	maker	CDS	7128	7307	.	+	0	Parent=mRNA5
+###
+KU215903	maker	gene	7791	7901	.	+	.	ID=gene8;Name=psbI|lcl|NC_021456.1_prot_YP_008082800.1_5-gene
+KU215903	maker	mRNA	7791	7901	33.3	+	.	ID=mRNA6;Parent=gene8;Name=psbI|lcl|NC_021456.1_prot_YP_008082800.1_5;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
+KU215903	maker	exon	7791	7901	.	+	.	Parent=mRNA6
+KU215903	maker	CDS	7791	7901	.	+	0	Parent=mRNA6
+###
+KU215903	maker	gene	7978	8065	.	-	.	ID=gene9;Name=trnS-GCU-gene
+KU215903	maker	tRNA	7978	8065	100	-	.	ID=tRNA3;Parent=gene9;Name=trnS-GCU;_AED=0.00;_eAED=0.00;_QI=6|-1|1|1|-1|0|1|49|10
+KU215903	maker	three_prime_UTR	7978	8026	.	-	.	Parent=tRNA3
+KU215903	maker	exon	7978	8065	.	-	.	Parent=tRNA3
+KU215903	maker	CDS	8027	8059	.	-	0	Parent=tRNA3
+KU215903	maker	five_prime_UTR	8060	8065	.	-	.	Parent=tRNA3
+###
+KU215903	maker	gene	8513	8614	.	+	.	ID=gene10;Name=ycf12|lcl|NC_021456.1_prot_YP_008082834.1_39-gene
+KU215903	maker	mRNA	8513	8614	33.3	+	.	ID=mRNA7;Parent=gene10;Name=ycf12|lcl|NC_021456.1_prot_YP_008082834.1_39;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|33
+KU215903	maker	exon	8513	8614	.	+	.	Parent=mRNA7
+KU215903	maker	CDS	8513	8614	.	+	0	Parent=mRNA7
+###
+KU215903	maker	gene	9034	9624	.	+	.	ID=gene11;Name=clpP|lcl|NC_021456.1_prot_YP_008082802.1_7-gene
+KU215903	maker	mRNA	9034	9624	33.3	+	.	ID=mRNA8;Parent=gene11;Name=clpP|lcl|NC_021456.1_prot_YP_008082802.1_7;_AED=0.00;_eAED=0.00;_QI=0|-1|0|1|-1|0|1|0|196
+KU215903	maker	exon	9034	9624	.	+	.	Parent=mRNA8
+KU215903	maker	CDS	9034	9624	.	+	0	Parent=mRNA8
+###
+KU215903	manual	gene	9802	9915	.	+	.	ID=gene12;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8-gene;exception=trans-splicing
+KU215903	manual	gene	113225	114024	.	+	.	ID=gene13;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8-gene;exception=trans-splicing
+KU215903	manual	mRNA	9802	9915	.	+	.	ID=mRNA9;Parent=gene12,gene13;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8;exception=trans-splicing
+KU215903	manual	exon	9802	9915	.	+	.	Parent=mRNA9
+KU215903	manual	CDS	9802	9915	.	+	0	ID=CDS1;Parent=mRNA9
+KU215903	manual	exon	113225	113456	.	+	.	Parent=mRNA9
+KU215903	manual	CDS	113225	113456	.	+	0	ID=CDS1;Parent=mRNA9
+KU215903	manual	intron	113457	113998	.	+	.	Parent=mRNA9
+KU215903	manual	exon	113999	114024	.	+	.	Parent=mRNA9
+KU215903	manual	CDS	113999	114024	.	+	2	ID=CDS1;Parent=mRNA9
+KU215903	manual	mRNA	113225	114024	.	+	.	ID=mRNA9;Parent=gene12,gene13;Name=rps12|lcl|NC_021456.1_prot_YP_008082803.1_8;exception=trans-splicing
+###
+KU215903	maker	gene	10625	10984	.	+	.	ID=gene14;Name=rpl20|lcl|NC_021456.1_prot_YP_008082804.1_9-gene
+KU215903	maker	mRNA	10625	10984	33.3	+	.	ID=mRNA10;Parent=gene14;Name=rpl20|lcl|NC_021456.1_prot_YP_008082804.1_9;_AED=0.00;_eAED=0.00;_QI=0|-1|0|1|-1|0|1|0|119
+KU215903	maker	exon	10625	10984	.	+	.	Parent=mRNA10
+KU215903	maker	CDS	10625	10984	.	+	0	Parent=mRNA10
+###
+KU215903	maker	gene	11244	11525	.	-	.	ID=gene15;Name=rps18|lcl|NC_021456.1_prot_YP_008082805.1_10-gene
+KU215903	maker	mRNA	11244	11525	33.3	-	.	ID=mRNA11;Parent=gene15;Name=rps18|lcl|NC_021456.1_prot_YP_008082805.1_10;_AED=0.28;_eAED=0.28;_QI=0|-1|0|1|-1|0|1|0|93
+KU215903	maker	exon	11244	11525	.	-	.	Parent=mRNA11
+KU215903	maker	CDS	11244	11525	.	-	0	Parent=mRNA11
+###
+KU215903	maker	gene	11649	11855	.	-	.	ID=gene16;Name=rpl33|lcl|NC_021456.1_prot_YP_008082806.1_11-gene
+KU215903	maker	mRNA	11649	11855	33.3	-	.	ID=mRNA12;Parent=gene16;Name=rpl33|lcl|NC_021456.1_prot_YP_008082806.1_11;_AED=0.34;_eAED=0.34;_QI=0|-1|0|1|-1|0|1|0|68
+KU215903	maker	exon	11649	11855	.	-	.	Parent=mRNA12
+KU215903	maker	CDS	11649	11855	.	-	0	Parent=mRNA12
+###
+KU215903	maker	gene	12174	12302	.	-	.	ID=gene17;Name=psaJ|lcl|NC_021456.1_prot_YP_008082807.1_12-gene
+KU215903	maker	mRNA	12174	12302	33.3	-	.	ID=mRNA13;Parent=gene17;Name=psaJ|lcl|NC_021456.1_prot_YP_008082807.1_12;_AED=0.41;_eAED=0.41;_QI=0|-1|0|1|-1|0|1|0|42
+KU215903	maker	exon	12174	12302	.	-	.	Parent=mRNA13
+KU215903	maker	CDS	12174	12302	.	-	0	Parent=mRNA13
+###
+KU215903	maker	gene	12600	12673	.	+	.	ID=gene18;Name=trnP-UGG-gene
+KU215903	maker	tRNA	12600	12673	100	+	.	ID=tRNA4;Parent=gene18;Name=trnP-UGG;_AED=0.25;_eAED=0.25;_QI=44|-1|1|1|-1|0|1|0|10
+KU215903	maker	five_prime_UTR	12600	12643	.	+	.	Parent=tRNA4
+KU215903	maker	exon	12600	12673	.	+	.	Parent=tRNA4
+KU215903	maker	CDS	12644	12673	.	+	0	Parent=tRNA4
+###
+KU215903	maker	gene	12841	12914	.	+	.	ID=gene19;Name=trnW-CCA-gene
+KU215903	maker	tRNA	12841	12914	100	+	.	ID=tRNA5;Parent=gene19;Name=trnW-CCA;_AED=0.25;_eAED=0.25;_QI=44|-1|1|1|-1|0|1|21|2
+KU215903	maker	five_prime_UTR	12841	12884	.	+	.	Parent=tRNA5
+KU215903	maker	exon	12841	12914	.	+	.	Parent=tRNA5
+KU215903	maker	CDS	12885	12893	.	+	0	Parent=tRNA5
+KU215903	maker	three_prime_UTR	12894	12914	.	+	.	Parent=tRNA5
+###
+KU215903	maker	gene	13037	13150	.	-	.	ID=gene20;Name=petG|lcl|NC_021456.1_prot_YP_008082808.1_13-gene
+KU215903	maker	mRNA	13037	13150	32.4	-	.	ID=mRNA14;Parent=gene20;Name=petG|lcl|NC_021456.1_prot_YP_008082808.1_13;_AED=0.25;_eAED=0.25;_QI=0|-1|0|1|-1|0|1|0|37
+KU215903	maker	exon	13037	13150	.	-	.	Parent=mRNA14
+KU215903	maker	CDS	13037	13150	.	-	0	Parent=mRNA14
+###
+KU215903	maker	gene	13255	13443	.	-	.	ID=gene21;Name=petL|lcl|NC_021456.1_prot_YP_008082809.1_14-gene
+KU215903	maker	mRNA	13255	13443	32.3	-	.	ID=mRNA15;Parent=gene21;Name=petL|lcl|NC_021456.1_prot_YP_008082809.1_14;_AED=0.51;_eAED=0.51;_QI=0|-1|0|1|-1|0|1|0|62
+KU215903	maker	exon	13255	13443	.	-	.	Parent=mRNA15
+KU215903	maker	CDS	13255	13443	.	-	0	Parent=mRNA15
+###
+KU215903	Prodigal_v2.6.2	gene	14197	14526	4.2	+	.	ID=gene22;Name=orf2
+KU215903	Prodigal_v2.6.2	mRNA	14197	14526	4.2	+	.	ID=mRNA16;Parent=gene22;Name=orf2
+KU215903	Prodigal_v2.6.2	exon	14197	14526	4.2	+	.	Parent=mRNA16
+KU215903	Prodigal_v2.6.2	CDS	14197	14526	4.2	+	0	Parent=mRNA16
+###
+KU215903	maker	gene	14685	14936	.	+	.	ID=gene23;Name=psbE|lcl|NC_021456.1_prot_YP_008082810.1_15-gene
+KU215903	maker	mRNA	14685	14936	32.9	+	.	ID=mRNA17;Parent=gene23;Name=psbE|lcl|NC_021456.1_prot_YP_008082810.1_15;_AED=0.30;_eAED=0.30;_QI=0|-1|0|1|-1|0|1|0|83
+KU215903	maker	exon	14685	14936	.	+	.	Parent=mRNA17
+KU215903	maker	CDS	14685	14936	.	+	0	Parent=mRNA17
+###
+KU215903	maker	gene	14946	15065	.	+	.	ID=gene24;Name=psbF|lcl|NC_021456.1_prot_YP_008082811.1_16-gene
+KU215903	maker	mRNA	14946	15065	33.3	+	.	ID=mRNA18;Parent=gene24;Name=psbF|lcl|NC_021456.1_prot_YP_008082811.1_16;_AED=0.42;_eAED=0.42;_QI=0|-1|0|1|-1|0|1|0|39
+KU215903	maker	exon	14946	15065	.	+	.	Parent=mRNA18
+KU215903	maker	CDS	14946	15065	.	+	0	Parent=mRNA18
+###
+KU215903	maker	gene	15099	15215	.	+	.	ID=gene25;Name=psbL|lcl|NC_021456.1_prot_YP_008082812.1_17-gene
+KU215903	maker	mRNA	15099	15215	32.5	+	.	ID=mRNA19;Parent=gene25;Name=psbL|lcl|NC_021456.1_prot_YP_008082812.1_17;_AED=0.42;_eAED=0.42;_QI=0|-1|0|1|-1|0|1|0|38
+KU215903	maker	exon	15099	15215	.	+	.	Parent=mRNA19
+KU215903	maker	CDS	15099	15215	.	+	0	Parent=mRNA19
+###
+KU215903	maker	gene	15334	15456	.	+	.	ID=gene26;Name=psbJ|lcl|NC_021456.1_prot_YP_008082813.1_18-gene
+KU215903	maker	mRNA	15334	15456	33.3	+	.	ID=mRNA20;Parent=gene26;Name=psbJ|lcl|NC_021456.1_prot_YP_008082813.1_18;_AED=0.41;_eAED=0.41;_QI=0|-1|0|1|-1|0|1|0|40
+KU215903	maker	exon	15334	15456	.	+	.	Parent=mRNA20
+KU215903	maker	CDS	15334	15456	.	+	0	Parent=mRNA20
+###
+KU215903	maker	gene	16466	17461	.	-	.	ID=gene27;Name=petA|lcl|NC_021456.1_prot_YP_008082814.1_19-gene
+KU215903	maker	mRNA	16466	17461	33.3	-	.	ID=mRNA21;Parent=gene27;Name=petA|lcl|NC_021456.1_prot_YP_008082814.1_19;_AED=0.24;_eAED=0.24;_QI=0|-1|0|1|-1|0|1|0|331
+KU215903	maker	exon	16466	17461	.	-	.	Parent=mRNA21
+KU215903	maker	CDS	16466	17461	.	-	0	Parent=mRNA21
+###
+KU215903	maker	gene	17691	18476	.	-	.	ID=gene28;Name=cemA|lcl|NC_021456.1_prot_YP_008082815.1_20-gene
+KU215903	maker	mRNA	17691	18476	33.2	-	.	ID=mRNA22;Parent=gene28;Name=cemA|lcl|NC_021456.1_prot_YP_008082815.1_20;_AED=0.28;_eAED=0.28;_QI=0|-1|0|1|-1|0|1|0|261
+KU215903	maker	exon	17691	18476	.	-	.	Parent=mRNA22
+KU215903	maker	CDS	17691	18476	.	-	0	Parent=mRNA22
+###
+KU215903	maker	gene	19296	19850	.	-	.	ID=gene29;Name=ycf4|lcl|NC_021456.1_prot_YP_008082816.1_21-gene
+KU215903	maker	mRNA	19296	19850	33.3	-	.	ID=mRNA23;Parent=gene29;Name=ycf4|lcl|NC_021456.1_prot_YP_008082816.1_21;_AED=0.00;_eAED=0.00;_QI=0|-1|0|1|-1|0|1|0|184
+KU215903	maker	exon	19296	19850	.	-	.	Parent=mRNA23
+KU215903	maker	CDS	19296	19850	.	-	0	Parent=mRNA23
+###
+KU215903	maker	gene	20416	20526	.	-	.	ID=gene30;Name=psaI|lcl|NC_021456.1_prot_YP_008082817.1_22-gene
+KU215903	maker	mRNA	20416	20526	33.3	-	.	ID=mRNA24;Parent=gene30;Name=psaI|lcl|NC_021456.1_prot_YP_008082817.1_22;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
+KU215903	maker	exon	20416	20526	.	-	.	Parent=mRNA24
+KU215903	maker	CDS	20416	20526	.	-	0	Parent=mRNA24
+###
+KU215903	Prodigal_v2.6.2	gene	20645	20848	4.2	+	.	ID=gene31;Name=orf3
+KU215903	Prodigal_v2.6.2	mRNA	20645	20848	4.2	+	.	ID=mRNA25;Parent=gene31;Name=orf3
+KU215903	Prodigal_v2.6.2	exon	20645	20848	4.2	+	.	Parent=mRNA25
+KU215903	Prodigal_v2.6.2	CDS	20645	20848	4.2	+	0	Parent=mRNA25
+###
+KU215903	maker	gene	21045	22028	.	-	.	ID=gene32;Name=accD|lcl|NC_021456.1_prot_YP_008082818.1_23-gene
+KU215903	maker	mRNA	21045	22028	33.1	-	.	ID=mRNA26;Parent=gene32;Name=accD|lcl|NC_021456.1_prot_YP_008082818.1_23;_AED=0.31;_eAED=0.31;_QI=0|-1|0|1|-1|0|1|0|327
+KU215903	maker	exon	21045	22028	.	-	.	Parent=mRNA26
+KU215903	maker	CDS	21045	22028	.	-	0	Parent=mRNA26
+###
+KU215903	maker	gene	22284	22357	.	-	.	ID=gene33;Name=trnR-CCG-gene
+KU215903	maker	tRNA	22284	22357	100	-	.	ID=tRNA6;Parent=gene33;Name=trnR-CCG;_AED=0.49;_eAED=0.49;_QI=28|-1|1|1|-1|0|1|4|13
+KU215903	maker	three_prime_UTR	22284	22287	.	-	.	Parent=tRNA6
+KU215903	maker	exon	22284	22357	.	-	.	Parent=tRNA6
+KU215903	maker	CDS	22288	22329	.	-	0	Parent=tRNA6
+KU215903	maker	five_prime_UTR	22330	22357	.	-	.	Parent=tRNA6
+###
+KU215903	maker	gene	22654	24081	.	-	.	ID=gene34;Name=rbcL|lcl|NC_021456.1_prot_YP_008082819.1_24-gene
+KU215903	maker	mRNA	22654	24081	32.8	-	.	ID=mRNA27;Parent=gene34;Name=rbcL|lcl|NC_021456.1_prot_YP_008082819.1_24;_AED=0.21;_eAED=0.21;_QI=0|-1|0|1|-1|0|1|0|475
+KU215903	maker	exon	22654	24081	.	-	.	Parent=mRNA27
+KU215903	maker	CDS	22654	24081	.	-	0	Parent=mRNA27
+###
+KU215903	maker	gene	24798	26276	.	+	.	ID=gene35;Name=atpB|lcl|NC_021456.1_prot_YP_008082820.1_25-gene
+KU215903	maker	mRNA	24798	26276	33.2	+	.	ID=mRNA28;Parent=gene35;Name=atpB|lcl|NC_021456.1_prot_YP_008082820.1_25;_AED=0.13;_eAED=0.13;_QI=0|-1|0|1|-1|0|1|0|492
+KU215903	maker	exon	24798	26276	.	+	.	Parent=mRNA28
+KU215903	maker	CDS	24798	26276	.	+	0	Parent=mRNA28
+###
+KU215903	maker	gene	26285	26698	.	+	.	ID=gene36;Name=atpE|lcl|NC_021456.1_prot_YP_008082821.1_26-gene
+KU215903	maker	mRNA	26285	26698	33.1	+	.	ID=mRNA29;Parent=gene36;Name=atpE|lcl|NC_021456.1_prot_YP_008082821.1_26;_AED=0.40;_eAED=0.40;_QI=0|-1|0|1|-1|0|1|0|137
+KU215903	maker	exon	26285	26698	.	+	.	Parent=mRNA29
+KU215903	maker	CDS	26285	26698	.	+	0	Parent=mRNA29
+###
+KU215903	maker	gene	26807	26879	.	-	.	ID=gene37;Name=trnM-CAU-gene
+KU215903	maker	tRNA	26807	26879	100	-	.	ID=tRNA7;Parent=gene37;Name=trnM-CAU;_AED=0.00;_eAED=0.00;_QI=0|-1|1|1|-1|0|1|1|24
+KU215903	maker	three_prime_UTR	26807	26807	.	-	.	Parent=tRNA7
+KU215903	maker	exon	26807	26879	.	-	.	Parent=tRNA7
+KU215903	maker	CDS	26808	26879	.	-	0	Parent=tRNA7
+###
+KU215903	maker	gene	27069	27687	.	+	.	ID=gene38;Name=trnV-UAC-gene
+KU215903	maker	tRNA	27069	27687	100	+	.	ID=tRNA8;Parent=gene38;Name=trnV-UAC;_AED=0.48;_eAED=0.48;_QI=0|1|1|1|0|0|2|1|25
+KU215903	maker	exon	27069	27107	.	+	.	Parent=tRNA8
+KU215903	maker	CDS	27069	27107	.	+	0	ID=CDS2;Parent=tRNA8
+KU215903	.	intron	27108	27650	.	+	.	Parent=tRNA8
+KU215903	maker	CDS	27651	27686	.	+	0	ID=CDS2;Parent=tRNA8
+KU215903	maker	exon	27651	27687	.	+	.	Parent=tRNA8
+KU215903	maker	three_prime_UTR	27687	27687	.	+	.	Parent=tRNA8
+###
+KU215903	Prodigal_v2.6.2	gene	28478	28681	4.4	+	.	ID=gene39;Name=orf4
+KU215903	Prodigal_v2.6.2	mRNA	28478	28681	4.4	+	.	ID=mRNA30;Parent=gene39;Name=orf4
+KU215903	Prodigal_v2.6.2	exon	28478	28681	4.4	+	.	Parent=mRNA30
+KU215903	Prodigal_v2.6.2	CDS	28478	28681	4.4	+	0	Parent=mRNA30
+###
+KU215903	maker	gene	30370	30444	.	+	.	ID=gene40;Name=trnH-GUG-gene
+KU215903	maker	tRNA	30370	30444	100	+	.	ID=tRNA9;Parent=gene40;Name=trnH-GUG;_AED=0.00;_eAED=0.00;_QI=1|-1|1|1|-1|0|1|2|24
+KU215903	maker	five_prime_UTR	30370	30370	.	+	.	Parent=tRNA9
+KU215903	maker	exon	30370	30444	.	+	.	Parent=tRNA9
+KU215903	maker	CDS	30371	30442	.	+	0	Parent=tRNA9
+KU215903	maker	three_prime_UTR	30443	30444	.	+	.	Parent=tRNA9
+###
+KU215903	maker	gene	30568	30638	.	-	.	ID=gene41;Name=trnT-GGU-gene
+KU215903	maker	tRNA	30568	30638	91.7	-	.	ID=tRNA10;Parent=gene41;Name=trnT-GGU;_AED=0.00;_eAED=0.00;_QI=29|-1|1|1|-1|0|1|6|11
+KU215903	maker	three_prime_UTR	30568	30573	.	-	.	Parent=tRNA10
+KU215903	maker	exon	30568	30638	.	-	.	Parent=tRNA10
+KU215903	maker	CDS	30574	30609	.	-	0	Parent=tRNA10
+KU215903	maker	five_prime_UTR	30610	30638	.	-	.	Parent=tRNA10
+###
+KU215903	Prodigal_v2.6.2	gene	30837	31148	24.9	+	.	ID=gene42;Name=orf5
+KU215903	Prodigal_v2.6.2	mRNA	30837	31148	24.9	+	.	ID=mRNA31;Parent=gene42;Name=orf5
+KU215903	Prodigal_v2.6.2	exon	30837	31148	24.9	+	.	Parent=mRNA31
+KU215903	Prodigal_v2.6.2	CDS	30837	31148	24.9	+	0	Parent=mRNA31
+###
+KU215903	maker	gene	31875	31967	.	+	.	ID=gene43;Name=psaM|lcl|NC_021456.1_prot_YP_008082822.1_27-gene
+KU215903	maker	mRNA	31875	31967	32.2	+	.	ID=mRNA32;Parent=gene43;Name=psaM|lcl|NC_021456.1_prot_YP_008082822.1_27;_AED=0.26;_eAED=0.26;_QI=0|-1|0|1|-1|0|1|0|30
+KU215903	maker	exon	31875	31967	.	+	.	Parent=mRNA32
+KU215903	maker	CDS	31875	31967	.	+	0	Parent=mRNA32
+###
+KU215903	maker	gene	32183	32270	.	+	.	ID=gene44;Name=trnS-GCU-gene
+KU215903	maker	tRNA	32183	32270	100	+	.	ID=tRNA11;Parent=gene44;Name=trnS-GCU;_AED=0.25;_eAED=0.25;_QI=6|-1|1|1|-1|0|1|49|10
+KU215903	maker	five_prime_UTR	32183	32188	.	+	.	Parent=tRNA11
+KU215903	maker	exon	32183	32270	.	+	.	Parent=tRNA11
+KU215903	maker	CDS	32189	32221	.	+	0	Parent=tRNA11
+KU215903	maker	three_prime_UTR	32222	32270	.	+	.	Parent=tRNA11
+###
+KU215903	maker	gene	32347	32457	.	-	.	ID=gene45;Name=psbI|lcl|NC_021456.1_prot_YP_008082800.1_5-gene
+KU215903	maker	mRNA	32347	32457	33.3	-	.	ID=mRNA33;Parent=gene45;Name=psbI|lcl|NC_021456.1_prot_YP_008082800.1_5;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|36
+KU215903	maker	exon	32347	32457	.	-	.	Parent=mRNA33
+KU215903	maker	CDS	32347	32457	.	-	0	Parent=mRNA33
+###
+KU215903	maker	gene	32760	32832	.	+	.	ID=gene46;Name=trnE-UUC-gene
+KU215903	maker	tRNA	32760	32832	100	+	.	ID=tRNA12;Parent=gene46;Name=trnE-UUC;_AED=0.34;_eAED=0.34;_QI=1|-1|1|1|-1|0|1|0|24
+KU215903	maker	five_prime_UTR	32760	32760	.	+	.	Parent=tRNA12
+KU215903	maker	exon	32760	32832	.	+	.	Parent=tRNA12
+KU215903	maker	CDS	32761	32832	.	+	0	Parent=tRNA12
+###
+KU215903	maker	gene	32905	32988	.	+	.	ID=gene47;Name=trnY-GUA-gene
+KU215903	maker	tRNA	32905	32988	100	+	.	ID=tRNA13;Parent=gene47;Name=trnY-GUA;_AED=0.32;_eAED=0.32;_QI=6|-1|1|1|-1|0|1|0|26
+KU215903	maker	five_prime_UTR	32905	32910	.	+	.	Parent=tRNA13
+KU215903	maker	exon	32905	32988	.	+	.	Parent=tRNA13
+KU215903	maker	CDS	32911	32988	.	+	0	Parent=tRNA13
+###
+KU215903	maker	gene	33248	33321	.	+	.	ID=gene48;Name=trnD-GUC-gene
+KU215903	maker	tRNA	33248	33321	100	+	.	ID=tRNA14;Parent=gene48;Name=trnD-GUC;_AED=0.34;_eAED=0.34;_QI=0|-1|1|1|-1|0|1|2|24
+KU215903	maker	CDS	33248	33319	.	+	0	Parent=tRNA14
+KU215903	maker	exon	33248	33321	.	+	.	Parent=tRNA14
+KU215903	maker	three_prime_UTR	33320	33321	.	+	.	Parent=tRNA14
+###
+KU215903	maker	gene	34224	34337	.	+	.	ID=gene49;Name=psbM|lcl|NC_021456.1_prot_YP_008082824.1_29-gene
+KU215903	maker	mRNA	34224	34337	33.3	+	.	ID=mRNA34;Parent=gene49;Name=psbM|lcl|NC_021456.1_prot_YP_008082824.1_29;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|37
+KU215903	maker	exon	34224	34337	.	+	.	Parent=mRNA34
+KU215903	maker	CDS	34224	34337	.	+	0	Parent=mRNA34
+###
+KU215903	maker	gene	35225	35314	.	-	.	ID=gene50;Name=petN|lcl|NC_021456.1_prot_YP_008082825.1_30-gene
+KU215903	maker	mRNA	35225	35314	33.3	-	.	ID=mRNA35;Parent=gene50;Name=petN|lcl|NC_021456.1_prot_YP_008082825.1_30;_AED=0.24;_eAED=0.24;_QI=0|-1|0|1|-1|0|1|0|29
+KU215903	maker	exon	35225	35314	.	-	.	Parent=mRNA35
+KU215903	maker	CDS	35225	35314	.	-	0	Parent=mRNA35
+###
+KU215903	maker	gene	35636	35706	.	-	.	ID=gene51;Name=trnC-GCA-gene
+KU215903	maker	tRNA	35636	35706	100	-	.	ID=tRNA15;Parent=gene51;Name=trnC-GCA;_AED=0.28;_eAED=0.28;_QI=2|-1|1|1|-1|0|1|0|23
+KU215903	maker	CDS	35636	35704	.	-	0	Parent=tRNA15
+KU215903	maker	exon	35636	35706	.	-	.	Parent=tRNA15
+KU215903	maker	five_prime_UTR	35705	35706	.	-	.	Parent=tRNA15
+###
+KU215903	Prodigal_v2.6.2	gene	35749	35904	-3.7	-	.	ID=gene52;Name=orf6
+KU215903	Prodigal_v2.6.2	mRNA	35749	35904	-3.7	-	.	ID=mRNA36;Parent=gene52;Name=orf6
+KU215903	Prodigal_v2.6.2	exon	35749	35904	-3.7	-	.	Parent=mRNA36
+KU215903	Prodigal_v2.6.2	CDS	35749	35904	-3.7	-	0	Parent=mRNA36
+###
+KU215903	maker	gene	36130	39360	.	+	.	ID=gene53;Name=rpoB|lcl|NC_021456.1_prot_YP_008082826.1_31-gene
+KU215903	maker	mRNA	36130	39360	33.3	+	.	ID=mRNA37;Parent=gene53;Name=rpoB|lcl|NC_021456.1_prot_YP_008082826.1_31;_AED=0.35;_eAED=0.35;_QI=0|-1|0|1|-1|0|1|0|1076
+KU215903	maker	exon	36130	39360	.	+	.	Parent=mRNA37
+KU215903	maker	CDS	36130	39360	.	+	0	Parent=mRNA37
+###
+KU215903	maker	gene	39383	42161	.	+	.	ID=gene54;Name=rpoC1|lcl|NC_021456.1_prot_YP_008082827.1_32-gene
+KU215903	maker	mRNA	39383	42161	33.3	+	.	ID=mRNA38;Parent=gene54;Name=rpoC1|lcl|NC_021456.1_prot_YP_008082827.1_32;_AED=0.40;_eAED=0.40;_QI=0|0|0|1|0|0|2|0|696
+KU215903	maker	exon	39383	39814	.	+	.	Parent=mRNA38
+KU215903	maker	CDS	39383	39814	.	+	0	ID=CDS3;Parent=mRNA38
+KU215903	.	intron	39815	40502	.	+	.	Parent=mRNA38
+KU215903	maker	exon	40503	42161	.	+	.	Parent=mRNA38
+KU215903	maker	CDS	40503	42161	.	+	0	ID=CDS3;Parent=mRNA38
+###
+KU215903	maker	gene	42255	45911	.	+	.	ID=gene55;Name=rpoC2|lcl|NC_021456.1_prot_YP_008082828.1_33-gene
+KU215903	maker	mRNA	42255	45911	33.2	+	.	ID=mRNA39;Parent=gene55;Name=rpoC2|lcl|NC_021456.1_prot_YP_008082828.1_33;_AED=0.33;_eAED=0.33;_QI=0|-1|0|1|-1|0|1|0|1218
+KU215903	maker	exon	42255	45911	.	+	.	Parent=mRNA39
+KU215903	maker	CDS	42255	45911	.	+	0	Parent=mRNA39
+###
+KU215903	maker	gene	46114	46818	.	+	.	ID=gene56;Name=rps2|lcl|NC_021456.1_prot_YP_008082829.1_34-gene
+KU215903	maker	mRNA	46114	46818	33.2	+	.	ID=mRNA40;Parent=gene56;Name=rps2|lcl|NC_021456.1_prot_YP_008082829.1_34;_AED=0.47;_eAED=0.47;_QI=0|-1|0|1|-1|0|1|0|234
+KU215903	maker	exon	46114	46818	.	+	.	Parent=mRNA40
+KU215903	maker	CDS	46114	46818	.	+	0	Parent=mRNA40
+###
+KU215903	maker	gene	47111	47857	.	+	.	ID=gene57;Name=atpI|lcl|NC_021456.1_prot_YP_008082830.1_35-gene
+KU215903	maker	mRNA	47111	47857	33.3	+	.	ID=mRNA41;Parent=gene57;Name=atpI|lcl|NC_021456.1_prot_YP_008082830.1_35;_AED=0.47;_eAED=0.47;_QI=0|-1|0|1|-1|0|1|0|248
+KU215903	maker	exon	47111	47857	.	+	.	Parent=mRNA41
+KU215903	maker	CDS	47111	47857	.	+	0	Parent=mRNA41
+###
+KU215903	maker	gene	48539	48784	.	+	.	ID=gene58;Name=atpH|lcl|NC_021456.1_prot_YP_008082831.1_36-gene
+KU215903	maker	mRNA	48539	48784	33.3	+	.	ID=mRNA42;Parent=gene58;Name=atpH|lcl|NC_021456.1_prot_YP_008082831.1_36;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|81
+KU215903	maker	exon	48539	48784	.	+	.	Parent=mRNA42
+KU215903	maker	CDS	48539	48784	.	+	0	Parent=mRNA42
+###
+KU215903	maker	gene	49114	50439	.	+	.	ID=gene59;Name=atpF|lcl|NC_021456.1_prot_YP_008082832.1_37-gene
+KU215903	maker	mRNA	49114	50439	33.3	+	.	ID=mRNA43;Parent=gene59;Name=atpF|lcl|NC_021456.1_prot_YP_008082832.1_37;_AED=0.38;_eAED=0.38;_QI=0|0|0|1|0|0|2|0|184
+KU215903	maker	exon	49114	49258	.	+	.	Parent=mRNA43
+KU215903	maker	CDS	49114	49258	.	+	0	ID=CDS4;Parent=mRNA43
+KU215903	.	intron	49259	50029	.	+	.	Parent=mRNA43
+KU215903	maker	exon	50030	50439	.	+	.	Parent=mRNA43
+KU215903	maker	CDS	50030	50439	.	+	2	ID=CDS4;Parent=mRNA43
+###
+KU215903	maker	gene	50483	52006	.	+	.	ID=gene60;Name=atpA|lcl|NC_021456.1_prot_YP_008082833.1_38-gene
+KU215903	maker	mRNA	50483	52006	32.9	+	.	ID=mRNA44;Parent=gene60;Name=atpA|lcl|NC_021456.1_prot_YP_008082833.1_38;_AED=0.17;_eAED=0.17;_QI=0|-1|0|1|-1|0|1|0|507
+KU215903	maker	exon	50483	52006	.	+	.	Parent=mRNA44
+KU215903	maker	CDS	50483	52006	.	+	0	Parent=mRNA44
+###
+KU215903	maker	gene	52106	52175	.	-	.	ID=gene61;Name=trnR-UCU-gene
+KU215903	maker	tRNA	52106	52175	98.6	-	.	ID=tRNA16;Parent=gene61;Name=trnR-UCU;_AED=0.22;_eAED=0.22;_QI=14|-1|1|1|-1|0|1|32|7
+KU215903	maker	three_prime_UTR	52106	52137	.	-	.	Parent=tRNA16
+KU215903	maker	exon	52106	52175	.	-	.	Parent=tRNA16
+KU215903	maker	CDS	52138	52161	.	-	0	Parent=tRNA16
+KU215903	maker	five_prime_UTR	52162	52175	.	-	.	Parent=tRNA16
+###
+KU215903	manual	gene	52392	53236	.	-	.	ID=gene62;Name=trnG-GCC-gene
+KU215903	manual	tRNA	52392	53236	.	-	.	ID=tRNA17;Parent=gene62;Name=trnG-GCC
+KU215903	manual	exon	52392	52440	.	-	.	Parent=tRNA17
+KU215903	manual	intron	52441	53214	.	-	.	Parent=tRNA17
+KU215903	manual	exon	53215	53236	.	-	.	Parent=tRNA17
+###
+KU215903	maker	gene	53422	53523	.	-	.	ID=gene63;Name=ycf12|lcl|NC_021456.1_prot_YP_008082834.1_39-gene
+KU215903	maker	mRNA	53422	53523	33.3	-	.	ID=mRNA45;Parent=gene63;Name=ycf12|lcl|NC_021456.1_prot_YP_008082834.1_39;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|33
+KU215903	maker	exon	53422	53523	.	-	.	Parent=mRNA45
+KU215903	maker	CDS	53422	53523	.	-	0	Parent=mRNA45
+###
+KU215903	Prodigal_v2.6.2	gene	53589	53807	27	-	.	ID=gene64;Name=orf7
+KU215903	Prodigal_v2.6.2	mRNA	53589	53807	27	-	.	ID=mRNA46;Parent=gene64;Name=orf7
+KU215903	Prodigal_v2.6.2	exon	53589	53807	27	-	.	Parent=mRNA46
+KU215903	Prodigal_v2.6.2	CDS	53589	53807	27	-	0	Parent=mRNA46
+###
+KU215903	maker	gene	54245	55771	.	+	.	ID=gene65;Name=psbB|lcl|NC_021456.1_prot_YP_008082835.1_40-gene
+KU215903	maker	mRNA	54245	55771	33.2	+	.	ID=mRNA47;Parent=gene65;Name=psbB|lcl|NC_021456.1_prot_YP_008082835.1_40;_AED=0.09;_eAED=0.09;_QI=0|-1|0|1|-1|0|1|0|508
+KU215903	maker	exon	54245	55771	.	+	.	Parent=mRNA47
+KU215903	maker	CDS	54245	55771	.	+	0	Parent=mRNA47
+###
+KU215903	maker	gene	55846	55953	.	+	.	ID=gene66;Name=psbT|lcl|NC_021456.1_prot_YP_008082836.1_41-gene
+KU215903	maker	mRNA	55846	55953	33.3	+	.	ID=mRNA48;Parent=gene66;Name=psbT|lcl|NC_021456.1_prot_YP_008082836.1_41;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|35
+KU215903	maker	exon	55846	55953	.	+	.	Parent=mRNA48
+KU215903	maker	CDS	55846	55953	.	+	0	Parent=mRNA48
+###
+KU215903	maker	gene	56035	56166	.	-	.	ID=gene67;Name=psbN|lcl|NC_021456.1_prot_YP_008082837.1_42-gene
+KU215903	maker	mRNA	56035	56166	33.3	-	.	ID=mRNA49;Parent=gene67;Name=psbN|lcl|NC_021456.1_prot_YP_008082837.1_42;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|43
+KU215903	maker	exon	56035	56166	.	-	.	Parent=mRNA49
+KU215903	maker	CDS	56035	56166	.	-	0	Parent=mRNA49
+###
+KU215903	maker	gene	56246	56473	.	+	.	ID=gene68;Name=psbH|lcl|NC_021456.1_prot_YP_008082838.1_43-gene
+KU215903	maker	mRNA	56246	56473	32.4	+	.	ID=mRNA50;Parent=gene68;Name=psbH|lcl|NC_021456.1_prot_YP_008082838.1_43;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|75
+KU215903	maker	exon	56246	56473	.	+	.	Parent=mRNA50
+KU215903	maker	CDS	56246	56473	.	+	0	Parent=mRNA50
+###
+KU215903	manual	gene	56629	58066	.	+	.	ID=gene69;Name=petB|lcl|NC_021456.1_prot_YP_008082839.1_44-gene
+KU215903	manual	mRNA	56629	58066	.	+	.	ID=mRNA51;Parent=gene69;Name=petB|lcl|NC_021456.1_prot_YP_008082839.1_44
+KU215903	manual	exon	56629	56634	.	+	.	Parent=mRNA51
+KU215903	manual	CDS	56629	56634	.	+	0	ID=CDS5;Parent=mRNA51
+KU215903	manual	intron	56635	57424	.	+	.	Parent=mRNA51
+KU215903	manual	exon	57425	58066	.	+	.	Parent=mRNA51
+KU215903	manual	CDS	57425	58066	.	+	0	ID=CDS5;Parent=mRNA51
+###
+KU215903	manual	gene	58276	59515	.	+	.	ID=gene70;Name=petD|lcl|NC_021456.1_prot_YP_008082840.1_45-gene
+KU215903	manual	mRNA	58276	59515	.	+	.	ID=mRNA52;Parent=gene70;Name=petD|lcl|NC_021456.1_prot_YP_008082840.1_45
+KU215903	manual	exon	58276	58283	.	+	.	Parent=mRNA52
+KU215903	manual	CDS	58276	58283	.	+	0	ID=CDS6;Parent=mRNA52
+KU215903	manual	intron	58284	58986	.	+	.	Parent=mRNA52
+KU215903	manual	exon	58987	59515	.	+	.	Parent=mRNA52
+KU215903	manual	CDS	58987	59515	.	+	1	ID=CDS6;Parent=mRNA52
+###
+KU215903	maker	gene	59624	60634	.	-	.	ID=gene71;Name=rpoA|lcl|NC_021456.1_prot_YP_008082841.1_46-gene
+KU215903	maker	mRNA	59624	60634	33.2	-	.	ID=mRNA53;Parent=gene71;Name=rpoA|lcl|NC_021456.1_prot_YP_008082841.1_46;_AED=0.33;_eAED=0.33;_QI=0|-1|0|1|-1|0|1|0|336
+KU215903	maker	exon	59624	60634	.	-	.	Parent=mRNA53
+KU215903	maker	CDS	59624	60634	.	-	0	Parent=mRNA53
+###
+KU215903	maker	gene	60694	61086	.	-	.	ID=gene72;Name=rps11|lcl|NC_021456.1_prot_YP_008082842.1_47-gene
+KU215903	maker	mRNA	60694	61086	33.3	-	.	ID=mRNA54;Parent=gene72;Name=rps11|lcl|NC_021456.1_prot_YP_008082842.1_47;_AED=0.44;_eAED=0.44;_QI=0|-1|0|1|-1|0|1|0|130
+KU215903	maker	exon	60694	61086	.	-	.	Parent=mRNA54
+KU215903	maker	CDS	60694	61086	.	-	0	Parent=mRNA54
+###
+KU215903	maker	gene	61169	61282	.	-	.	ID=gene73;Name=rpl36|lcl|NC_021456.1_prot_YP_008082843.1_48-gene
+KU215903	maker	mRNA	61169	61282	33.3	-	.	ID=mRNA55;Parent=gene73;Name=rpl36|lcl|NC_021456.1_prot_YP_008082843.1_48;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|37
+KU215903	maker	exon	61169	61282	.	-	.	Parent=mRNA55
+KU215903	maker	CDS	61169	61282	.	-	0	Parent=mRNA55
+###
+KU215903	maker	gene	61385	61621	.	-	.	ID=gene74;Name=infA|lcl|NC_021456.1_prot_YP_008082844.1_49-gene
+KU215903	maker	mRNA	61385	61621	33.3	-	.	ID=mRNA56;Parent=gene74;Name=infA|lcl|NC_021456.1_prot_YP_008082844.1_49;_AED=0.47;_eAED=0.47;_QI=0|-1|0|1|-1|0|1|0|78
+KU215903	maker	exon	61385	61621	.	-	.	Parent=mRNA56
+KU215903	maker	CDS	61385	61621	.	-	0	Parent=mRNA56
+###
+KU215903	maker	gene	61765	62163	.	-	.	ID=gene75;Name=rps8|lcl|NC_021456.1_prot_YP_008082845.1_50-gene
+KU215903	maker	mRNA	61765	62163	33.3	-	.	ID=mRNA57;Parent=gene75;Name=rps8|lcl|NC_021456.1_prot_YP_008082845.1_50;_AED=0.44;_eAED=0.44;_QI=0|-1|0|1|-1|0|1|0|132
+KU215903	maker	exon	61765	62163	.	-	.	Parent=mRNA57
+KU215903	maker	CDS	61765	62163	.	-	0	Parent=mRNA57
+###
+KU215903	maker	gene	62309	62677	.	-	.	ID=gene76;Name=rpl14|lcl|NC_021456.1_prot_YP_008082846.1_51-gene
+KU215903	maker	mRNA	62309	62677	33.3	-	.	ID=mRNA58;Parent=gene76;Name=rpl14|lcl|NC_021456.1_prot_YP_008082846.1_51;_AED=0.44;_eAED=0.44;_QI=0|-1|0|1|-1|0|1|0|122
+KU215903	maker	exon	62309	62677	.	-	.	Parent=mRNA58
+KU215903	maker	CDS	62309	62677	.	-	0	Parent=mRNA58
+###
+KU215903	manual	gene	62794	64068	.	-	.	ID=gene77;Name=rpl16|lcl|NC_021456.1_prot_YP_008082847.1_52-gene
+KU215903	manual	mRNA	62794	64068	.	-	.	ID=mRNA59;Parent=gene77;Name=rpl16|lcl|NC_021456.1_prot_YP_008082847.1_52
+KU215903	manual	exon	62794	63189	.	-	.	Parent=mRNA59
+KU215903	manual	CDS	62794	63189	.	-	0	ID=CDS7;Parent=mRNA59
+KU215903	manual	intron	63190	64059	.	-	.	Parent=mRNA59
+KU215903	manual	exon	64060	64068	.	-	.	Parent=mRNA59
+KU215903	manual	CDS	64060	64068	.	-	0	ID=CDS7;Parent=mRNA59
+###
+KU215903	manual	gene	64162	64818	.	-	.	ID=gene78;Name=rps3|lcl|NC_021456.1_prot_YP_008082848.1_53-gene
+KU215903	manual	mRNA	64162	64818	.	-	.	ID=mRNA60;Parent=gene78;Name=rps3|lcl|NC_021456.1_prot_YP_008082848.1_53
+KU215903	manual	exon	64162	64818	.	-	.	Parent=mRNA60
+KU215903	manual	CDS	64162	64818	.	-	0	Parent=mRNA60
+###
+KU215903	manual	gene	64803	65231	.	-	.	ID=gene79;Name=rpl22|lcl|NC_021456.1_prot_YP_008082849.1_54-gene
+KU215903	manual	mRNA	64803	65231	.	-	.	ID=mRNA61;Parent=gene79;Name=rpl22|lcl|NC_021456.1_prot_YP_008082849.1_54
+KU215903	manual	exon	64803	65231	.	-	.	Parent=mRNA61
+KU215903	manual	CDS	64803	65231	.	-	0	Parent=mRNA61
+###
+KU215903	maker	gene	65262	65540	.	-	.	ID=gene80;Name=rps19|lcl|NC_021456.1_prot_YP_008082850.1_55-gene
+KU215903	maker	mRNA	65262	65540	33.3	-	.	ID=mRNA62;Parent=gene80;Name=rps19|lcl|NC_021456.1_prot_YP_008082850.1_55;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|92
+KU215903	maker	exon	65262	65540	.	-	.	Parent=mRNA62
+KU215903	maker	CDS	65262	65540	.	-	0	Parent=mRNA62
+###
+KU215903	maker	gene	65592	67099	.	-	.	ID=gene81;Name=rpl2|lcl|NC_021456.1_prot_YP_008082851.1_56-gene
+KU215903	maker	mRNA	65592	67099	33.3	-	.	ID=mRNA63;Parent=gene81;Name=rpl2|lcl|NC_021456.1_prot_YP_008082851.1_56;_AED=0.34;_eAED=0.34;_QI=0|0|0|1|0|0|2|0|276
+KU215903	maker	exon	65592	66022	.	-	.	Parent=mRNA63
+KU215903	maker	CDS	65592	66022	.	-	2	ID=CDS8;Parent=mRNA63
+KU215903	.	intron	66023	66699	.	-	.	Parent=mRNA63
+KU215903	maker	exon	66700	67099	.	-	.	Parent=mRNA63
+KU215903	maker	CDS	66700	67099	.	-	0	ID=CDS8;Parent=mRNA63
+###
+KU215903	maker	gene	67124	67399	.	-	.	ID=gene82;Name=rpl23|lcl|NC_021456.1_prot_YP_008082852.1_57-gene
+KU215903	maker	mRNA	67124	67399	33	-	.	ID=mRNA64;Parent=gene82;Name=rpl23|lcl|NC_021456.1_prot_YP_008082852.1_57;_AED=0.45;_eAED=0.45;_QI=0|-1|0|1|-1|0|1|0|91
+KU215903	maker	exon	67124	67399	.	-	.	Parent=mRNA64
+KU215903	maker	CDS	67124	67399	.	-	0	Parent=mRNA64
+###
+KU215903	manual	gene	67497	67583	.	+	.	ID=gene83;Name=psbA|lcl|NC_021456.1_gene_75-gene;pseudo=true
+KU215903	manual	mRNA	67497	67583	.	+	.	Parent=gene83;Name=psbA|lcl|NC_021456.1_gene_75-gene;pseudo=true
+###
+KU215903	maker	gene	67734	67807	.	-	.	ID=gene84;Name=trnI-CAU-gene
+KU215903	maker	tRNA	67734	67807	100	-	.	ID=tRNA18;Parent=gene84;Name=trnI-CAU;_AED=0.49;_eAED=0.49;_QI=6|-1|1|1|-1|0|1|29|12
+KU215903	maker	three_prime_UTR	67734	67762	.	-	.	Parent=tRNA18
+KU215903	maker	exon	67734	67807	.	-	.	Parent=tRNA18
+KU215903	maker	CDS	67763	67801	.	-	0	Parent=tRNA18
+KU215903	maker	five_prime_UTR	67802	67807	.	-	.	Parent=tRNA18
+###
+KU215903	Prodigal_v2.6.2	gene	68781	69188	15.5	+	.	ID=gene85;Name=orf8
+KU215903	Prodigal_v2.6.2	mRNA	68781	69188	15.5	+	.	ID=mRNA65;Parent=gene85;Name=orf8
+KU215903	Prodigal_v2.6.2	exon	68781	69188	15.5	+	.	Parent=mRNA65
+KU215903	Prodigal_v2.6.2	CDS	68781	69188	15.5	+	0	Parent=mRNA65
+###
+KU215903	maker	gene	69636	69708	.	-	.	ID=gene86;Name=trnF-GAA-gene
+KU215903	maker	tRNA	69636	69708	100	-	.	ID=tRNA19;Parent=gene86;Name=trnF-GAA;_AED=0.28;_eAED=0.28;_QI=0|-1|1|1|-1|0|1|1|24
+KU215903	maker	three_prime_UTR	69636	69636	.	-	.	Parent=tRNA19
+KU215903	maker	exon	69636	69708	.	-	.	Parent=tRNA19
+KU215903	maker	CDS	69637	69708	.	-	0	Parent=tRNA19
+###
+KU215903	maker	gene	70090	70662	.	-	.	ID=gene87;Name=trnL-UAA-gene
+KU215903	maker	tRNA	70090	70662	90.1	-	.	ID=tRNA20;Parent=gene87;Name=trnL-UAA;_AED=0.22;_eAED=0.22;_QI=6|1|1|1|0|0|2|1|28
+KU215903	maker	three_prime_UTR	70090	70090	.	-	.	Parent=tRNA20
+KU215903	maker	exon	70090	70128	.	-	.	Parent=tRNA20
+KU215903	maker	CDS	70091	70128	.	-	2	ID=CDS9;Parent=tRNA20
+KU215903	.	intron	70129	70610	.	-	.	Parent=tRNA20
+KU215903	maker	CDS	70611	70656	.	-	0	ID=CDS9;Parent=tRNA20
+KU215903	maker	exon	70611	70662	.	-	.	Parent=tRNA20
+KU215903	maker	five_prime_UTR	70657	70662	.	-	.	Parent=tRNA20
+###
+KU215903	maker	gene	71077	71149	.	+	.	ID=gene88;Name=trnT-UGU-gene
+KU215903	maker	tRNA	71077	71149	100	+	.	ID=tRNA21;Parent=gene88;Name=trnT-UGU;_AED=0.45;_eAED=0.45;_QI=42|-1|1|1|-1|0|1|1|10
+KU215903	maker	five_prime_UTR	71077	71118	.	+	.	Parent=tRNA21
+KU215903	maker	exon	71077	71149	.	+	.	Parent=tRNA21
+KU215903	maker	CDS	71119	71148	.	+	0	Parent=tRNA21
+KU215903	maker	three_prime_UTR	71149	71149	.	+	.	Parent=tRNA21
+###
+KU215903	maker	gene	71418	72023	.	+	.	ID=gene89;Name=rps4|lcl|NC_021456.1_prot_YP_008082853.1_58-gene
+KU215903	maker	mRNA	71418	72023	33	+	.	ID=mRNA66;Parent=gene89;Name=rps4|lcl|NC_021456.1_prot_YP_008082853.1_58;_AED=0.11;_eAED=0.11;_QI=0|-1|0|1|-1|0|1|0|201
+KU215903	maker	exon	71418	72023	.	+	.	Parent=mRNA66
+KU215903	maker	CDS	71418	72023	.	+	0	Parent=mRNA66
+###
+KU215903	maker	gene	72324	72410	.	+	.	ID=gene90;Name=trnS-GGA-gene
+KU215903	maker	tRNA	72324	72410	100	+	.	ID=tRNA22;Parent=gene90;Name=trnS-GGA;_AED=0.44;_eAED=0.44;_QI=54|-1|1|1|-1|0|1|0|11
+KU215903	maker	five_prime_UTR	72324	72377	.	+	.	Parent=tRNA22
+KU215903	maker	exon	72324	72410	.	+	.	Parent=tRNA22
+KU215903	maker	CDS	72378	72410	.	+	0	Parent=tRNA22
+###
+KU215903	maker	gene	73116	75054	.	+	.	ID=gene91;Name=ycf3|lcl|NC_021456.1_prot_YP_008082854.1_59-gene
+KU215903	maker	mRNA	73116	75054	33.1	+	.	ID=mRNA67;Parent=gene91;Name=ycf3|lcl|NC_021456.1_prot_YP_008082854.1_59;_AED=0.01;_eAED=0.01;_QI=0|0|0|1|0|0|3|0|170
+KU215903	maker	exon	73116	73241	.	+	.	Parent=mRNA67
+KU215903	maker	CDS	73116	73241	.	+	0	ID=CDS10;Parent=mRNA67
+KU215903	.	intron	73242	73956	.	+	.	Parent=mRNA67
+KU215903	maker	exon	73957	74187	.	+	.	Parent=mRNA67
+KU215903	maker	CDS	73957	74187	.	+	0	ID=CDS10;Parent=mRNA67
+KU215903	.	intron	74188	74898	.	+	.	Parent=mRNA67
+KU215903	maker	exon	74899	75054	.	+	.	Parent=mRNA67
+KU215903	maker	CDS	74899	75054	.	+	0	ID=CDS10;Parent=mRNA67
+###
+KU215903	maker	gene	75679	77931	.	+	.	ID=gene92;Name=psaA|lcl|NC_021456.1_prot_YP_008082855.1_60-gene
+KU215903	maker	mRNA	75679	77931	33.2	+	.	ID=mRNA68;Parent=gene92;Name=psaA|lcl|NC_021456.1_prot_YP_008082855.1_60;_AED=0.27;_eAED=0.27;_QI=0|-1|0|1|-1|0|1|0|750
+KU215903	maker	exon	75679	77931	.	+	.	Parent=mRNA68
+KU215903	maker	CDS	75679	77931	.	+	0	Parent=mRNA68
+###
+KU215903	maker	gene	77957	80161	.	+	.	ID=gene93;Name=psaB|lcl|NC_021456.1_prot_YP_008082856.1_61-gene
+KU215903	maker	mRNA	77957	80161	33.3	+	.	ID=mRNA69;Parent=gene93;Name=psaB|lcl|NC_021456.1_prot_YP_008082856.1_61;_AED=0.27;_eAED=0.27;_QI=0|-1|0|1|-1|0|1|0|734
+KU215903	maker	exon	77957	80161	.	+	.	Parent=mRNA69
+KU215903	maker	CDS	77957	80161	.	+	0	Parent=mRNA69
+###
+KU215903	maker	gene	80311	80610	.	+	.	ID=gene94;Name=rps14|lcl|NC_021456.1_prot_YP_008082857.1_62-gene
+KU215903	maker	mRNA	80311	80610	33.3	+	.	ID=mRNA70;Parent=gene94;Name=rps14|lcl|NC_021456.1_prot_YP_008082857.1_62;_AED=0.47;_eAED=0.47;_QI=0|-1|0|1|-1|0|1|0|99
+KU215903	maker	exon	80311	80610	.	+	.	Parent=mRNA70
+KU215903	maker	CDS	80311	80610	.	+	0	Parent=mRNA70
+###
+KU215903	maker	gene	80739	80812	.	+	.	ID=gene95;Name=trnfM-CAU-gene
+KU215903	maker	tRNA	80739	80812	100	+	.	ID=tRNA23;Parent=gene95;Name=trnfM-CAU;_AED=0.49;_eAED=0.49;_QI=10|-1|1|1|-1|0|1|1|21
+KU215903	maker	five_prime_UTR	80739	80748	.	+	.	Parent=tRNA23
+KU215903	maker	exon	80739	80812	.	+	.	Parent=tRNA23
+KU215903	maker	CDS	80749	80811	.	+	0	Parent=tRNA23
+KU215903	maker	three_prime_UTR	80812	80812	.	+	.	Parent=tRNA23
+###
+KU215903	maker	gene	80949	81019	.	-	.	ID=gene96;Name=trnG-UCC-gene
+KU215903	maker	tRNA	80949	81019	100	-	.	ID=tRNA24;Parent=gene96;Name=trnG-UCC;_AED=0.36;_eAED=0.36;_QI=14|-1|1|1|-1|0|1|0|19
+KU215903	maker	CDS	80949	81005	.	-	0	Parent=tRNA24
+KU215903	maker	exon	80949	81019	.	-	.	Parent=tRNA24
+KU215903	maker	five_prime_UTR	81006	81019	.	-	.	Parent=tRNA24
+###
+KU215903	maker	gene	81138	81437	.	-	.	ID=gene97;Name=psbZ|lcl|NC_021456.1_prot_YP_008082858.1_63-gene
+KU215903	maker	mRNA	81138	81437	33.3	-	.	ID=mRNA71;Parent=gene97;Name=psbZ|lcl|NC_021456.1_prot_YP_008082858.1_63;_AED=0.33;_eAED=0.33;_QI=0|-1|0|1|-1|0|1|0|99
+KU215903	maker	exon	81138	81437	.	-	.	Parent=mRNA71
+KU215903	maker	CDS	81138	81437	.	-	0	Parent=mRNA71
+###
+KU215903	maker	gene	81727	81813	.	+	.	ID=gene98;Name=trnS-UGA-gene
+KU215903	maker	tRNA	81727	81813	100	+	.	ID=tRNA25;Parent=gene98;Name=trnS-UGA;_AED=0.00;_eAED=0.00;_QI=6|-1|1|1|-1|0|1|0|27
+KU215903	maker	five_prime_UTR	81727	81732	.	+	.	Parent=tRNA25
+KU215903	maker	exon	81727	81813	.	+	.	Parent=tRNA25
+KU215903	maker	CDS	81733	81813	.	+	0	Parent=tRNA25
+###
+KU215903	manual	gene	82007	83428	.	-	.	ID=gene99;Name=psbC|lcl|NC_021456.1_prot_YP_008082859.1_64-gene
+KU215903	manual	mRNA	82007	83428	.	-	.	ID=mRNA72;Parent=gene99;Name=psbC|lcl|NC_021456.1_prot_YP_008082859.1_64
+KU215903	manual	exon	82007	83428	.	-	.	Parent=mRNA72
+KU215903	manual	CDS	82007	83428	.	-	0	Parent=mRNA72
+###
+KU215903	manual	gene	83376	84437	.	-	.	ID=gene100;Name=psbD|lcl|NC_021456.1_prot_YP_008082860.1_65-gene
+KU215903	manual	mRNA	83376	84437	.	-	.	ID=mRNA73;Parent=gene100;Name=psbD|lcl|NC_021456.1_prot_YP_008082860.1_65
+KU215903	manual	exon	83376	84437	.	-	.	Parent=mRNA73
+KU215903	manual	CDS	83376	84437	.	-	0	Parent=mRNA73
+###
+KU215903	Prodigal_v2.6.2	gene	85089	85292	6.3	-	.	ID=gene101;Name=orf9
+KU215903	Prodigal_v2.6.2	mRNA	85089	85292	6.3	-	.	ID=mRNA74;Parent=gene101;Name=orf9
+KU215903	Prodigal_v2.6.2	exon	85089	85292	6.3	-	.	Parent=mRNA74
+KU215903	Prodigal_v2.6.2	CDS	85089	85292	6.3	-	0	Parent=mRNA74
+###
+KU215903	maker	gene	85760	85830	.	-	.	ID=gene102;Name=trnT-GGU-gene
+KU215903	maker	tRNA	85760	85830	98.6	-	.	ID=tRNA26;Parent=gene102;Name=trnT-GGU;_AED=0.00;_eAED=0.00;_QI=29|-1|1|1|-1|0|1|6|11
+KU215903	maker	three_prime_UTR	85760	85765	.	-	.	Parent=tRNA26
+KU215903	maker	exon	85760	85830	.	-	.	Parent=tRNA26
+KU215903	maker	CDS	85766	85801	.	-	0	Parent=tRNA26
+KU215903	maker	five_prime_UTR	85802	85830	.	-	.	Parent=tRNA26
+###
+KU215903	maker	gene	86161	87651	.	+	.	ID=gene103;Name=rrn16-gene
+KU215903	maker	rRNA	86161	87651	100	+	.	ID=rRNA1;Parent=gene103;Name=rrn16;_AED=0.34;_eAED=0.34;_QI=852|-1|1|1|-1|0|1|462|58
+KU215903	maker	five_prime_UTR	86161	87012	.	+	.	Parent=rRNA1
+KU215903	maker	exon	86161	87651	.	+	.	Parent=rRNA1
+KU215903	maker	CDS	87013	87189	.	+	0	Parent=rRNA1
+KU215903	maker	three_prime_UTR	87190	87651	.	+	.	Parent=rRNA1
+###
+KU215903	manual	gene	88034	89093	.	-	.	ID=gene104;Name=trnI-GAU-gene
+KU215903	manual	tRNA	88034	89093	.	-	.	ID=tRNA27;Parent=gene104;Name=trnI-GAU
+KU215903	manual	exon	88034	88075	.	-	.	Parent=tRNA27
+KU215903	manual	intron	88076	89058	.	-	.	Parent=tRNA27
+KU215903	manual	exon	89059	89093	.	-	.	Parent=tRNA27
+###
+KU215903	maker	gene	89166	90022	.	+	.	ID=gene105;Name=trnA-UGC-gene
+KU215903	maker	tRNA	89166	90022	100	+	.	ID=tRNA28;Parent=gene105;Name=trnA-UGC;_AED=0.49;_eAED=0.49;_QI=43|1|1|1|0|0|2|0|10
+KU215903	maker	exon	89166	89203	.	+	.	Parent=tRNA28
+KU215903	maker	five_prime_UTR	89166	89203	.	+	.	ID=five_prime_UTR1;Parent=tRNA28
+KU215903	.	intron	89204	89987	.	+	.	Parent=tRNA28
+KU215903	maker	five_prime_UTR	89988	89992	.	+	.	ID=five_prime_UTR1;Parent=tRNA28
+KU215903	maker	exon	89988	90022	.	+	.	Parent=tRNA28
+KU215903	maker	CDS	89993	90022	.	+	0	Parent=tRNA28
+###
+KU215903	maker	gene	90170	92976	.	+	.	ID=gene106;Name=rrn23-gene
+KU215903	maker	rRNA	90170	92976	100	+	.	ID=rRNA2;Parent=gene106;Name=rrn23;_AED=0.20;_eAED=0.20;_QI=1156|-1|1|1|-1|0|1|1444|68
+KU215903	maker	five_prime_UTR	90170	91325	.	+	.	Parent=rRNA2
+KU215903	maker	exon	90170	92976	.	+	.	Parent=rRNA2
+KU215903	maker	CDS	91326	91532	.	+	0	Parent=rRNA2
+KU215903	maker	three_prime_UTR	91533	92976	.	+	.	Parent=rRNA2
+###
+KU215903	maker	gene	93080	93182	.	+	.	ID=gene107;Name=rrn4.5-gene
+KU215903	maker	rRNA	93080	93182	100	+	.	ID=rRNA3;Parent=gene107;Name=rrn4.5;_AED=0.49;_eAED=0.49;_QI=64|-1|1|1|-1|0|1|0|13
+KU215903	maker	five_prime_UTR	93080	93143	.	+	.	Parent=rRNA3
+KU215903	maker	exon	93080	93182	.	+	.	Parent=rRNA3
+KU215903	maker	CDS	93144	93182	.	+	0	Parent=rRNA3
+###
+KU215903	maker	gene	93429	93549	.	+	.	ID=gene108;Name=rrn5-gene
+KU215903	maker	rRNA	93429	93549	100	+	.	ID=rRNA4;Parent=gene108;Name=rrn5;_AED=0.49;_eAED=0.49;_QI=0|-1|1|1|-1|0|1|1|40
+KU215903	maker	CDS	93429	93548	.	+	0	Parent=rRNA4
+KU215903	maker	exon	93429	93549	.	+	.	Parent=rRNA4
+KU215903	maker	three_prime_UTR	93549	93549	.	+	.	Parent=rRNA4
+###
+KU215903	maker	gene	93761	93834	.	+	.	ID=gene109;Name=trnR-ACG-gene
+KU215903	maker	tRNA	93761	93834	100	+	.	ID=tRNA29;Parent=gene109;Name=trnR-ACG;_AED=0.49;_eAED=0.49;_QI=0|-1|1|1|-1|0|1|2|24
+KU215903	maker	CDS	93761	93832	.	+	0	Parent=tRNA29
+KU215903	maker	exon	93761	93834	.	+	.	Parent=tRNA29
+KU215903	maker	three_prime_UTR	93833	93834	.	+	.	Parent=tRNA29
+###
+KU215903	maker	gene	94570	94641	.	-	.	ID=gene110;Name=trnN-GUU-gene
+KU215903	maker	tRNA	94570	94641	98.6	-	.	ID=tRNA30;Parent=gene110;Name=trnN-GUU;_AED=0.00;_eAED=0.00;_QI=2|-1|1|1|-1|0|1|31|12
+KU215903	maker	three_prime_UTR	94570	94600	.	-	.	Parent=tRNA30
+KU215903	maker	exon	94570	94641	.	-	.	Parent=tRNA30
+KU215903	maker	CDS	94601	94639	.	-	0	Parent=tRNA30
+KU215903	maker	five_prime_UTR	94640	94641	.	-	.	Parent=tRNA30
+###
+KU215903	maker	gene	94927	95802	.	+	.	ID=gene111;Name=chlL|lcl|NC_021456.1_prot_YP_008082861.1_66-gene
+KU215903	maker	mRNA	94927	95802	33.2	+	.	ID=mRNA75;Parent=gene111;Name=chlL|lcl|NC_021456.1_prot_YP_008082861.1_66;_AED=0.31;_eAED=0.31;_QI=0|-1|0|1|-1|0|1|0|291
+KU215903	maker	exon	94927	95802	.	+	.	Parent=mRNA75
+KU215903	maker	CDS	94927	95802	.	+	0	Parent=mRNA75
+###
+KU215903	maker	gene	95919	97331	.	+	.	ID=gene112;Name=chlN|lcl|NC_021456.1_prot_YP_008082862.1_67-gene
+KU215903	maker	mRNA	95919	97331	33.2	+	.	ID=mRNA76;Parent=gene112;Name=chlN|lcl|NC_021456.1_prot_YP_008082862.1_67;_AED=0.20;_eAED=0.20;_QI=0|-1|0|1|-1|0|1|0|470
+KU215903	maker	exon	95919	97331	.	+	.	Parent=mRNA76
+KU215903	maker	CDS	95919	97331	.	+	0	Parent=mRNA76
+###
+KU215903	maker	gene	98309	103486	.	+	.	ID=gene113;Name=ycf1|lcl|NC_021456.1_prot_YP_008082863.1_68-gene
+KU215903	maker	mRNA	98309	103486	22.9	+	.	ID=mRNA77;Parent=gene113;Name=ycf1|lcl|NC_021456.1_prot_YP_008082863.1_68;_AED=0.03;_eAED=0.03;_QI=0|-1|0|1|-1|0|1|0|1725
+KU215903	maker	exon	98309	103486	.	+	.	Parent=mRNA77
+KU215903	maker	CDS	98309	103486	.	+	0	Parent=mRNA77
+###
+KU215903	maker	gene	103821	104087	.	+	.	ID=gene114;Name=rps15|lcl|NC_021456.1_prot_YP_008082864.1_69-gene
+KU215903	maker	mRNA	103821	104087	33.3	+	.	ID=mRNA78;Parent=gene114;Name=rps15|lcl|NC_021456.1_prot_YP_008082864.1_69;_AED=0.48;_eAED=0.48;_QI=0|-1|0|1|-1|0|1|0|88
+KU215903	maker	exon	103821	104087	.	+	.	Parent=mRNA78
+KU215903	maker	CDS	103821	104087	.	+	0	Parent=mRNA78
+###
+KU215903	maker	gene	105451	105696	.	+	.	ID=gene115;Name=psaC|lcl|NC_021456.1_prot_YP_008082865.1_70-gene
+KU215903	maker	mRNA	105451	105696	32.9	+	.	ID=mRNA79;Parent=gene115;Name=psaC|lcl|NC_021456.1_prot_YP_008082865.1_70;_AED=0.01;_eAED=0.01;_QI=0|-1|0|1|-1|0|1|0|81
+KU215903	maker	exon	105451	105696	.	+	.	Parent=mRNA79
+KU215903	maker	CDS	105451	105696	.	+	0	Parent=mRNA79
+###
+KU215903	maker	gene	107630	108592	.	-	.	ID=gene116;Name=ccsA|lcl|NC_021456.1_prot_YP_008082866.1_71-gene
+KU215903	maker	mRNA	107630	108592	33.2	-	.	ID=mRNA80;Parent=gene116;Name=ccsA|lcl|NC_021456.1_prot_YP_008082866.1_71;_AED=0.04;_eAED=0.04;_QI=0|-1|0|1|-1|0|1|0|320
+KU215903	maker	exon	107630	108592	.	-	.	Parent=mRNA80
+KU215903	maker	CDS	107630	108592	.	-	0	Parent=mRNA80
+###
+KU215903	maker	gene	108731	108808	.	-	.	ID=gene117;Name=trnL-UAG-gene
+KU215903	maker	tRNA	108731	108808	100	-	.	ID=tRNA31;Parent=gene117;Name=trnL-UAG;_AED=0.46;_eAED=0.46;_QI=6|-1|1|1|-1|0|1|0|24
+KU215903	maker	CDS	108731	108802	.	-	0	Parent=tRNA31
+KU215903	maker	exon	108731	108808	.	-	.	Parent=tRNA31
+KU215903	maker	five_prime_UTR	108803	108808	.	-	.	Parent=tRNA31
+###
+KU215903	maker	gene	108965	109038	.	+	.	ID=gene118;Name=trnP-GGG-gene
+KU215903	maker	tRNA	108965	109038	100	+	.	ID=tRNA32;Parent=gene118;Name=trnP-GGG;_AED=0.00;_eAED=0.00;_QI=6|-1|1|1|-1|0|1|2|22
+KU215903	maker	five_prime_UTR	108965	108970	.	+	.	Parent=tRNA32
+KU215903	maker	exon	108965	109038	.	+	.	Parent=tRNA32
+KU215903	maker	CDS	108971	109036	.	+	0	Parent=tRNA32
+KU215903	maker	three_prime_UTR	109037	109038	.	+	.	Parent=tRNA32
+###
+KU215903	maker	gene	110132	110344	.	-	.	ID=gene119;Name=rpl32|lcl|NC_021456.1_prot_YP_008082867.1_72-gene
+KU215903	maker	mRNA	110132	110344	33.3	-	.	ID=mRNA81;Parent=gene119;Name=rpl32|lcl|NC_021456.1_prot_YP_008082867.1_72;_AED=0.49;_eAED=0.49;_QI=0|-1|0|1|-1|0|1|0|70
+KU215903	maker	exon	110132	110344	.	-	.	Parent=mRNA81
+KU215903	maker	CDS	110132	110344	.	-	0	Parent=mRNA81
+###
+KU215903	Prodigal_v2.6.2	gene	110595	111131	14	-	.	ID=gene120;Name=orf10
+KU215903	Prodigal_v2.6.2	mRNA	110595	111131	14	-	.	ID=mRNA82;Parent=gene120;Name=orf10
+KU215903	Prodigal_v2.6.2	exon	110595	111131	14	-	.	Parent=mRNA82
+KU215903	Prodigal_v2.6.2	CDS	110595	111131	14	-	0	Parent=mRNA82
+###
+KU215903	maker	gene	111489	111560	.	-	.	ID=gene121;Name=trnV-GAC-gene
+KU215903	maker	tRNA	111489	111560	100	-	.	ID=tRNA33;Parent=gene121;Name=trnV-GAC;_AED=0.50;_eAED=0.50;_QI=35|-1|1|1|-1|0|1|1|12
+KU215903	maker	three_prime_UTR	111489	111489	.	-	.	Parent=tRNA33
+KU215903	maker	exon	111489	111560	.	-	.	Parent=tRNA33
+KU215903	maker	CDS	111490	111525	.	-	0	Parent=tRNA33
+KU215903	maker	five_prime_UTR	111526	111560	.	-	.	Parent=tRNA33
+###
+KU215903	Prodigal_v2.6.2	gene	112748	112930	2.7	+	.	ID=gene122;Name=orf11
+KU215903	Prodigal_v2.6.2	mRNA	112748	112930	2.7	+	.	ID=mRNA83;Parent=gene122;Name=orf11
+KU215903	Prodigal_v2.6.2	exon	112748	112930	2.7	+	.	Parent=mRNA83
+KU215903	Prodigal_v2.6.2	CDS	112748	112930	2.7	+	0	Parent=mRNA83
+###
+KU215903	maker	gene	114073	114540	.	+	.	ID=gene123;Name=rps7|lcl|NC_021456.1_prot_YP_008082868.1_73-gene
+KU215903	maker	mRNA	114073	114540	33.3	+	.	ID=mRNA84;Parent=gene123;Name=rps7|lcl|NC_021456.1_prot_YP_008082868.1_73;_AED=0.00;_eAED=0.00;_QI=0|-1|0|1|-1|0|1|0|155
+KU215903	maker	exon	114073	114540	.	+	.	Parent=mRNA84
+KU215903	maker	CDS	114073	114540	.	+	0	Parent=mRNA84
+###
+KU215903	Prodigal_v2.6.2	gene	115029	115187	4.3	+	.	ID=gene124;Name=orf12
+KU215903	Prodigal_v2.6.2	mRNA	115029	115187	4.3	+	.	ID=mRNA85;Parent=gene124;Name=orf12
+KU215903	Prodigal_v2.6.2	exon	115029	115187	4.3	+	.	Parent=mRNA85
+KU215903	Prodigal_v2.6.2	CDS	115029	115187	4.3	+	0	Parent=mRNA85
+###
+KU215903	Prodigal_v2.6.2	gene	115241	115528	12.2	+	.	ID=gene125;Name=orf13
+KU215903	Prodigal_v2.6.2	mRNA	115241	115528	12.2	+	.	ID=mRNA86;Parent=gene125;Name=orf13
+KU215903	Prodigal_v2.6.2	exon	115241	115528	12.2	+	.	Parent=mRNA86
+KU215903	Prodigal_v2.6.2	CDS	115241	115528	12.2	+	0	Parent=mRNA86
+###
+KU215903	maker	gene	116107	116187	.	+	.	ID=gene126;Name=trnL-CAA-gene
+KU215903	maker	tRNA	116107	116187	100	+	.	ID=tRNA34;Parent=gene126;Name=trnL-CAA;_AED=0.00;_eAED=0.00;_QI=14|-1|1|1|-1|0|1|31|11
+KU215903	maker	five_prime_UTR	116107	116120	.	+	.	Parent=tRNA34
+KU215903	maker	exon	116107	116187	.	+	.	Parent=tRNA34
+KU215903	maker	CDS	116121	116156	.	+	0	Parent=tRNA34
+KU215903	maker	three_prime_UTR	116157	116187	.	+	.	Parent=tRNA34
+###
+KU215903	Prodigal_v2.6.2	gene	116390	116575	4.8	+	.	ID=gene127;Name=orf14
+KU215903	Prodigal_v2.6.2	mRNA	116390	116575	4.8	+	.	ID=mRNA87;Parent=gene127;Name=orf14
+KU215903	Prodigal_v2.6.2	exon	116390	116575	4.8	+	.	Parent=mRNA87
+KU215903	Prodigal_v2.6.2	CDS	116390	116575	4.8	+	0	Parent=mRNA87
+###
+KU215903	maker	gene	116890	123270	.	-	.	ID=gene128;Name=ycf2|lcl|NC_021456.1_prot_YP_008082869.1_74-gene
+KU215903	maker	mRNA	116890	123270	32.8	-	.	ID=mRNA88;Parent=gene128;Name=ycf2|lcl|NC_021456.1_prot_YP_008082869.1_74;_AED=0.06;_eAED=0.06;_QI=0|-1|0|1|-1|0|1|0|2126
+KU215903	maker	exon	116890	123270	.	-	.	Parent=mRNA88
+KU215903	maker	CDS	116890	123270	.	-	0	Parent=mRNA88
+###
+KU215903	maker	gene	123452	123526	.	-	.	ID=gene129;Name=trnH-GUG-gene
+KU215903	maker	tRNA	123452	123526	100	-	.	ID=tRNA35;Parent=gene129;Name=trnH-GUG;_AED=0.49;_eAED=0.49;_QI=1|-1|1|1|-1|0|1|2|24
+KU215903	maker	three_prime_UTR	123452	123453	.	-	.	Parent=tRNA35
+KU215903	maker	exon	123452	123526	.	-	.	Parent=tRNA35
+KU215903	maker	CDS	123454	123525	.	-	0	Parent=tRNA35
+KU215903	maker	five_prime_UTR	123526	123526	.	-	.	Parent=tRNA35
+###
+KU215903	maker	gene	123826	123899	.	+	.	ID=gene130;Name=trnI-CAU-gene
+KU215903	maker	tRNA	123826	123899	100	+	.	ID=tRNA36;Parent=gene130;Name=trnI-CAU;_AED=0.00;_eAED=0.00;_QI=6|-1|1|1|-1|0|1|29|12
+KU215903	maker	five_prime_UTR	123826	123831	.	+	.	Parent=tRNA36
+KU215903	maker	exon	123826	123899	.	+	.	Parent=tRNA36
+KU215903	maker	CDS	123832	123870	.	+	0	Parent=tRNA36
+KU215903	maker	three_prime_UTR	123871	123899	.	+	.	Parent=tRNA36
+###
