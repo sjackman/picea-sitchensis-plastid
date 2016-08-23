@@ -5,6 +5,7 @@
 1062	1	CDS
 			product	photosystem II protein D1
 			protein_id	gnl|BCGSC|Q903CP_gene1
+			inference	similar to AA sequence:RefSeq:YP_008082796.1
 4172	1586	gene
 			gene	trnK-UUU
 			locus_tag	Q903CP_gene2
@@ -19,6 +20,7 @@
 3349	1802	CDS
 			product	maturase
 			protein_id	gnl|BCGSC|Q903CP_gene3
+			inference	similar to AA sequence:RefSeq:YP_008082797.1
 4398	4523	gene
 			gene	orf1
 			locus_tag	Q903CP_gene4
@@ -31,6 +33,7 @@
 6495	4954	CDS
 			product	photochlorophyllide reductase subunit B
 			protein_id	gnl|BCGSC|Q903CP_gene5
+			inference	similar to AA sequence:RefSeq:YP_008082798.1
 6771	6700	gene
 			gene	trnQ-UUG
 			locus_tag	Q903CP_gene6
@@ -43,12 +46,14 @@
 7128	7307	CDS
 			product	photosystem II protein K
 			protein_id	gnl|BCGSC|Q903CP_gene7
+			inference	similar to AA sequence:RefSeq:YP_008082799.1
 7791	7901	gene
 			gene	psbI
 			locus_tag	Q903CP_gene8
 7791	7901	CDS
 			product	photosystem II protein I
 			protein_id	gnl|BCGSC|Q903CP_gene8
+			inference	similar to AA sequence:RefSeq:YP_008082800.1
 8065	7978	gene
 			gene	trnS-GCU
 			locus_tag	Q903CP_gene9
@@ -61,12 +66,14 @@
 8513	8614	CDS
 			product	photosystem II reaction center protein ycf12
 			protein_id	gnl|BCGSC|Q903CP_gene10
+			inference	similar to AA sequence:RefSeq:YP_008082834.1
 9034	9624	gene
 			gene	clpP
 			locus_tag	Q903CP_gene11
 9034	9624	CDS
 			product	ATP-dependent Clp protease proteolytic subunit
 			protein_id	gnl|BCGSC|Q903CP_gene11
+			inference	similar to AA sequence:RefSeq:YP_008082802.1
 9802	9915	gene
 113225	114024
 			gene	rps12
@@ -77,6 +84,7 @@
 113999	114024
 			product	ribosomal protein S12
 			protein_id	gnl|BCGSC|Q903CP_gene12
+			inference	similar to AA sequence:RefSeq:YP_008082803.1
 			exception	trans-splicing
 113457	113998	intron
 10625	10984	gene
@@ -85,24 +93,28 @@
 10625	10984	CDS
 			product	ribosomal protein L20
 			protein_id	gnl|BCGSC|Q903CP_gene14
+			inference	similar to AA sequence:RefSeq:YP_008082804.1
 11525	11244	gene
 			gene	rps18
 			locus_tag	Q903CP_gene15
 11525	11244	CDS
 			product	ribosomal protein S18
 			protein_id	gnl|BCGSC|Q903CP_gene15
+			inference	similar to AA sequence:RefSeq:YP_008082805.1
 11855	11649	gene
 			gene	rpl33
 			locus_tag	Q903CP_gene16
 11855	11649	CDS
 			product	ribosomal protein L33
 			protein_id	gnl|BCGSC|Q903CP_gene16
+			inference	similar to AA sequence:RefSeq:YP_008082806.1
 12302	12174	gene
 			gene	psaJ
 			locus_tag	Q903CP_gene17
 12302	12174	CDS
 			product	photosystem I subunit IX
 			protein_id	gnl|BCGSC|Q903CP_gene17
+			inference	similar to AA sequence:RefSeq:YP_008082807.1
 12600	12673	gene
 			gene	trnP-UGG
 			locus_tag	Q903CP_gene18
@@ -121,12 +133,14 @@
 13150	13037	CDS
 			product	cytochrome b6/f complex subunit V
 			protein_id	gnl|BCGSC|Q903CP_gene20
+			inference	similar to AA sequence:RefSeq:YP_008082808.1
 13443	13255	gene
 			gene	petL
 			locus_tag	Q903CP_gene21
 13443	13255	CDS
 			product	cytochrome b/f complex 3.5 kDa subunit
 			protein_id	gnl|BCGSC|Q903CP_gene21
+			inference	similar to AA sequence:RefSeq:YP_008082809.1
 14197	14526	gene
 			gene	orf2
 			locus_tag	Q903CP_gene22
@@ -139,48 +153,56 @@
 14685	14936	CDS
 			product	cytochrome b559 alpha chain
 			protein_id	gnl|BCGSC|Q903CP_gene23
+			inference	similar to AA sequence:RefSeq:YP_008082810.1
 14946	15065	gene
 			gene	psbF
 			locus_tag	Q903CP_gene24
 14946	15065	CDS
 			product	photosystem II cytochrome b559 beta subunit
 			protein_id	gnl|BCGSC|Q903CP_gene24
+			inference	similar to AA sequence:RefSeq:YP_008082811.1
 15099	15215	gene
 			gene	psbL
 			locus_tag	Q903CP_gene25
 15099	15215	CDS
 			product	photosystem II protein L
 			protein_id	gnl|BCGSC|Q903CP_gene25
+			inference	similar to AA sequence:RefSeq:YP_008082812.1
 15334	15456	gene
 			gene	psbJ
 			locus_tag	Q903CP_gene26
 15334	15456	CDS
 			product	photosystem II protein J
 			protein_id	gnl|BCGSC|Q903CP_gene26
+			inference	similar to AA sequence:RefSeq:YP_008082813.1
 17461	16466	gene
 			gene	petA
 			locus_tag	Q903CP_gene27
 17461	16466	CDS
 			product	cytochrome f
 			protein_id	gnl|BCGSC|Q903CP_gene27
+			inference	similar to AA sequence:RefSeq:YP_008082814.1
 18476	17691	gene
 			gene	cemA
 			locus_tag	Q903CP_gene28
 18476	17691	CDS
 			product	chloroplast envelope membrane protein
 			protein_id	gnl|BCGSC|Q903CP_gene28
+			inference	similar to AA sequence:RefSeq:YP_008082815.1
 19850	19296	gene
 			gene	ycf4
 			locus_tag	Q903CP_gene29
 19850	19296	CDS
 			product	photosystem I assembly protein Ycf4
 			protein_id	gnl|BCGSC|Q903CP_gene29
+			inference	similar to AA sequence:RefSeq:YP_008082816.1
 20526	20416	gene
 			gene	psaI
 			locus_tag	Q903CP_gene30
 20526	20416	CDS
 			product	photosystem I subunit VIII
 			protein_id	gnl|BCGSC|Q903CP_gene30
+			inference	similar to AA sequence:RefSeq:YP_008082817.1
 20645	20848	gene
 			gene	orf3
 			locus_tag	Q903CP_gene31
@@ -193,6 +215,7 @@
 22028	21045	CDS
 			product	acetyl-CoA carboxylase beta subunit
 			protein_id	gnl|BCGSC|Q903CP_gene32
+			inference	similar to AA sequence:RefSeq:YP_008082818.1
 22357	22284	gene
 			gene	trnR-CCG
 			locus_tag	Q903CP_gene33
@@ -205,18 +228,21 @@
 24081	22654	CDS
 			product	ribulose-1,5-bisphosphate carboxylase/oxygenase large subunit
 			protein_id	gnl|BCGSC|Q903CP_gene34
+			inference	similar to AA sequence:RefSeq:YP_008082819.1
 24798	26276	gene
 			gene	atpB
 			locus_tag	Q903CP_gene35
 24798	26276	CDS
 			product	ATP synthase CF1 beta chain
 			protein_id	gnl|BCGSC|Q903CP_gene35
+			inference	similar to AA sequence:RefSeq:YP_008082820.1
 26285	26698	gene
 			gene	atpE
 			locus_tag	Q903CP_gene36
 26285	26698	CDS
 			product	ATP synthase CF1 epsilon chain
 			protein_id	gnl|BCGSC|Q903CP_gene36
+			inference	similar to AA sequence:RefSeq:YP_008082821.1
 26879	26807	gene
 			gene	trnM-CAU
 			locus_tag	Q903CP_gene37
@@ -261,6 +287,7 @@
 31875	31967	CDS
 			product	photosystem I protein M
 			protein_id	gnl|BCGSC|Q903CP_gene43
+			inference	similar to AA sequence:RefSeq:YP_008082822.1
 32183	32270	gene
 			gene	trnS-GCU
 			locus_tag	Q903CP_gene44
@@ -273,6 +300,7 @@
 32457	32347	CDS
 			product	photosystem II protein I
 			protein_id	gnl|BCGSC|Q903CP_gene45
+			inference	similar to AA sequence:RefSeq:YP_008082800.1
 32760	32832	gene
 			gene	trnE-UUC
 			locus_tag	Q903CP_gene46
@@ -297,12 +325,14 @@
 34224	34337	CDS
 			product	photosystem II M protein
 			protein_id	gnl|BCGSC|Q903CP_gene49
+			inference	similar to AA sequence:RefSeq:YP_008082824.1
 35314	35225	gene
 			gene	petN
 			locus_tag	Q903CP_gene50
 35314	35225	CDS
 			product	cytochrome b6/f complex subunit VIII
 			protein_id	gnl|BCGSC|Q903CP_gene50
+			inference	similar to AA sequence:RefSeq:YP_008082825.1
 35706	35636	gene
 			gene	trnC-GCA
 			locus_tag	Q903CP_gene51
@@ -321,6 +351,7 @@
 36130	39360	CDS
 			product	RNA polymerase beta subunit
 			protein_id	gnl|BCGSC|Q903CP_gene53
+			inference	similar to AA sequence:RefSeq:YP_008082826.1
 39383	42161	gene
 			gene	rpoC1
 			locus_tag	Q903CP_gene54
@@ -328,6 +359,7 @@
 40503	42161
 			product	RNA polymerase beta subunit-1
 			protein_id	gnl|BCGSC|Q903CP_gene54
+			inference	similar to AA sequence:RefSeq:YP_008082827.1
 39815	40502	intron
 42255	45911	gene
 			gene	rpoC2
@@ -335,24 +367,28 @@
 42255	45911	CDS
 			product	RNA polymerase beta subunit-2
 			protein_id	gnl|BCGSC|Q903CP_gene55
+			inference	similar to AA sequence:RefSeq:YP_008082828.1
 46114	46818	gene
 			gene	rps2
 			locus_tag	Q903CP_gene56
 46114	46818	CDS
 			product	ribosomal protein S2
 			protein_id	gnl|BCGSC|Q903CP_gene56
+			inference	similar to AA sequence:RefSeq:YP_008082829.1
 47111	47857	gene
 			gene	atpI
 			locus_tag	Q903CP_gene57
 47111	47857	CDS
 			product	ATP synthase CF0 A chain
 			protein_id	gnl|BCGSC|Q903CP_gene57
+			inference	similar to AA sequence:RefSeq:YP_008082830.1
 48539	48784	gene
 			gene	atpH
 			locus_tag	Q903CP_gene58
 48539	48784	CDS
 			product	ATP synthase CF0 subunit III
 			protein_id	gnl|BCGSC|Q903CP_gene58
+			inference	similar to AA sequence:RefSeq:YP_008082831.1
 49114	50439	gene
 			gene	atpF
 			locus_tag	Q903CP_gene59
@@ -360,6 +396,7 @@
 50030	50439
 			product	ATP synthase CF0 subunit I
 			protein_id	gnl|BCGSC|Q903CP_gene59
+			inference	similar to AA sequence:RefSeq:YP_008082832.1
 49259	50029	intron
 50483	52006	gene
 			gene	atpA
@@ -367,6 +404,7 @@
 50483	52006	CDS
 			product	ATP synthase CF1 alpha chain
 			protein_id	gnl|BCGSC|Q903CP_gene60
+			inference	similar to AA sequence:RefSeq:YP_008082833.1
 52175	52106	gene
 			gene	trnR-UCU
 			locus_tag	Q903CP_gene61
@@ -387,6 +425,7 @@
 53523	53422	CDS
 			product	photosystem II reaction center protein ycf12
 			protein_id	gnl|BCGSC|Q903CP_gene63
+			inference	similar to AA sequence:RefSeq:YP_008082834.1
 53807	53589	gene
 			gene	orf7
 			locus_tag	Q903CP_gene64
@@ -399,24 +438,28 @@
 54245	55771	CDS
 			product	photosystem II CP47 chlorophyll apoprotein
 			protein_id	gnl|BCGSC|Q903CP_gene65
+			inference	similar to AA sequence:RefSeq:YP_008082835.1
 55846	55953	gene
 			gene	psbT
 			locus_tag	Q903CP_gene66
 55846	55953	CDS
 			product	photosystem II protein T
 			protein_id	gnl|BCGSC|Q903CP_gene66
+			inference	similar to AA sequence:RefSeq:YP_008082836.1
 56166	56035	gene
 			gene	psbN
 			locus_tag	Q903CP_gene67
 56166	56035	CDS
 			product	photosystem II protein N
 			protein_id	gnl|BCGSC|Q903CP_gene67
+			inference	similar to AA sequence:RefSeq:YP_008082837.1
 56246	56473	gene
 			gene	psbH
 			locus_tag	Q903CP_gene68
 56246	56473	CDS
 			product	photosystem II 10 kDa phosphoprotein
 			protein_id	gnl|BCGSC|Q903CP_gene68
+			inference	similar to AA sequence:RefSeq:YP_008082838.1
 56629	58066	gene
 			gene	petB
 			locus_tag	Q903CP_gene69
@@ -424,6 +467,7 @@
 57425	58066
 			product	cytochrome b6
 			protein_id	gnl|BCGSC|Q903CP_gene69
+			inference	similar to AA sequence:RefSeq:YP_008082839.1
 56635	57424	intron
 58276	59515	gene
 			gene	petD
@@ -432,6 +476,7 @@
 58987	59515
 			product	cytochrome b6/f complex subunit IV
 			protein_id	gnl|BCGSC|Q903CP_gene70
+			inference	similar to AA sequence:RefSeq:YP_008082840.1
 58284	58986	intron
 60634	59624	gene
 			gene	rpoA
@@ -439,36 +484,42 @@
 60634	59624	CDS
 			product	RNA polymerase alpha subunit
 			protein_id	gnl|BCGSC|Q903CP_gene71
+			inference	similar to AA sequence:RefSeq:YP_008082841.1
 61086	60694	gene
 			gene	rps11
 			locus_tag	Q903CP_gene72
 61086	60694	CDS
 			product	ribosomal protein S11
 			protein_id	gnl|BCGSC|Q903CP_gene72
+			inference	similar to AA sequence:RefSeq:YP_008082842.1
 61282	61169	gene
 			gene	rpl36
 			locus_tag	Q903CP_gene73
 61282	61169	CDS
 			product	ribosomal protein L36
 			protein_id	gnl|BCGSC|Q903CP_gene73
+			inference	similar to AA sequence:RefSeq:YP_008082843.1
 61621	61385	gene
 			gene	infA
 			locus_tag	Q903CP_gene74
 61621	61385	CDS
 			product	translation initiation factor 1
 			protein_id	gnl|BCGSC|Q903CP_gene74
+			inference	similar to AA sequence:RefSeq:YP_008082844.1
 62163	61765	gene
 			gene	rps8
 			locus_tag	Q903CP_gene75
 62163	61765	CDS
 			product	ribosomal protein S8
 			protein_id	gnl|BCGSC|Q903CP_gene75
+			inference	similar to AA sequence:RefSeq:YP_008082845.1
 62677	62309	gene
 			gene	rpl14
 			locus_tag	Q903CP_gene76
 62677	62309	CDS
 			product	ribosomal protein L14
 			protein_id	gnl|BCGSC|Q903CP_gene76
+			inference	similar to AA sequence:RefSeq:YP_008082846.1
 64068	62794	gene
 			gene	rpl16
 			locus_tag	Q903CP_gene77
@@ -476,6 +527,7 @@
 63189	62794
 			product	ribosomal protein L16
 			protein_id	gnl|BCGSC|Q903CP_gene77
+			inference	similar to AA sequence:RefSeq:YP_008082847.1
 64059	63190	intron
 64818	64162	gene
 			gene	rps3
@@ -483,18 +535,21 @@
 64818	64162	CDS
 			product	ribosomal protein S3
 			protein_id	gnl|BCGSC|Q903CP_gene78
+			inference	similar to AA sequence:RefSeq:YP_008082848.1
 65231	64803	gene
 			gene	rpl22
 			locus_tag	Q903CP_gene79
 65231	64803	CDS
 			product	ribosomal protein L22
 			protein_id	gnl|BCGSC|Q903CP_gene79
+			inference	similar to AA sequence:RefSeq:YP_008082849.1
 65540	65262	gene
 			gene	rps19
 			locus_tag	Q903CP_gene80
 65540	65262	CDS
 			product	ribosomal protein S19
 			protein_id	gnl|BCGSC|Q903CP_gene80
+			inference	similar to AA sequence:RefSeq:YP_008082850.1
 67099	65592	gene
 			gene	rpl2
 			locus_tag	Q903CP_gene81
@@ -502,6 +557,7 @@
 66022	65592
 			product	ribosomal protein L2
 			protein_id	gnl|BCGSC|Q903CP_gene81
+			inference	similar to AA sequence:RefSeq:YP_008082851.1
 66699	66023	intron
 67399	67124	gene
 			gene	rpl23
@@ -509,6 +565,7 @@
 67399	67124	CDS
 			product	ribosomal protein L23
 			protein_id	gnl|BCGSC|Q903CP_gene82
+			inference	similar to AA sequence:RefSeq:YP_008082852.1
 67497	67583	gene
 			gene	psbA
 			locus_tag	Q903CP_gene83
@@ -551,6 +608,7 @@
 71418	72023	CDS
 			product	ribosomal protein S4
 			protein_id	gnl|BCGSC|Q903CP_gene89
+			inference	similar to AA sequence:RefSeq:YP_008082853.1
 72324	72410	gene
 			gene	trnS-GGA
 			locus_tag	Q903CP_gene90
@@ -565,6 +623,7 @@
 74899	75054
 			product	photosystem I assembly protein Ycf3
 			protein_id	gnl|BCGSC|Q903CP_gene91
+			inference	similar to AA sequence:RefSeq:YP_008082854.1
 73242	73956	intron
 74188	74898	intron
 75679	77931	gene
@@ -573,18 +632,21 @@
 75679	77931	CDS
 			product	photosystem I P700 apoprotein A1
 			protein_id	gnl|BCGSC|Q903CP_gene92
+			inference	similar to AA sequence:RefSeq:YP_008082855.1
 77957	80161	gene
 			gene	psaB
 			locus_tag	Q903CP_gene93
 77957	80161	CDS
 			product	photosystem I P700 apoprotein A2
 			protein_id	gnl|BCGSC|Q903CP_gene93
+			inference	similar to AA sequence:RefSeq:YP_008082856.1
 80311	80610	gene
 			gene	rps14
 			locus_tag	Q903CP_gene94
 80311	80610	CDS
 			product	ribosomal protein S14
 			protein_id	gnl|BCGSC|Q903CP_gene94
+			inference	similar to AA sequence:RefSeq:YP_008082857.1
 80739	80812	gene
 			gene	trnfM-CAU
 			locus_tag	Q903CP_gene95
@@ -603,6 +665,7 @@
 81437	81138	CDS
 			product	photosystem II protein Z
 			protein_id	gnl|BCGSC|Q903CP_gene97
+			inference	similar to AA sequence:RefSeq:YP_008082858.1
 81727	81813	gene
 			gene	trnS-UGA
 			locus_tag	Q903CP_gene98
@@ -615,12 +678,14 @@
 83428	82007	CDS
 			product	photosystem II 44 kDa protein
 			protein_id	gnl|BCGSC|Q903CP_gene99
+			inference	similar to AA sequence:RefSeq:YP_008082859.1
 84437	83376	gene
 			gene	psbD
 			locus_tag	Q903CP_gene100
 84437	83376	CDS
 			product	photosystem II protein D2
 			protein_id	gnl|BCGSC|Q903CP_gene100
+			inference	similar to AA sequence:RefSeq:YP_008082860.1
 85292	85089	gene
 			gene	orf9
 			locus_tag	Q903CP_gene101
@@ -687,36 +752,42 @@
 94927	95802	CDS
 			product	protochlorophyllide reductase ATP-binding subunit
 			protein_id	gnl|BCGSC|Q903CP_gene111
+			inference	similar to AA sequence:RefSeq:YP_008082861.1
 95919	97331	gene
 			gene	chlN
 			locus_tag	Q903CP_gene112
 95919	97331	CDS
 			product	photochlorophyllide reductase subunit N
 			protein_id	gnl|BCGSC|Q903CP_gene112
+			inference	similar to AA sequence:RefSeq:YP_008082862.1
 98309	103486	gene
 			gene	ycf1
 			locus_tag	Q903CP_gene113
 98309	103486	CDS
 			product	hypothetical chloroplast protein
 			protein_id	gnl|BCGSC|Q903CP_gene113
+			inference	similar to AA sequence:RefSeq:YP_008082863.1
 103821	104087	gene
 			gene	rps15
 			locus_tag	Q903CP_gene114
 103821	104087	CDS
 			product	ribosomal protein S15
 			protein_id	gnl|BCGSC|Q903CP_gene114
+			inference	similar to AA sequence:RefSeq:YP_008082864.1
 105451	105696	gene
 			gene	psaC
 			locus_tag	Q903CP_gene115
 105451	105696	CDS
 			product	photosystem I subunit VII
 			protein_id	gnl|BCGSC|Q903CP_gene115
+			inference	similar to AA sequence:RefSeq:YP_008082865.1
 108592	107630	gene
 			gene	ccsA
 			locus_tag	Q903CP_gene116
 108592	107630	CDS
 			product	cytochrome c biogenesis protein
 			protein_id	gnl|BCGSC|Q903CP_gene116
+			inference	similar to AA sequence:RefSeq:YP_008082866.1
 108808	108731	gene
 			gene	trnL-UAG
 			locus_tag	Q903CP_gene117
@@ -735,6 +806,7 @@
 110344	110132	CDS
 			product	ribosomal protein L32
 			protein_id	gnl|BCGSC|Q903CP_gene119
+			inference	similar to AA sequence:RefSeq:YP_008082867.1
 111131	110595	gene
 			gene	orf10
 			locus_tag	Q903CP_gene120
@@ -759,6 +831,7 @@
 114073	114540	CDS
 			product	ribosomal protein S7
 			protein_id	gnl|BCGSC|Q903CP_gene123
+			inference	similar to AA sequence:RefSeq:YP_008082868.1
 115029	115187	gene
 			gene	orf12
 			locus_tag	Q903CP_gene124
@@ -789,6 +862,7 @@
 123270	116890	CDS
 			product	hypothetical chloroplast protein
 			protein_id	gnl|BCGSC|Q903CP_gene128
+			inference	similar to AA sequence:RefSeq:YP_008082869.1
 123526	123452	gene
 			gene	trnH-GUG
 			locus_tag	Q903CP_gene129
