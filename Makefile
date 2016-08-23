@@ -13,10 +13,10 @@ edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] R
 # Number of threads
 t=64
 
-all: $(name).tbl \
-	$(name).tbl.gene \
-	$(name).sqn \
-	$(name).gbf.png
+all: $(name).2.tbl \
+	$(name).2.tbl.gene \
+	$(name).2.sqn \
+	$(name).2.gbf.png
 
 clean:
 	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png
@@ -148,6 +148,10 @@ $(name).%.bam: %.fq.gz $(name).fa.bwt
 %.vcf.fa: %.vcf.gz %.vcf.gz.csi $(name).unamb.fa
 	bcftools consensus -f $(name).unamb.fa $< | seqtk seq >$@
 
+# Correct ambiguity codes and single nucleotide misassemblies
+$(name).2.fa: KU215903.set5k.filter.vcf.fa
+	cp -a $< $@
+
 # Prodigal
 
 # Annotate genes using Prodigal
@@ -185,8 +189,8 @@ $(name).%.bam: %.fq.gz $(name).fa.bwt
 # MAKER
 
 # Annotate genes using MAKER
-$(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn cds_aa.fa
-	maker -fix_nucleotides
+%.maker.output/stamp: %.fa maker_opts.ctl $(ref).frn cds_aa.fa
+	maker -fix_nucleotides -g $<
 	touch $@
 
 %.maker.orig.gff: %.maker.output/stamp
@@ -293,3 +297,23 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 # Render Markdown to HTML using Pandoc
 %.html: %.md %.bib
 	pandoc -s -F pandoc-citeproc --bibliography=$*.bib -o $@ $<
+
+# Symlinks
+
+$(name).2.manual.gff: $(name).manual.gff
+	ln -s $< $@
+
+$(name).2.ircoord: $(name).ircoord
+	ln -s $< $@
+
+$(name).2.cmt: $(name).cmt
+	ln -s $< $@
+
+$(name).2.sbt: $(name).sbt
+	ln -s $< $@
+
+$(name).2-header.gbk: $(name)-header.gbk
+	ln -s $< $@
+
+$(name).2-product.tsv: $(name)-product.tsv
+	ln -s $< $@
