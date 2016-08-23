@@ -13,14 +13,13 @@ edirect_query='Picea abies[Organism] chloroplast[Title] complete genome[Title] R
 # Number of threads
 t=64
 
-all: $(name)-manual.tbl \
-	$(name)-manual.tbl.gene \
-	$(name)-manual.sqn \
-	$(name)-manual.gbf.png
+all: $(name).tbl \
+	$(name).tbl.gene \
+	$(name).sqn \
+	$(name).gbf.png
 
 clean:
-	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png \
-		$(name)-manual.tbl $(name)-manual.tbl.gene $(name)-manual.sqn
+	rm -f $(name).orig.gff $(name).gff $(name).orig.gbk $(name).gbk $(name).gbk.png
 
 install-deps:
 	brew install gnu-sed
@@ -190,10 +189,10 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 	maker -fix_nucleotides
 	touch $@
 
-%.orig.gff: %.maker.output/stamp
+%.maker.orig.gff: %.maker.output/stamp
 	gff3_merge -s -g -n -d $*.maker.output/$*_master_datastore_index.log >$@
 
-%.gff: %.orig.gff
+%.maker.gff: %.maker.orig.gff
 	gsed '/rrn/s/mRNA/rRNA/; \
 		/trn/s/mRNA/tRNA/' $< \
 	|gt gff3 -addintrons - >$@
@@ -228,12 +227,12 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 		p;}' $*.orig.gbk) >$@
 
 # Merge MAKER and manual annotations using bedtools.
-%.maker.manual.gff: %.gff %.manual.gff
+%.maker.manual.gff: %.maker.gff %.manual.gff
 	bedtools intersect -v -header -a $< -b $*.manual.gff \
 		|gt gff3 -sort $*.manual.gff - >$@
 
 # Merge MAKER, manual and Prodigal ORF annotations using bedtools.
-%-manual.gff: %.gff %.manual.gff %.prodigal.orf.gff
+%.gff: %.maker.gff %.manual.gff %.prodigal.orf.gff
 	bedtools intersect -v -header -a $< -b $*.manual.gff \
 		|gt gff3 -sort - $*.manual.gff $*.prodigal.orf.gff >$@
 
@@ -290,26 +289,6 @@ $(name).maker.output/stamp: %.maker.output/stamp: maker_opts.ctl %.fa $(ref).frn
 # Convert TBL to GBF and SQN
 %.gbf %.sqn: %.fsa %.sbt %.tbl %.cmt
 	tbl2asn -i $< -t $*.sbt -w $*.cmt -Z $*.discrep -Vbv
-
-# Symlinks
-
-$(name)-manual.fa: $(name).fa
-	ln -s $< $@
-
-$(name)-manual.ircoord: $(name).ircoord
-	ln -s $< $@
-
-$(name)-manual.cmt: $(name).cmt
-	ln -s $< $@
-
-$(name)-manual.sbt: $(name).sbt
-	ln -s $< $@
-
-$(name)-manual-header.gbk: $(name)-header.gbk
-	ln -s $< $@
-
-$(name)-manual-product.tsv: $(name)-product.tsv
-	ln -s $< $@
 
 # Render Markdown to HTML using Pandoc
 %.html: %.md %.bib
